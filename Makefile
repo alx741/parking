@@ -37,4 +37,4 @@ burn: $(FILE).hex
 	sudo avrdude -p $(AVRDUDE_PART) -c $(AVRDUDE_PROGRAMMER) -U flash:w:$(FILE).hex
 
 test:
-	sudo picocom -c -b 9600 /dev/ttyUSB1
+	sudo picocom -c -b 9600 /dev/ttyUSB0

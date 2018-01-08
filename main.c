@@ -13,29 +13,43 @@
 void init(void)
 {
     stepper_init();
-    servo_init();
+    /* servo_init(); */
     uart_init();
+    /* DDRC |= 0b00000001; */
+    /* PORTC = 0b00000001; */
 }
 
 void execute_command(char *s)
 {
     switch (s[0])
     {
-        case 's':
-            (s[2] == 'f') ? servo_fstep() : servo_bstep();
-            break;
+        /* case 's': */
+        /*     (s[2] == 'f') ? servo_fstep() : servo_bstep(); */
+        /*     break; */
 
         case 'x':
-            (s[2] == 'f') ? fstep() : bstep();
+            step_right();
             break;
 
-        /* case 'y': */
-        /*     (s[2] == 'f') ? y_fstep() : y_bstep(); */
+        case 'y':
+            step_left();
+            break;
+
+        /* case 'r': */
+        /*     (s[2] == 'r') ? step_right(10) : step_left(10); */
         /*     break; */
 
         case 'r':
-            servo_reset();
+            rotate_right(30);
             break;
+
+        case 'l':
+            rotate_left(30);
+            break;
+
+        /* case 'r': */
+        /*     servo_reset(); */
+        /*     break; */
     }
 }
 
