@@ -2,14 +2,16 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
+#define SERVO_0 200
+#define SERVO_90 410
 #define SERVO_180 560
-#define SERVO_90 355
-#define SERVO_0 140
 #define SERVO_STEP 10
 
-#define SERVO_ANGLE_START 215
-#define SERVO_ANGLE_MIDDLE SERVO_90
-#define SERVO_ANGLE_END 520
+#define SERVO_ANGLE_START SERVO_0
+/* #define SERVO_ANGLE_MIDDLE SERVO_90 */
+#define SERVO_ANGLE_END SERVO_90
+
+const int CURRENT_ANGLE = SERVO_ANGLE_START;
 
 void servo_init()
 {

@@ -13,7 +13,7 @@
 void init(void)
 {
     stepper_init();
-    /* servo_init(); */
+    servo_init();
     uart_init();
     /* DDRC |= 0b00000001; */
     /* PORTC = 0b00000001; */
@@ -23,9 +23,9 @@ void execute_command(char *s)
 {
     switch (s[0])
     {
-        /* case 's': */
-        /*     (s[2] == 'f') ? servo_fstep() : servo_bstep(); */
-        /*     break; */
+        case 's':
+            (s[2] == 'f') ? servo_fstep() : servo_bstep();
+            break;
 
         case 'x':
             step_right();
