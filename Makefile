@@ -27,7 +27,7 @@ CFLAGS += -g
 $(FILE).hex: $(FILE).elf
 	avr-objcopy -j .text -j .data -O ihex $< $@
 
-$(FILE).elf: $(FILE).c uart.c servo.c board.c
+$(FILE).elf: $(FILE).c uart.c servo.c stepper.c
 	avr-gcc $(CFLAGS) $^ -o $@
 
 clean:

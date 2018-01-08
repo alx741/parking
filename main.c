@@ -3,7 +3,7 @@
 #include <util/delay.h>
 #include "uart.h"
 #include "servo.h"
-#include "board.h"
+#include "stepper.h"
 
 #define F_CPU 16000000
 
@@ -12,7 +12,7 @@
 
 void init(void)
 {
-    board_init();
+    stepper_init();
     servo_init();
     uart_init();
 }
@@ -26,15 +26,14 @@ void execute_command(char *s)
             break;
 
         case 'x':
-            (s[2] == 'f') ? x_fstep() : x_bstep();
+            (s[2] == 'f') ? fstep() : bstep();
             break;
 
-        case 'y':
-            (s[2] == 'f') ? y_fstep() : y_bstep();
-            break;
+        /* case 'y': */
+        /*     (s[2] == 'f') ? y_fstep() : y_bstep(); */
+        /*     break; */
 
         case 'r':
-            board_reset();
             servo_reset();
             break;
     }
