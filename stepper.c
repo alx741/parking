@@ -2,7 +2,7 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
-#define X_WAIT 40
+#define DELAY 40
 
 int STEP_STATE = 0x01;
 
@@ -16,14 +16,16 @@ void step_right()
 {
     STEP_STATE = (STEP_STATE == 0x01)? 0x08 : (STEP_STATE >>= 1);
     PORTC = STEP_STATE;
-    _delay_ms(X_WAIT);
+    _delay_ms(DELAY);
+    PORTC = 0x00;
 }
 
 void step_left()
 {
     STEP_STATE = (STEP_STATE == 0x08)? 0x01 : (STEP_STATE <<= 1);
     PORTC = STEP_STATE;
-    _delay_ms(X_WAIT);
+    _delay_ms(DELAY);
+    PORTC = 0x00;
 }
 
 void rotate_right(int angle)

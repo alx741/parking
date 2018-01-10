@@ -80,20 +80,12 @@ void execute_command(char *s)
 {
     switch (s[0])
     {
-        case 'x':
-            step_right();
-            break;
-
-        case 'y':
-            step_left();
-            break;
-
         case 'r':
-            rotate_right(30);
+            rotate_right(5);
             break;
 
         case 'l':
-            rotate_left(30);
+            rotate_left(5);
             break;
     }
 }
