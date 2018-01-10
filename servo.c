@@ -3,7 +3,7 @@
 #include <util/delay.h>
 #include <stdbool.h>
 
-#define SERVO_0 410
+#define SERVO_0 405
 #define SERVO_90 200
 #define SERVO_CLOSE SERVO_0
 #define SERVO_OPEN SERVO_90
@@ -29,6 +29,9 @@ void servo_init()
 
 void servo_reset()
 {
+    servo_set(1, SERVO_OPEN);
+    servo_set(2, SERVO_OPEN);
+    _delay_ms(300);
     servo_set(1, SERVO_CLOSE);
     servo_set(2, SERVO_CLOSE);
 }

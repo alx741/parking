@@ -22,6 +22,15 @@ void react_arms(void)
             servo_open(1);
         }
     }
+    if (! (PINB & (1 << PB5)))
+    {
+        // Car on sensor for at least 150ms
+        _delay_ms(150);
+        if (! (PINB & (1 << PB5)))
+        {
+            servo_open(2);
+        }
+    }
 
     // Entry Close
     if (PINB & (1 << PB4))
@@ -31,6 +40,15 @@ void react_arms(void)
         if (PINB & (1 << PB4))
         {
             servo_close(1);
+        }
+    }
+    if (PINB & (1 << PB5))
+    {
+        // Car left sensor 300ms ago
+        _delay_ms(300);
+        if (PINB & (1 << PB5))
+        {
+            servo_close(2);
         }
     }
 }
