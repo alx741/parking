@@ -1,17 +1,16 @@
 #include "servo.h"
 #include <avr/io.h>
 #include <util/delay.h>
+#include <stdbool.h>
 
 #define SERVO_0 200
 #define SERVO_90 410
-#define SERVO_180 560
+#define SERVO_180 520
 #define SERVO_STEP 10
+#define SERVO_STEP_DELAY 40
 
-#define SERVO_ANGLE_START SERVO_0
-/* #define SERVO_ANGLE_MIDDLE SERVO_90 */
-#define SERVO_ANGLE_END SERVO_90
-
-const int CURRENT_ANGLE = SERVO_ANGLE_START;
+static int CURRENT_ANGLE = SERVO_0;
+static int SERVO_CLOSED = true;
 
 void servo_init()
 {
@@ -25,43 +24,73 @@ void servo_init()
 
 void servo_reset()
 {
-    servo_set(ANGLE_START);
+    servo_set(SERVO_0);
     _delay_ms(500);
-    servo_set(ANGLE_MIDDLE);
+    servo_set(SERVO_90);
     _delay_ms(500);
-    servo_set(ANGLE_START);
+    servo_set(SERVO_0);
 }
 
 void servo_set(angle a)
 {
-    if (a == ANGLE_START)
+    // Enable servo
+    PORTB |= (1 << PORTB0);
+
+    int a_ = a;
+    if (a <= SERVO_0)
     {
-        OCR1A = SERVO_ANGLE_START;
+        a_ = SERVO_0;
     }
-    else if (a == ANGLE_MIDDLE)
+    else if (a >= SERVO_90)
     {
-        OCR1A = SERVO_ANGLE_MIDDLE;
+        a_ = SERVO_90;
     }
-    else if (a == ANGLE_END)
+    CURRENT_ANGLE = a_;
+    OCR1A = a_;
+
+    // Disable servo
+    _delay_ms(500);
+    PORTB &= ~(1 << PORTB0);
+}
+
+void servo_open()
+{
+    if (SERVO_CLOSED)
     {
-        OCR1A = SERVO_ANGLE_END;
+        while (CURRENT_ANGLE != SERVO_90)
+        {
+            servo_fstep();
+        }
+        SERVO_CLOSED = false;
     }
+}
+
+void servo_close()
+{
+    if (! SERVO_CLOSED)
+    {
+        while (CURRENT_ANGLE != SERVO_0)
+        {
+            servo_bstep();
+        }
+        SERVO_CLOSED = true;
+    }
+}
+
+void servo_toggle()
+{
+    if (SERVO_CLOSED) { servo_open(); }
+    else { servo_close(); }
 }
 
 void servo_fstep()
 {
-    OCR1A += SERVO_STEP;
-    if (OCR1A >= SERVO_ANGLE_END)
-    {
-        servo_set(ANGLE_END);
-    }
+    servo_set(CURRENT_ANGLE + SERVO_STEP);
+    _delay_ms(SERVO_STEP_DELAY);
 }
 
 void servo_bstep()
 {
-    OCR1A -= SERVO_STEP;
-    if (OCR1A <= SERVO_ANGLE_START)
-    {
-        servo_set(ANGLE_START);
-    }
+    servo_set(CURRENT_ANGLE - SERVO_STEP);
+    _delay_ms(SERVO_STEP_DELAY);
 }

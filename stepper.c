@@ -6,11 +6,19 @@
 
 int STEP_STATE = 0x01;
 
+void stepper_reset()
+{
+    rotate_right(30);
+    _delay_ms(500);
+    rotate_left(30);
+    _delay_ms(500);
+}
+
 void stepper_init()
 {
     DDRC = 0b00001111;
     PORTC = 0x00;
-    /* board_reset(); */
+    stepper_reset();
 }
 
 void step_right()

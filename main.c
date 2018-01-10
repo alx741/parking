@@ -24,7 +24,8 @@ void execute_command(char *s)
     switch (s[0])
     {
         case 's':
-            (s[2] == 'f') ? servo_fstep() : servo_bstep();
+            servo_toggle();
+            /* (s[2] == 'f') ? servo_fstep() : servo_bstep(); */
             break;
 
         case 'x':
@@ -46,10 +47,6 @@ void execute_command(char *s)
         case 'l':
             rotate_left(30);
             break;
-
-        /* case 'r': */
-        /*     servo_reset(); */
-        /*     break; */
     }
 }
 
