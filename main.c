@@ -10,13 +10,16 @@
 #define COMMAND_PROMPT '>'
 #define COMMAND_END ';'
 
+#define ENTER_DELAY 100
+#define EXIT_DELAY 400
+
 void react_arms(void)
 {
     // Entry Open
     if (! (PINB & (1 << PB4)))
     {
         // Car on sensor for at least 150ms
-        _delay_ms(150);
+        _delay_ms(ENTER_DELAY);
         if (! (PINB & (1 << PB4)))
         {
             servo_open(1);
@@ -25,7 +28,7 @@ void react_arms(void)
     if (! (PINB & (1 << PB5)))
     {
         // Car on sensor for at least 150ms
-        _delay_ms(150);
+        _delay_ms(ENTER_DELAY);
         if (! (PINB & (1 << PB5)))
         {
             servo_open(2);
@@ -36,7 +39,7 @@ void react_arms(void)
     if (PINB & (1 << PB4))
     {
         // Car left sensor 300ms ago
-        _delay_ms(300);
+        _delay_ms(EXIT_DELAY);
         if (PINB & (1 << PB4))
         {
             servo_close(1);
@@ -45,7 +48,7 @@ void react_arms(void)
     if (PINB & (1 << PB5))
     {
         // Car left sensor 300ms ago
-        _delay_ms(300);
+        _delay_ms(EXIT_DELAY);
         if (PINB & (1 << PB5))
         {
             servo_close(2);
