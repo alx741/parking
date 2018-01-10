@@ -80,10 +80,6 @@ void execute_command(char *s)
 {
     switch (s[0])
     {
-        /* case 's': */
-        /*     (s[1] == '1') ? servo_toggle(1) : servo_toggle(2); */
-        /*     break; */
-
         case 'x':
             step_right();
             break;
