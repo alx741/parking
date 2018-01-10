@@ -3,14 +3,19 @@
 #include <util/delay.h>
 #include <stdbool.h>
 
-#define SERVO_0 200
-#define SERVO_90 410
-#define SERVO_180 520
-#define SERVO_STEP 10
-#define SERVO_STEP_DELAY 40
+#define SERVO_0 410
+#define SERVO_90 200
+#define SERVO_CLOSE SERVO_0
+#define SERVO_OPEN SERVO_90
 
-static int CURRENT_ANGLE = SERVO_0;
-static int SERVO_CLOSED = true;
+static int CURRENT_A_ANGLE = SERVO_0;
+static int CURRENT_B_ANGLE = SERVO_0;
+static int SERVO_A_CLOSED = true;
+static int SERVO_B_CLOSED = true;
+
+void servo_fstep(int id);
+void servo_bstep(int id);
+void servo_set(int id, int a);
 
 void servo_init()
 {
@@ -24,73 +29,147 @@ void servo_init()
 
 void servo_reset()
 {
-    servo_set(SERVO_0);
-    _delay_ms(500);
-    servo_set(SERVO_90);
-    _delay_ms(500);
-    servo_set(SERVO_0);
+    servo_set(1, SERVO_CLOSE);
+    servo_set(2, SERVO_CLOSE);
 }
 
-void servo_set(angle a)
+void servo_set(int id, int a)
 {
-    // Enable servo
+    // Enable servos
     PORTB |= (1 << PORTB0);
 
     int a_ = a;
-    if (a <= SERVO_0)
+    if (a >= SERVO_0)
     {
         a_ = SERVO_0;
     }
-    else if (a >= SERVO_90)
+    else if (a <= SERVO_90)
     {
         a_ = SERVO_90;
     }
-    CURRENT_ANGLE = a_;
-    OCR1A = a_;
 
-    // Disable servo
+    // Servo A
+    if (id == 1)
+    {
+        CURRENT_A_ANGLE = a_;
+        OCR1A = a_;
+    }
+    // Servo B
+    else
+    {
+        CURRENT_B_ANGLE = a_;
+        OCR1B = a_;
+    }
+
+    // Disable servos
     _delay_ms(500);
     PORTB &= ~(1 << PORTB0);
 }
 
-void servo_open()
+void servo_open(int id)
 {
-    if (SERVO_CLOSED)
+    // Servo A
+    if (id == 1)
     {
-        while (CURRENT_ANGLE != SERVO_90)
+        if (SERVO_A_CLOSED)
         {
-            servo_fstep();
+            servo_set(1, SERVO_OPEN);
+            /* while (CURRENT_A_ANGLE != SERVO_90) */
+            /* { */
+            /*     servo_fstep(1); */
+            /* } */
+            SERVO_A_CLOSED = false;
         }
-        SERVO_CLOSED = false;
+    }
+    // Servo B
+    else
+    {
+        if (SERVO_B_CLOSED)
+        {
+            servo_set(2, SERVO_OPEN);
+            /* while (CURRENT_B_ANGLE != SERVO_90) */
+            /* { */
+            /*     servo_fstep(2); */
+            /* } */
+            SERVO_B_CLOSED = false;
+        }
     }
 }
 
-void servo_close()
+void servo_close(int id)
 {
-    if (! SERVO_CLOSED)
+    // Servo A
+    if (id == 1)
     {
-        while (CURRENT_ANGLE != SERVO_0)
+        if (! SERVO_A_CLOSED)
         {
-            servo_bstep();
+            servo_set(1, SERVO_CLOSE);
+            /* while (CURRENT_A_ANGLE != SERVO_0) */
+            /* { */
+            /*     servo_bstep(1); */
+            /* } */
+            SERVO_A_CLOSED = true;
         }
-        SERVO_CLOSED = true;
+    }
+    // Servo B
+    else
+    {
+        if (! SERVO_B_CLOSED)
+        {
+            servo_set(2, SERVO_CLOSE);
+            /* while (CURRENT_B_ANGLE != SERVO_0) */
+            /* { */
+            /*     servo_bstep(2); */
+            /* } */
+            SERVO_B_CLOSED = true;
+        }
     }
 }
 
-void servo_toggle()
+void servo_toggle(int id)
 {
-    if (SERVO_CLOSED) { servo_open(); }
-    else { servo_close(); }
+    // Servo A
+    if (id == 1)
+    {
+        if (SERVO_A_CLOSED) { servo_open(1); }
+        else { servo_close(1); }
+    }
+    // Servo B
+    else
+    {
+        if (SERVO_B_CLOSED) { servo_open(2); }
+        else { servo_close(2); }
+    }
 }
 
-void servo_fstep()
-{
-    servo_set(CURRENT_ANGLE + SERVO_STEP);
-    _delay_ms(SERVO_STEP_DELAY);
-}
+/* void servo_fstep(int id) */
+/* { */
+/*     // Servo A */
+/*     if (id == 1) */
+/*     { */
+/*         servo_set(1, CURRENT_A_ANGLE + SERVO_STEP); */
+/*         /1* _delay_ms(SERVO_STEP_DELAY); *1/ */
+/*     } */
+/*     // Servo B */
+/*     else */
+/*     { */
+/*         servo_set(2, CURRENT_B_ANGLE + SERVO_STEP); */
+/*         /1* _delay_ms(SERVO_STEP_DELAY); *1/ */
+/*     } */
+/* } */
 
-void servo_bstep()
-{
-    servo_set(CURRENT_ANGLE - SERVO_STEP);
-    _delay_ms(SERVO_STEP_DELAY);
-}
+/* void servo_bstep(int id) */
+/* { */
+/*     // Servo A */
+/*     if (id == 1) */
+/*     { */
+/*         servo_set(1, CURRENT_A_ANGLE - SERVO_STEP); */
+/*         /1* _delay_ms(SERVO_STEP_DELAY); *1/ */
+/*     } */
+/*     // Servo B */
+/*     else */
+/*     { */
+/*         servo_set(2, CURRENT_B_ANGLE - SERVO_STEP); */
+/*         /1* _delay_ms(SERVO_STEP_DELAY); *1/ */
+/*     } */
+/* } */

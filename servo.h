@@ -1,10 +1,10 @@
 #pragma once
 
-typedef enum {ANGLE_START, ANGLE_MIDDLE, ANGLE_END} angle;
-
 void servo_init();
 void servo_reset();
 
-void servo_open();
-void servo_close();
-void servo_toggle();
+void servo_set(int id, int a);
+
+void servo_open(int id);
+void servo_close(int id);
+void servo_toggle(int id);
