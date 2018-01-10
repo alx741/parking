@@ -3,7 +3,7 @@
 #include <util/delay.h>
 #include <stdbool.h>
 
-#define SERVO_0 405
+#define SERVO_0 410
 #define SERVO_90 200
 #define SERVO_CLOSE SERVO_0
 #define SERVO_OPEN SERVO_90
@@ -65,7 +65,7 @@ void servo_set(int id, int a)
     }
 
     // Disable servos
-    _delay_ms(500);
+    _delay_ms(600);
     PORTB &= ~(1 << PORTB0);
 }
 

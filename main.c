@@ -1,6 +1,7 @@
-#include <avr/io.h>
 #include <string.h>
 #include <util/delay.h>
+#include <avr/io.h>
+#include <avr/interrupt.h>
 #include "uart.h"
 #include "servo.h"
 #include "stepper.h"
@@ -11,14 +12,14 @@
 #define COMMAND_END ';'
 
 #define ENTER_DELAY 100
-#define EXIT_DELAY 400
+#define EXIT_DELAY 500
+
 
 void react_arms(void)
 {
     // Entry Open
     if (! (PINB & (1 << PB4)))
     {
-        // Car on sensor for at least 150ms
         _delay_ms(ENTER_DELAY);
         if (! (PINB & (1 << PB4)))
         {
@@ -27,7 +28,6 @@ void react_arms(void)
     }
     if (! (PINB & (1 << PB5)))
     {
-        // Car on sensor for at least 150ms
         _delay_ms(ENTER_DELAY);
         if (! (PINB & (1 << PB5)))
         {
@@ -38,7 +38,6 @@ void react_arms(void)
     // Entry Close
     if (PINB & (1 << PB4))
     {
-        // Car left sensor 300ms ago
         _delay_ms(EXIT_DELAY);
         if (PINB & (1 << PB4))
         {
@@ -47,7 +46,6 @@ void react_arms(void)
     }
     if (PINB & (1 << PB5))
     {
-        // Car left sensor 300ms ago
         _delay_ms(EXIT_DELAY);
         if (PINB & (1 << PB5))
         {
@@ -63,11 +61,19 @@ void init(void)
     servo_init();
     uart_init();
 
-    // Sensors inputs
-    /* DDRB |= (1 << PORTB5); */
+    // Car sensors inputs
     DDRB &= ~(1 << PORTB4);
     DDRB &= ~(1 << PORTB5);
-    /* PORTB &= ~(1 << PORTB5); */
+    DDRB &= ~(1 << DDB4);
+    DDRB &= ~(1 << DDB5);
+    PORTB |= (1 << PORTB4); // Pull-ups
+    PORTB |= (1 << PORTB5);
+
+    // Interrupts
+    PCICR |= (1 << PCIE0);
+    PCMSK0 |= (1 << PCINT4);
+    PCMSK0 |= (1 << PCINT5);
+    sei();
 }
 
 void execute_command(char *s)
@@ -96,7 +102,6 @@ void execute_command(char *s)
     }
 }
 
-
 int main(void)
 {
     const int com_max = 10;
@@ -108,21 +113,26 @@ int main(void)
 
     while (1)
     {
-        react_arms();
-
         // code is blocking from here on
-        /* com_char = getchar(); */
-        /* int i = 0; */
-        /* while (com_char != COMMAND_END || i == 10) */
-        /* { */
-        /*     command[i] = com_char; */
-        /*     com_char = getchar(); */
-        /*     i++; */
-        /* } */
+        com_char = getchar();
+        int i = 0;
+        while (com_char != COMMAND_END || i == 10)
+        {
+            command[i] = com_char;
+            com_char = getchar();
+            i++;
+        }
 
-        /* execute_command(command); */
-        /* memset(command, 0, com_max); */
-        /* _delay_ms(50); */
-        /* putchar(COMMAND_PROMPT); */
+        execute_command(command);
+        memset(command, 0, com_max);
+        _delay_ms(50);
+        putchar(COMMAND_PROMPT);
     }
+}
+
+ISR(BADISR_vect){}
+
+ISR(PCINT0_vect)
+{
+    react_arms();
 }
