@@ -19,7 +19,7 @@ void react_arms(void)
         _delay_ms(150);
         if (! (PINB & (1 << PB4)))
         {
-            car_enters(1);
+            servo_open(1);
         }
     }
 
@@ -30,34 +30,11 @@ void react_arms(void)
         _delay_ms(300);
         if (PINB & (1 << PB4))
         {
-            car_leaves(1);
+            servo_close(1);
         }
     }
 }
 
-void car_enters(int id)
-{
-    if (id == 1)
-    {
-        servo_open(1);
-    }
-    else
-    {
-        servo_open(2);
-    }
-}
-
-void car_leaves(int id)
-{
-    if (id == 1)
-    {
-        servo_close(1);
-    }
-    else
-    {
-        servo_close(2);
-    }
-}
 
 void init(void)
 {
