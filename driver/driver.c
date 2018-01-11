@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <string.h>
 #include <fcntl.h>
 #include <termios.h>
 #include <stdio.h>
@@ -37,7 +39,7 @@ int step(Axis axis);
 int rotate(Axis axis, int angle);
 
 
-int main(void)
+int main(int argc, char *argv[])
 {
     if (geteuid() != 0)
     {
@@ -45,9 +47,24 @@ int main(void)
         return 1;
     }
 
+    if (argc < 2)
+    {
+        printf("Uso: sudo ./driver [i|d]\n\n"
+                "i - girar a la izquierda\nd - girar a la derecha\n");
+        return 1;
+    }
+
     serial_init();
-    /* step(RIGHT); */
-    rotate(LEFT, 90);
+
+    if (strcmp(argv[1], "i"))
+    {
+        step(LEFT);
+    }
+    else if (strcmp(argv[1], "d"))
+    {
+        step(RIGHT);
+    }
+
     return 0;
 }
 
@@ -55,7 +72,7 @@ int main(void)
 
 int rotate(Axis axis, int angle)
 {
-    int steps = angle / 6; // Each step is ~5 deg
+    int steps = angle / 10;
 
     if (COM_FD < 0)
     {
