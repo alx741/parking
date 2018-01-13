@@ -81,11 +81,13 @@ void execute_command(char *s)
     switch (s[0])
     {
         case 'r':
-            rotate_right(10);
+            step_right();
+            /* rotate_right(10); */
             break;
 
         case 'l':
-            rotate_left(10);
+            step_left();
+            /* rotate_left(10); */
             break;
     }
 }
