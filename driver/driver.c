@@ -57,11 +57,11 @@ int main(int argc, char *argv[])
 
     serial_init();
 
-    if (argv[1][0] == 'i')
+    if (argv[1][0] == 'd')
     {
         step(LEFT);
     }
-    else if (argv[1][0] == 'd')
+    else if (argv[1][0] == 'i')
     {
         step(RIGHT);
     }
