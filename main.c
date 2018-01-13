@@ -1,5 +1,6 @@
 #include <string.h>
 #include <util/delay.h>
+#include <stdbool.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include "uart.h"
@@ -14,6 +15,7 @@
 #define ENTER_DELAY 100
 #define EXIT_DELAY 500
 
+static bool LIGHTS_ON = false;
 
 void react_arms(void)
 {
@@ -74,6 +76,25 @@ void init(void)
     PCMSK0 |= (1 << PCINT4);
     PCMSK0 |= (1 << PCINT5);
     sei();
+
+    // Light control
+    DDRB |= (1 << PORTB3);
+    /* PORTB |= (1 << PORTB3); */
+    PORTB &= ~(1 << PORTB3);
+}
+
+void toggle_lights(void)
+{
+    if (LIGHTS_ON)
+    {
+        PORTB &= ~(1 << PORTB3);
+        LIGHTS_ON = false;
+    }
+    else
+    {
+        PORTB |= (1 << PORTB3);
+        LIGHTS_ON = true;
+    }
 }
 
 void execute_command(char *s)
@@ -82,12 +103,14 @@ void execute_command(char *s)
     {
         case 'r':
             step_right();
-            /* rotate_right(10); */
             break;
 
         case 'l':
             step_left();
-            /* rotate_left(10); */
+            break;
+
+        case 'p':
+            toggle_lights();
             break;
     }
 }
