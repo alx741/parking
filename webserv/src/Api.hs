@@ -1,6 +1,6 @@
 {-# LANGUAGE DataKinds         #-}
-{-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE LambdaCase        #-}
+{-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TypeFamilies      #-}
 {-# LANGUAGE TypeOperators     #-}
 
@@ -15,11 +15,9 @@ import Models
 
 import Servant.API
 
-
-
-type Api =
-       "user" :> ReqBody '[JSON] User :> Post '[JSON] (Maybe (Key User))
-  :<|> "user" :> Capture "name" Text  :> Get  '[JSON] (Maybe User)
+type Api = "usuario" :> Capture "email" Text  :> Get '[JSON] (Maybe Usuario)
+  :<|> "edificio" :> Capture "id" EdificioId :> Get '[JSON] (Maybe Edificio)
+  :<|> "edificio" :> Capture "id" EdificioId :> "bloques" :> Get '[JSON] [Bloque]
 
 api :: Proxy Api
 api = Proxy

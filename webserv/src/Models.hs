@@ -1,3 +1,4 @@
+{-# LANGUAGE DeriveGeneric              #-}
 {-# LANGUAGE EmptyDataDecls             #-}
 {-# LANGUAGE FlexibleContexts           #-}
 {-# LANGUAGE GADTs                      #-}
@@ -10,25 +11,49 @@
 
 module Models where
 
+import GHC.Generics
+
 import Data.Aeson
 import Data.Text
+import Data.Time.Clock
 
 import Database.Persist.TH
 
 share [mkPersist sqlSettings, mkMigrate "migrateAll"] [persistLowerCase|
-User
-  name Text
-  age  Int
-  UniqueName name
-  deriving Eq Read Show
+
+Edificio
+    nombre Text
+    numeroBloques Int
+    totalEspaciosParqueo Int
+    latitud Double
+    longitud Double
+    deriving Eq Read Show Generic
+
+Bloque
+    edificioId EdificioId
+    latitud Double
+    longitud Double
+    puestosTotales Int
+    puestosOcupados Int
+    puestosVacios Int
+    ultimaActualizacion UTCTime
+    deriving Eq Read Show Generic
+
+Puesto
+    bloqueId BloqueId
+    ocupado Bool
+    deriving Eq Read Show Generic
+
+Usuario
+    email Text
+    nombre Text
+    placa Text
+    edificioId EdificioId
+    UniqueUsuario email
+    deriving Eq Read Show Generic
 |]
 
-instance FromJSON User where
-  parseJSON = withObject "User" $ \ v ->
-    User <$> v .: "name"
-         <*> v .: "age"
-
-instance ToJSON User where
-  toJSON (User name age) =
-    object [ "name" .= name
-           , "age"  .= age  ]
+instance ToJSON Usuario where
+instance ToJSON Edificio where
+instance ToJSON Bloque where
+instance ToJSON Puesto where

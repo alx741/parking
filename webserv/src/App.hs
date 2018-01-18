@@ -15,9 +15,10 @@ import Control.Monad.Logger   (runStderrLoggingT)
 --                                          , insert, entityVal)
 import Data.String.Conversions  (cs)
 import Data.Text                (Text)
+import Database.Persist.Types
 import Database.Persist.MySQL   (ConnectInfo(..), ConnectionPool, createMySQLPool,
                                  entityVal, insert, runMigration,
-                                 runSqlPersistMPool, runSqlPool, selectFirst,
+                                 runSqlPersistMPool, runSqlPool, selectFirst, selectList, get,
                                  (==.), connectPath, defaultConnectInfo)
 import Network.Wai.Handler.Warp as Warp
 
@@ -26,8 +27,6 @@ import Servant
 import Api
 import Models
 
-
--- connStr = "host=localhost dbname=webserv user=alx password=verde port=3306"
 
 connInfo :: ConnectInfo
 connInfo = ConnectInfo
@@ -43,22 +42,25 @@ connInfo = ConnectInfo
 
 server :: ConnectionPool -> Server Api
 server pool =
-  userAddH :<|> userGetH
+  usuarioGetH :<|> edificioGetH :<|> bloqueGetH
   where
-    userAddH newUser = liftIO $ userAdd newUser
-    userGetH name    = liftIO $ userGet name
+    usuarioGetH email    = liftIO $ userGet email
+    edificioGetH id      = liftIO $ edificioGet id
+    bloqueGetH id        = liftIO $ bloqueGet id
 
-    userAdd :: User -> IO (Maybe (Key User))
-    userAdd newUser = flip runSqlPersistMPool pool $ do
-      exists <- selectFirst [UserName ==. (userName newUser)] []
-      case exists of
-        Nothing -> Just <$> insert newUser
-        Just _  -> return Nothing
-
-    userGet :: Text -> IO (Maybe User)
-    userGet name = flip runSqlPersistMPool pool $ do
-      mUser <- selectFirst [UserName ==. name] []
+    userGet :: Text -> IO (Maybe Usuario)
+    userGet email = flip runSqlPersistMPool pool $ do
+      mUser <- selectFirst [UsuarioEmail ==. email] []
       return $ entityVal <$> mUser
+
+    edificioGet :: EdificioId -> IO (Maybe Edificio)
+    edificioGet id = flip runSqlPersistMPool pool $ get id
+
+    bloqueGet :: EdificioId -> IO [Bloque]
+    bloqueGet id = flip runSqlPersistMPool pool $ do
+        bloques <- selectList [BloqueEdificioId ==. id] []
+        return $ entityVal <$> bloques
+
 
 app :: ConnectionPool -> Application
 app pool = serve api $ server pool
@@ -66,7 +68,6 @@ app pool = serve api $ server pool
 mkApp :: IO Application
 mkApp = do
   pool <- runStderrLoggingT $ do
-    -- createMySQLPool (cs sqliteFile) 5
     createMySQLPool connInfo 5
 
   runSqlPool (runMigration migrateAll) pool

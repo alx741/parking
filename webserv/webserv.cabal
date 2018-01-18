@@ -15,6 +15,7 @@ executable webserv
                      , Models
   build-depends:       base >=4.8 && <4.11
                      , aeson
+                     , time
                      , monad-logger
                      , persistent
                      , persistent-template
