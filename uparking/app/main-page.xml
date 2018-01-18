@@ -10,7 +10,7 @@ https://docs.nativescript.org/ui/components.
     http://docs.nativescript.org/ui/action-bar
     -->
     <Page.actionBar>
-        <ActionBar title="My App" icon="" class="action-bar">
+        <ActionBar title="UCuenca Parking" icon="" class="action-bar">
         </ActionBar>
     </Page.actionBar>
     <!--
@@ -24,9 +24,59 @@ https://docs.nativescript.org/ui/components.
     core theme, such as p-20, btn, h2, and text-center. You can view a full list of the
     class names available for styling your app at https://docs.nativescript.org/ui/theme.
     -->
-    <StackLayout class="p-20">
-        <Label text="Tap the button" class="h1 text-center"/>
-        <Button text="TAP" tap="{{ onTap }}" class="btn btn-primary btn-active"/>
-        <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
-    </StackLayout>
+    <TabView>
+        <TabView.items>
+
+            <TabViewItem title="Ingeniería">
+                <TabViewItem.view>
+                    <StackLayout>
+                        <AbsoluteLayout width="100%" height="100%">
+                            <Image id='map' width="100%" height="100%" top='-5' left='0' src="~/img/inge.jpg"></Image>
+                            <Label id='front-inge' text="9"></Label>
+                            <Label id='right-inge' text="2"></Label>
+                        </AbsoluteLayout>
+                    </StackLayout>
+                </TabViewItem.view>
+            </TabViewItem>
+
+            <TabViewItem title="Arquitectura">
+                <TabViewItem.view>
+                    <StackLayout>
+                        <AbsoluteLayout width="100%" height="100%">
+                            <Image id='map' width="100%" height="100%" top='-5' left='0' src="~/img/arqui.jpg"></Image>
+                            <Label id='front-arqui' text="3"></Label>
+                            <Label id='right-arqui' text="0"></Label>
+                        </AbsoluteLayout>
+                    </StackLayout>
+                </TabViewItem.view>
+            </TabViewItem>
+
+            <TabViewItem title="Economía">
+                <TabViewItem.view>
+                    <StackLayout>
+                        <AbsoluteLayout width="100%" height="100%">
+                            <Image id='map' width="100%" height="100%" top='-5' left='0' src="~/img/econ.jpg"></Image>
+                            <Label id='front-econ' text="8"></Label>
+                            <Label id='right-econ' text="5"></Label>
+                        </AbsoluteLayout>
+                    </StackLayout>
+                </TabViewItem.view>
+            </TabViewItem>
+
+            <TabViewItem title="Filosofía">
+                <TabViewItem.view>
+                    <StackLayout>
+                        <AbsoluteLayout width="100%" height="100%">
+                            <Image id='map' width="100%" height="100%" top='-5' left='0' src="~/img/filo.jpg"></Image>
+                            <Label id='front-filo' text="1"></Label>
+                            <Label id='right-filo' text="0"></Label>
+                        </AbsoluteLayout>
+                    </StackLayout>
+                </TabViewItem.view>
+            </TabViewItem>
+
+        </TabView.items>
+    </TabView>
+
+
 </Page>
