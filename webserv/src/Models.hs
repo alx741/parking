@@ -19,7 +19,7 @@ import Data.Time.Clock
 
 import Database.Persist.TH
 
-share [mkPersist sqlSettings, mkMigrate "migrateAll"] [persistLowerCase|
+share [mkPersist sqlSettings, mkMigrate "migrateAll"] [persistUpperCase|
 
 Edificio
     nombre Text

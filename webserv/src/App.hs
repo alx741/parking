@@ -9,10 +9,6 @@ module App where
 
 import Control.Monad.IO.Class (liftIO)
 import Control.Monad.Logger   (runStderrLoggingT)
--- import           Database.Persist.Sqlite ( ConnectionPool, createSqlitePool
---                                          , runSqlPool, runSqlPersistMPool
---                                          , runMigration, selectFirst, (==.)
---                                          , insert, entityVal)
 import Data.String.Conversions  (cs)
 import Data.Text                (Text)
 import Database.Persist.Types
@@ -32,9 +28,9 @@ connInfo :: ConnectInfo
 connInfo = ConnectInfo
     { connectHost = "localhost"
     , connectPort = 3306
-    , connectUser = "alx"
-    , connectPassword = "verde"
-    , connectDatabase = "webserv"
+    , connectUser = "parking"
+    , connectPassword = "parking123"
+    , connectDatabase = "Parking"
     , connectOptions = []
     , connectPath = connectPath defaultConnectInfo
     , connectSSL = Nothing
