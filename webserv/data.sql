@@ -6,7 +6,7 @@ DELETE FROM Usuario;
 DELETE FROM Edificio;
 
 INSERT INTO Edificio
-VALUES (1, "Ingeniería", 2, 0, -2.9010587, -79.0097391);
+VALUES (0, "Ingeniería", 2, 0, -2.9010587, -79.0097391);
 
 INSERT INTO Usuario (nombre, email, placa, edificioId)
 VALUES
@@ -27,11 +27,11 @@ VALUES
     (1, 1, -2.9010587, -79.0097391, 0, 0, 0, NOW()),
     (2, 1, -2.9010587, -79.0097391, 0, 0, 0, NOW());
 
-INSERT INTO Puesto (bloqueId, ocupado)
+INSERT INTO Puesto (bloqueId, puesto, ocupado)
 VALUES
-    (1, 0),
-    (1, 0),
-    (1, 0),
-    (2, 0),
-    (2, 0),
-    (2, 0);
+    (1, 1, 0),
+    (1, 2, 0),
+    (1, 3, 0),
+    (2, 4, 0),
+    (2, 5, 0),
+    (2, 6, 0);

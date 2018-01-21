@@ -41,14 +41,15 @@ Bloque
 
 Puesto
     bloqueId BloqueId
+    puesto Int
     ocupado Bool
     deriving Eq Read Show Generic
 
 Usuario
+    edificioId EdificioId
     email Text
     nombre Text
     placa Text
-    edificioId EdificioId
     UniqueUsuario email
     deriving Eq Read Show Generic
 |]

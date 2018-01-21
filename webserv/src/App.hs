@@ -26,10 +26,10 @@ import Models
 
 connInfo :: ConnectInfo
 connInfo = ConnectInfo
-    { connectHost = "localhost"
+    { connectHost = "192.168.1.8"
     , connectPort = 3306
     , connectUser = "parking"
-    , connectPassword = "parking123"
+    , connectPassword = "Parking_123"
     , connectDatabase = "Parking"
     , connectOptions = []
     , connectPath = connectPath defaultConnectInfo
