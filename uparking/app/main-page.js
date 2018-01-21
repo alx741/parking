@@ -1,41 +1,78 @@
-/*
-In NativeScript, a file with the same name as an XML file is known as
-a code-behind file. The code-behind is a great place to place your view
-logic, and to set up your page’s data binding.
-*/
-
-/*
-NativeScript adheres to the CommonJS specification for dealing with
-JavaScript modules. The CommonJS require() function is how you import
-JavaScript modules defined in other files.
-*/ 
+var fetchModule = require("fetch");
 var createViewModel = require("./main-view-model").createViewModel;
+var observableModule = require("data/observable");
+var page;
+
+var parking = new observableModule.fromObject({
+    b1: 0,
+    b1c: "empty",
+    b2: 9,
+    b2c: "empty"
+});
 
 function onNavigatingTo(args) {
-    /*
-    This gets a reference this page’s <Page> UI component. You can
-    view the API reference of the Page to see what’s available at
-    https://docs.nativescript.org/api-reference/classes/_ui_page_.page.html
-    */
     var page = args.object;
-
-    /*
-    A page’s bindingContext is an object that should be used to perform
-    data binding between XML markup and JavaScript code. Properties
-    on the bindingContext can be accessed using the {{ }} syntax in XML.
-    In this example, the {{ message }} and {{ onTap }} bindings are resolved
-    against the object returned by createViewModel().
-
-    You can learn more about data binding in NativeScript at
-    https://docs.nativescript.org/core-concepts/data-binding.
-    */
-    page.bindingContext = createViewModel();
+    page.bindingContext = parking;
 }
 
-/*
-Exporting a function in a NativeScript code-behind file makes it accessible
-to the file’s corresponding XML file. In this case, exporting the onNavigatingTo
-function here makes the navigatingTo="onNavigatingTo" binding in this page’s XML
-file work.
-*/
+function getBlocks(args)
+{
+    console.log("here");
+    var bloque1totales = 0;
+    var bloque2totales = 0;
+    var bloque1vacios = 0;
+    var bloque2vacios = 0;
+
+    fetchModule.fetch("http://10.0.2.2:3000/edificio/1/bloques")
+        .then(handleErrors)
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+            // console.log(data[0].bloquePuestosTotales);
+            let bloque1totales = data[0].bloquePuestosTotales;
+            let bloque2totales = data[1].bloquePuestosTotales;
+
+            let bloque1vacios = data[0].bloquePuestosVacios;
+            let bloque2vacios = data[1].bloquePuestosVacios;
+
+            parking.set("b1", bloque1vacios);
+            parking.set("b2", bloque2vacios);
+
+            parking.set("b1c", getStateClass(bloque1totales, bloque1vacios));
+            parking.set("b2c", getStateClass(bloque2totales, bloque2vacios));
+
+            return;
+        });
+
+}
+
+function getStateClass(totales, vacios)
+{
+    var ratio = vacios/totales
+    if (ratio >= 0.3)
+    {
+        return "empty";
+    }
+    else if (ratio >= 0.1)
+    {
+        return "medium";
+    }
+    else
+    {
+        return "full";
+    }
+}
+
+function handleErrors(response) {
+    if (!response.ok) {
+        console.log("ERROR in fetch");
+        console.log(JSON.stringify(response));
+        throw Error(response.statusText);
+    }
+    return response;
+}
+
+setInterval(getBlocks, 3000); ;
+
 exports.onNavigatingTo = onNavigatingTo;

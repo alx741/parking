@@ -1,5 +1,4 @@
 #front-inge {
-    background-color: rgba(0, 255, 0, 0.5);
     text-align: center;
     color: white;
     font-size: 70px;
@@ -12,7 +11,6 @@
 }
 
 #right-inge {
-    background-color: rgba(255, 255, 0, 0.5);
     color: white;
     font-size: 70px;
     padding-top: 70px;
@@ -84,4 +82,16 @@
     left: 630px;
     height: 1000px;
     width: 200px;
+}
+
+.full {
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+.medium {
+    background-color: rgba(255, 255, 0, 0.4);
+}
+
+.empty {
+    background-color: rgba(0, 255, 0, 0.4);
 }
