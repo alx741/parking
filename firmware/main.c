@@ -109,6 +109,14 @@ void execute_command(char *s)
             step_left();
             break;
 
+        case 'R':
+            rotate_right(19);
+            break;
+
+        case 'L':
+            rotate_left(19);
+            break;
+
         case 'p':
             toggle_lights();
             break;

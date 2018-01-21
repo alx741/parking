@@ -33,7 +33,7 @@ int serial_init(void);
  * */
 int wait_hw(void);
 
-typedef enum Axis_ {LEFT, RIGHT} Axis;
+typedef enum Axis_ {LEFT, RIGHT, RLEFT, RRIGHT} Axis;
 
 int step(Axis axis);
 int light(void);
@@ -64,6 +64,14 @@ int main(int argc, char *argv[])
     else if (argv[1][0] == 'i')
     {
         step(RIGHT);
+    }
+    else if (argv[1][0] == 'D')
+    {
+        step(RLEFT);
+    }
+    else if (argv[1][0] == 'I')
+    {
+        step(RRIGHT);
     }
     else if (argv[1][0] == 'l')
     {
@@ -119,6 +127,14 @@ int step(Axis axis)
             break;
         case RIGHT:
             write(COM_FD, "r;", 2);
+            wait_hw();
+            break;
+        case RLEFT:
+            write(COM_FD, "L;", 2);
+            wait_hw();
+            break;
+        case RRIGHT:
+            write(COM_FD, "R;", 2);
             wait_hw();
             break;
     }
