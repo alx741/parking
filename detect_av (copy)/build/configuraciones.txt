@@ -1,0 +1,7 @@
+COMPILAR:
+g++ -std=c++11 -o build/salidabd ./*.cpp -L/usr/lib/mysql -lmysqlclient `pkg-config opencv --cflags --libs`
+PROBAR:
+delta=4
+./salidabd 1.webm 1_test.txt
+delta=1.95
+./salida parkinglot_1_480p.mp4 parkinglot_1.txt

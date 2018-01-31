@@ -26,9 +26,9 @@ import Models
 
 connInfo :: ConnectInfo
 connInfo = ConnectInfo
-    -- { connectHost = "192.168.1.7"
-    -- { connectHost = "192.168.1.8"
-    { connectHost = "localhost"
+    -- { connectHost = "192.168.10.3"
+    { connectHost = "192.168.10.4"
+    -- { connectHost = "localhost"
     , connectPort = 3306
     , connectUser = "parking"
     , connectPassword = "Parking_123"
