@@ -6,7 +6,7 @@ var page;
 var parking = new observableModule.fromObject({
     b1: 0,
     b1c: "empty",
-    b2: 9,
+    b2: 0,
     b2c: "empty"
 });
 
@@ -17,7 +17,6 @@ function onNavigatingTo(args) {
 
 function getBlocks(args)
 {
-    console.log("here");
     var bloque1totales = 0;
     var bloque2totales = 0;
     var bloque1vacios = 0;
