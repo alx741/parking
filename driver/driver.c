@@ -34,13 +34,6 @@ int serial_init(void);
  * */
 int wait_hw(void);
 
-typedef enum Axis_ {LEFT, RIGHT, RLEFT, RRIGHT} Axis;
-
-int step(Axis axis);
-int light(void);
-int rotate(Axis axis, int angle);
-
-
 int main(int argc, char *argv[])
 {
     if (geteuid() != 0)
@@ -58,72 +51,42 @@ int main(int argc, char *argv[])
 
     serial_init();
 
-    switch (argv[1][0])
-    {
-        case 'd':
-            step(RIGHT);
-            break;
-
-        case 'i':
-            step(LEFT);
-            break;
-
-        case 'D':
-            step(RRIGHT);
-            break;
-
-        case 'I':
-            step(RLEFT);
-            break;
-
-        case 'l':
-            step(RLEFT);
-            break;
-    }
-
-    return 0;
-}
-
-
-
-
-int step(Axis axis)
-{
     command_t command = {0};
 
     if (COM_FD < 0) { return 0; }
 
-    switch (axis)
+    switch (argv[1][0])
     {
-        case LEFT:
-            command.command = STEP_LEFT;
-            break;
-        case RIGHT:
+        case 'd':
             command.command = STEP_RIGHT;
             break;
-        case RLEFT:
-            command.command = ROTATE_LEFT;
+
+        case 'i':
+            command.command = STEP_LEFT;
             break;
-        case RRIGHT:
+
+        case 'D':
             command.command = ROTATE_RIGHT;
             break;
+
+        case 'I':
+            command.command = ROTATE_LEFT;
+            break;
+
+        case 'l':
+            command.command = LIGHTS_OFF;
+            break;
+
+        case 'L':
+            command.command = LIGHTS_ON;
+            break;
     }
 
-    printf("%#01X", command);
     write(COM_FD, &command, 1);
     wait_hw();
+    return 0;
 }
 
-int light()
-{
-    if (COM_FD < 0)
-    {
-        return 0;
-    }
-
-    write(COM_FD, "p;", 2);
-    wait_hw();
-}
 
 int serial_init(void)
 {
