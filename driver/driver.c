@@ -51,6 +51,10 @@ I - giro completo a la izquierda\n \
 D - giro completo a la derecha\n \
 l - apagar luces\n \
 L - encender luces\n \
+f - bajar brazo frontal\n \
+F - levantar brazo frontales\n \
+b - bajar brazo posterior\n \
+B - levantar brazo posterior\n \
                 ");
         return 1;
     }
