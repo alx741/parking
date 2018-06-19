@@ -12,14 +12,8 @@ typedef struct
     unsigned         : 3;
 } command_t;
 
-command_t read_command(uint_8)
-{
-    command_t command;
-    command.command = 0b0000;
-    command.value = 0b0;
-}
-
 /* Available commands */
+#define NOP      0x0
 
 // Actuators
 #define STEP_LEFT      0x1
