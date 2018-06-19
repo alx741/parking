@@ -1,0 +1,38 @@
+#pragma once
+
+#include <stdint.h>
+
+#define COMMAND_PROMPT '>'
+#define COMMAND_END ';'
+
+typedef struct
+{
+    unsigned command : 4;
+    unsigned value   : 1;
+    unsigned         : 3;
+} command_t;
+
+command_t read_command(uint_8)
+{
+    command_t command;
+    command.command = 0b0000;
+    command.value = 0b0;
+}
+
+/* Available commands */
+
+// Actuators
+#define STEP_LEFT      0x1
+#define STEP_RIGHT     0x2
+#define ROTATE_LEFT    0x3
+#define ROTATE_RIGHT   0x4
+#define LIGHTS_ON      0x5
+#define LIGHTS_OFF     0x6
+#define FRONT_ARM_UP   0x7
+#define FRONT_ARM_DOWN 0x8
+#define BACK_ARM_UP    0x9
+#define BACK_ARM_DOWN  0xA
+
+// Sensors
+#define FRONT_ENTRY_SENSE 0xB
+#define BACK_ENTRY_SENSE  0xC
