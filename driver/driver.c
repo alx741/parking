@@ -38,14 +38,20 @@ int main(int argc, char *argv[])
 {
     if (geteuid() != 0)
     {
-        printf("Ejecutar como root: \"sudo driver ...\"");
+        printf("Ejecutar como root: \"sudo ./driver <...>\"");
         return 1;
     }
 
     if (argc < 2)
     {
-        printf("Uso: sudo ./driver [i|d]\n\n"
-                "i - girar a la izquierda\nd - girar a la derecha\n");
+        printf("Uso: sudo ./driver [i|d|I|D|l|L]\n\n \
+i - un paso a la izquierda\n \
+d - un paso a la derecha\n \
+I - giro completo a la izquierda\n \
+D - giro completo a la derecha\n \
+l - apagar luces\n \
+L - encender luces\n \
+                ");
         return 1;
     }
 
