@@ -34,6 +34,36 @@ int serial_init(void);
  * */
 int wait_hw(void);
 
+void sense(int id)
+{
+    command_t command = {0};
+    if (id == 1)
+    {
+        command.command = FRONT_ENTRY_SENSE;
+    }
+    else if (id == 2)
+    {
+        command.command = BACK_ENTRY_SENSE;
+    }
+
+    write(COM_FD, &command, 1);
+    char response;
+    int timeout = 0;
+    while (response != 't' && response != 'f')
+    {
+        read(COM_FD, &response, 1);
+        if (timeout++ >= 10000)
+        {
+            printf("false\n");
+            return;
+        }
+    }
+    if (response == 't') { printf("true\n"); }
+    else { printf("false\n"); }
+    wait_hw();
+    return;
+}
+
 int main(int argc, char *argv[])
 {
     if (geteuid() != 0)
@@ -105,6 +135,14 @@ B - levantar brazo posterior\n \
 
         case 'T':
             command.command = BACK_ARM_UP;
+            break;
+
+        case 's':
+            sense(1);
+            break;
+
+        case 'S':
+            sense(2);
             break;
     }
 

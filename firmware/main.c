@@ -135,6 +135,32 @@ void execute_command(command_t c)
         case BACK_ARM_DOWN:
             servo_close(2);
             break;
+
+        case FRONT_ENTRY_SENSE:
+            if (PINB & (1 << PB4))
+            {
+                putchar('f');
+            }
+            else
+            {
+                putchar('t');
+            }
+            break;
+
+        case BACK_ENTRY_SENSE:
+            if (PINB & (1 << PB5))
+            {
+                putchar('f');
+            }
+            else
+            {
+                putchar('t');
+            }
+            break;
+
+        default:
+            putchar('t');
+            break;
     }
 }
 
