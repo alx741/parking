@@ -14,18 +14,16 @@ void stepper_init()
 
 void step_left()
 {
-    STEP_STATE = (STEP_STATE == 0x01)? 0x08 : (STEP_STATE >>= 1);
+    STEP_STATE = (STEP_STATE == 0x08)? 0x01 : (STEP_STATE <<= 1);
     _delay_ms(DELAY);
     PORTC = STEP_STATE;
-    /* PORTC = 0x00; */
 }
 
 void step_right()
 {
-    STEP_STATE = (STEP_STATE == 0x08)? 0x01 : (STEP_STATE <<= 1);
+    STEP_STATE = (STEP_STATE == 0x01)? 0x08 : (STEP_STATE >>= 1);
     _delay_ms(DELAY);
     PORTC = STEP_STATE;
-    /* PORTC = 0x00; */
 }
 
 void rotate_right(int steps)
