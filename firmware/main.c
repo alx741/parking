@@ -1,21 +1,126 @@
 #include <string.h>
 #include <util/delay.h>
 #include <stdbool.h>
+#include <stdint.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include "uart.h"
 #include "servo.h"
 #include "stepper.h"
-
-#define F_CPU 16000000
-
-#define COMMAND_PROMPT '>'
-#define COMMAND_END ';'
+#include "command.h"
 
 #define ENTER_DELAY 100
 #define EXIT_DELAY 500
 
-static bool LIGHTS_ON = false;
+static bool LIGHTS_STATE_ON = false;
+
+void execute_command(command_t c);
+void react_arms(void);
+
+
+void init(void)
+{
+    stepper_init();
+    servo_init();
+    uart_init();
+
+    // Car sensors inputs
+    DDRB &= ~(1 << PORTB4);
+    DDRB &= ~(1 << PORTB5);
+    DDRB &= ~(1 << DDB4);
+    DDRB &= ~(1 << DDB5);
+    PORTB |= (1 << PORTB4); // Pull-ups
+    PORTB |= (1 << PORTB5);
+
+    // Interrupts
+    PCICR |= (1 << PCIE0);
+    PCMSK0 |= (1 << PCINT4);
+    PCMSK0 |= (1 << PCINT5);
+    sei();
+
+    // Light control
+    DDRB |= (1 << PORTB3);
+    PORTB &= ~(1 << PORTB3);
+}
+
+void toggle_lights(void)
+{
+    if (LIGHTS_STATE_ON)
+    {
+        PORTB &= ~(1 << PORTB3);
+        LIGHTS_STATE_ON = false;
+    }
+    else
+    {
+        PORTB |= (1 << PORTB3);
+        LIGHTS_STATE_ON = true;
+    }
+}
+
+void lights_on(void)
+{
+    PORTB |= (1 << PORTB3);
+    LIGHTS_STATE_ON = true;
+}
+
+void lights_off(void)
+{
+    PORTB &= ~(1 << PORTB3);
+    LIGHTS_STATE_ON = false;
+}
+
+command_t read_command(char c)
+{
+    command_t command;
+    command.command = 0x0F & c;
+    command.value = false;
+    return command;
+}
+
+int main(void)
+{
+    init();
+
+    while (1)
+    {
+        putchar(COMMAND_PROMPT);
+        execute_command(read_command(getchar()));
+    }
+}
+
+void execute_command(command_t c)
+{
+    switch (c.command)
+    {
+        case STEP_RIGHT:
+            step_right();
+            break;
+
+        case STEP_LEFT:
+            step_left();
+            break;
+
+        case ROTATE_RIGHT:
+            rotate_right(19);
+            break;
+
+        case ROTATE_LEFT:
+            rotate_left(19);
+            break;
+
+        case LIGHTS_ON:
+            lights_on();
+            break;
+
+        case LIGHTS_OFF:
+            lights_off();
+            break;
+
+        case LIGHTS_TOGGLE:
+            toggle_lights();
+            break;
+    }
+}
 
 void react_arms(void)
 {
@@ -53,101 +158,6 @@ void react_arms(void)
         {
             servo_close(2);
         }
-    }
-}
-
-
-void init(void)
-{
-    stepper_init();
-    servo_init();
-    uart_init();
-
-    // Car sensors inputs
-    DDRB &= ~(1 << PORTB4);
-    DDRB &= ~(1 << PORTB5);
-    DDRB &= ~(1 << DDB4);
-    DDRB &= ~(1 << DDB5);
-    PORTB |= (1 << PORTB4); // Pull-ups
-    PORTB |= (1 << PORTB5);
-
-    // Interrupts
-    PCICR |= (1 << PCIE0);
-    PCMSK0 |= (1 << PCINT4);
-    PCMSK0 |= (1 << PCINT5);
-    sei();
-
-    // Light control
-    DDRB |= (1 << PORTB3);
-    /* PORTB |= (1 << PORTB3); */
-    PORTB &= ~(1 << PORTB3);
-}
-
-void toggle_lights(void)
-{
-    if (LIGHTS_ON)
-    {
-        PORTB &= ~(1 << PORTB3);
-        LIGHTS_ON = false;
-    }
-    else
-    {
-        PORTB |= (1 << PORTB3);
-        LIGHTS_ON = true;
-    }
-}
-
-void execute_command(char *s)
-{
-    switch (s[0])
-    {
-        case 'r':
-            step_right();
-            break;
-
-        case 'l':
-            step_left();
-            break;
-
-        case 'R':
-            rotate_right(19);
-            break;
-
-        case 'L':
-            rotate_left(19);
-            break;
-
-        case 'p':
-            toggle_lights();
-            break;
-    }
-}
-
-int main(void)
-{
-    const int com_max = 10;
-    char com_char;
-    char command[com_max];
-
-    init();
-    putchar(COMMAND_PROMPT);
-
-    while (1)
-    {
-        // code is blocking from here on
-        com_char = getchar();
-        int i = 0;
-        while (com_char != COMMAND_END || i == 10)
-        {
-            command[i] = com_char;
-            com_char = getchar();
-            i++;
-        }
-
-        execute_command(command);
-        memset(command, 0, com_max);
-        _delay_ms(50);
-        putchar(COMMAND_PROMPT);
     }
 }
 
