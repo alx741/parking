@@ -86,6 +86,22 @@ L - encender luces\n \
         case 'L':
             command.command = LIGHTS_ON;
             break;
+
+        case 'f':
+            command.command = FRONT_ARM_DOWN;
+            break;
+
+        case 'F':
+            command.command = FRONT_ARM_UP;
+            break;
+
+        case 't':
+            command.command = BACK_ARM_DOWN;
+            break;
+
+        case 'T':
+            command.command = BACK_ARM_UP;
+            break;
     }
 
     write(COM_FD, &command, 1);
