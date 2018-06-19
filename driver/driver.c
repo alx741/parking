@@ -4,6 +4,7 @@
 #include <termios.h>
 #include <stdio.h>
 #include <unistd.h>
+#include "command.h"
 
 #define COMPORT "/dev/ttyUSB0"
 
@@ -57,25 +58,27 @@ int main(int argc, char *argv[])
 
     serial_init();
 
-    if (argv[1][0] == 'd')
+    switch (argv[1][0])
     {
-        step(LEFT);
-    }
-    else if (argv[1][0] == 'i')
-    {
-        step(RIGHT);
-    }
-    else if (argv[1][0] == 'D')
-    {
-        step(RLEFT);
-    }
-    else if (argv[1][0] == 'I')
-    {
-        step(RRIGHT);
-    }
-    else if (argv[1][0] == 'l')
-    {
-        light();
+        case 'd':
+            step(RIGHT);
+            break;
+
+        case 'i':
+            step(LEFT);
+            break;
+
+        case 'D':
+            step(RRIGHT);
+            break;
+
+        case 'I':
+            step(RLEFT);
+            break;
+
+        case 'l':
+            step(RLEFT);
+            break;
     }
 
     return 0;
@@ -83,61 +86,31 @@ int main(int argc, char *argv[])
 
 
 
-int rotate(Axis axis, int angle)
-{
-    int steps = angle / 10;
-
-    if (COM_FD < 0)
-    {
-        return 0;
-    }
-    printf("Rotando\n");
-    switch (axis)
-    {
-        case LEFT:
-            while (steps > 0)
-            {
-                step(LEFT);
-                steps--;
-            }
-            break;
-
-        case RIGHT:
-            while (steps > 0)
-            {
-                step(RIGHT);
-                steps--;
-            }
-            break;
-    }
-}
-
-
 int step(Axis axis)
 {
-    if (COM_FD < 0)
-    {
-        return 0;
-    }
+    command_t command = {0};
+
+    if (COM_FD < 0) { return 0; }
+
     switch (axis)
     {
         case LEFT:
-            write(COM_FD, "l;", 2);
-            wait_hw();
+            command.command = STEP_LEFT;
             break;
         case RIGHT:
-            write(COM_FD, "r;", 2);
-            wait_hw();
+            command.command = STEP_RIGHT;
             break;
         case RLEFT:
-            write(COM_FD, "L;", 2);
-            wait_hw();
+            command.command = ROTATE_LEFT;
             break;
         case RRIGHT:
-            write(COM_FD, "R;", 2);
-            wait_hw();
+            command.command = ROTATE_RIGHT;
             break;
     }
+
+    printf("%#01X", command);
+    write(COM_FD, &command, 1);
+    wait_hw();
 }
 
 int light()

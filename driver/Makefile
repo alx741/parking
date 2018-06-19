@@ -1,2 +1,5 @@
 driver: driver.c
-	gcc -o $@ $^
+	gcc -I ../firmware/ -o $@ $^
+
+clean:
+	rm -f driver
