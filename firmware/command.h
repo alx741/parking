@@ -31,3 +31,7 @@ typedef struct
 // Sensors
 #define FRONT_ENTRY_SENSE 0xC
 #define BACK_ENTRY_SENSE  0xD
+
+// Configuration
+#define ENABLE_AUTO_ENTRY_REACT  0xE
+#define DISABLE_AUTO_ENTRY_REACT 0xF
