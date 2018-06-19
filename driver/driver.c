@@ -74,17 +74,14 @@ int main(int argc, char *argv[])
 
     if (argc < 2)
     {
-        printf("Uso: sudo ./driver [i|d|I|D|l|L]\n\n \
-i - un paso a la izquierda\n \
-d - un paso a la derecha\n \
-I - giro completo a la izquierda\n \
-D - giro completo a la derecha\n \
-l - apagar luces\n \
-L - encender luces\n \
-f - bajar brazo frontal\n \
-F - levantar brazo frontales\n \
-b - bajar brazo posterior\n \
-B - levantar brazo posterior\n \
+        printf("Uso: sudo ./driver [i|d|I|D|l|L|f|F|p|P|s|S|r|R]\n\n \
+[i|d] - un paso a la izquierda|derecha\n \
+[I|D] - giro completo a la izquierda|derecha\n \
+[l|L] - apagar|encender luces\n \
+[f|F] - bajar|levantar brazo frontal\n \
+[p|P] - bajar|levantar brazo posterior\n \
+[s|S] - leer sensor frontal|posterior (true = carro en la entrada)\n \
+[r|R] - desactivar|activar reacción automática de brazos\n \
                 ");
         return 1;
     }
@@ -129,11 +126,11 @@ B - levantar brazo posterior\n \
             command.command = FRONT_ARM_UP;
             break;
 
-        case 't':
+        case 'p':
             command.command = BACK_ARM_DOWN;
             break;
 
-        case 'T':
+        case 'P':
             command.command = BACK_ARM_UP;
             break;
 
