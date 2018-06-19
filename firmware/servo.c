@@ -23,7 +23,6 @@ void servo_init()
     TCCR1B |= (1 << WGM13) | (1 << WGM12) | (1 << CS11) | (1 << CS10);
     ICR1 = 4999; // PWM = 50Hz
     DDRB |= (1 << PORTB0) | (1 << PORTB1) | (1 << PORTB2);
-    servo_reset();
 }
 
 
