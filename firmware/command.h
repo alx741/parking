@@ -22,11 +22,12 @@ typedef struct
 #define ROTATE_RIGHT   0x4
 #define LIGHTS_ON      0x5
 #define LIGHTS_OFF     0x6
-#define FRONT_ARM_UP   0x7
-#define FRONT_ARM_DOWN 0x8
-#define BACK_ARM_UP    0x9
-#define BACK_ARM_DOWN  0xA
+#define LIGHTS_TOGGLE  0x7
+#define FRONT_ARM_UP   0x8
+#define FRONT_ARM_DOWN 0x9
+#define BACK_ARM_UP    0xA
+#define BACK_ARM_DOWN  0xB
 
 // Sensors
-#define FRONT_ENTRY_SENSE 0xB
-#define BACK_ENTRY_SENSE  0xC
+#define FRONT_ENTRY_SENSE 0xC
+#define BACK_ENTRY_SENSE  0xD
