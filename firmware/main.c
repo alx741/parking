@@ -13,6 +13,7 @@
 #define EXIT_DELAY 500
 
 static bool LIGHTS_STATE_ON = false;
+static bool AUTO_ENTRY_REACT_ENABLED = true;
 
 void execute_command(command_t c);
 void react_arms(void);
@@ -137,29 +138,21 @@ void execute_command(command_t c)
             break;
 
         case FRONT_ENTRY_SENSE:
-            if (PINB & (1 << PB4))
-            {
-                putchar('f');
-            }
-            else
-            {
-                putchar('t');
-            }
+            if (PINB & (1 << PB4)) { putchar('f'); }
+            else { putchar('t'); }
             break;
 
         case BACK_ENTRY_SENSE:
-            if (PINB & (1 << PB5))
-            {
-                putchar('f');
-            }
-            else
-            {
-                putchar('t');
-            }
+            if (PINB & (1 << PB5)) { putchar('f'); }
+            else { putchar('t'); }
             break;
 
-        default:
-            putchar('t');
+        case ENABLE_AUTO_ENTRY_REACT:
+            AUTO_ENTRY_REACT_ENABLED = true;
+            break;
+
+        case DISABLE_AUTO_ENTRY_REACT:
+            AUTO_ENTRY_REACT_ENABLED = false;
             break;
     }
 }
@@ -207,5 +200,8 @@ ISR(BADISR_vect){}
 
 ISR(PCINT0_vect)
 {
-    react_arms();
+    if (AUTO_ENTRY_REACT_ENABLED)
+    {
+        react_arms();
+    }
 }

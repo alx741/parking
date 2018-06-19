@@ -144,6 +144,14 @@ B - levantar brazo posterior\n \
         case 'S':
             sense(2);
             break;
+
+        case 'r':
+            command.command = DISABLE_AUTO_ENTRY_REACT;
+            break;
+
+        case 'R':
+            command.command = ENABLE_AUTO_ENTRY_REACT;
+            break;
     }
 
     write(COM_FD, &command, 1);
