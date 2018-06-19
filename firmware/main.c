@@ -119,6 +119,22 @@ void execute_command(command_t c)
         case LIGHTS_TOGGLE:
             toggle_lights();
             break;
+
+        case FRONT_ARM_UP:
+            servo_open(1);
+            break;
+
+        case FRONT_ARM_DOWN:
+            servo_close(1);
+            break;
+
+        case BACK_ARM_UP:
+            servo_open(2);
+            break;
+
+        case BACK_ARM_DOWN:
+            servo_close(2);
+            break;
     }
 }
 
