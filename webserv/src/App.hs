@@ -26,12 +26,11 @@ import Models
 
 connInfo :: ConnectInfo
 connInfo = ConnectInfo
-    -- { connectHost = "192.168.10.3"
-    { connectHost = "192.168.10.4"
     -- { connectHost = "localhost"
+    { connectHost = "parking1.mysql.database.azure.com"
     , connectPort = 3306
-    , connectUser = "parking"
-    , connectPassword = "Parking_123"
+    , connectUser = "alx@parking1"
+    , connectPassword = "Parking741"
     , connectDatabase = "Parking"
     , connectOptions = []
     , connectPath = connectPath defaultConnectInfo
