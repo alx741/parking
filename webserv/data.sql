@@ -1,3 +1,5 @@
+/* mysql -u alx -p -h localhost < data.sql */
+
 use Parking;
 
 DELETE FROM Puesto;
