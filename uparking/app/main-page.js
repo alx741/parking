@@ -22,7 +22,8 @@ function getBlocks(args)
     var bloque1vacios = 0;
     var bloque2vacios = 0;
 
-    fetchModule.fetch("http://192.168.10.2:3000/edificio/1/bloques")
+    // fetchModule.fetch("http://192.168.1.50:3000/edificio/1/bloques")
+    fetchModule.fetch("http://40.112.129.174:3000/edificio/1/bloques")
         .then(handleErrors)
         .then(function(response) {
             return response.json();
