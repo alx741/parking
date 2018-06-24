@@ -1,0 +1,205 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-24 22:37:06.25616663 UTC
+
+interface facews-0.1.0.0-GNS5Olg5Cd2KyTIWAeiBcI:Lib 8022
+  interface hash: 754261105f2966c87be81d02f2162c01
+  ABI hash: 145d636adea632f54e2141a1ae9171e6
+  export-list hash: db7b8dd92b08ce7bd73251319d677d11
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: a33bd47dc072e5c4077a4bfdd0f2ddc4
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.app
+  Lib.startApp
+module dependencies:
+package dependencies: aeson-1.2.4.0 appar-0.1.4 array-0.5.2.0
+                      async-2.1.1.1 attoparsec-0.13.2.2 attoparsec-iso8601-1.0.0.0
+                      auto-update-0.1.4 base-4.10.1.0 base-compat-0.9.3
+                      base64-bytestring-1.0.0.1 basement-0.0.7 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 blaze-html-0.9.1.1 blaze-markup-0.8.2.1
+                      bsb-http-chunked-0.0.0.2 byteorder-1.0.4 bytestring-0.10.8.2
+                      case-insensitive-1.2.0.11 containers-0.5.10.2 cryptonite-0.25
+                      deepseq-1.4.3.0 directory-1.3.0.2 dlist-0.8.0.4 exceptions-0.8.3
+                      file-embed-0.0.10.1 filepath-1.4.1.2 ghc-boot-th-8.2.2
+                      ghc-prim-0.5.1.1 hashable-1.2.7.0 http-api-data-0.3.7.2
+                      http-date-0.0.7 http-media-0.7.1.2 http-types-0.12.1 http2-1.6.3
+                      integer-gmp-1.0.1.0 integer-logarithms-1.0.2.1 iproute-1.7.5
+                      memory-0.14.16 mime-types-0.1.0.7 monad-control-1.0.2.3 mtl-2.2.2
+                      network-2.6.3.5 network-uri-2.6.1.0 parsec-3.1.13.0 pretty-1.1.3.3
+                      primitive-0.6.4.0 psqueues-0.2.7.0 random-1.1 resourcet-1.2.1
+                      scientific-0.3.6.2 servant-0.13.0.1 servant-server-0.13.0.1
+                      simple-sendfile-0.2.27 singleton-bool-0.1.4 stm-2.4.5.0
+                      streaming-commons-0.1.19 string-conversions-0.4.0.1 tagged-0.8.5
+                      template-haskell-2.12.0.0 text-1.2.3.0 th-abstraction-0.2.7.0
+                      th-lift-0.7.10 th-lift-instances-0.1.11 time-1.8.0.2
+                      time-locale-compat-0.1.1.4 transformers-0.5.2.0
+                      transformers-base-0.4.4 unix-2.7.2.2 unix-compat-0.5.0.1
+                      unliftio-core-0.1.1.0 unordered-containers-0.2.9.0
+                      uri-bytestring-0.3.2.0 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vault-0.3.1.1 vector-0.12.0.1 wai-3.2.1.2 wai-app-static-3.1.6.2
+                      warp-3.2.22 word8-0.1.3 zlib-0.6.2
+orphans: attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         th-lift-instances-0.1.11:Instances.TH.Lift
+         th-lift-0.7.10:Language.Haskell.TH.Lift
+         vector-0.12.0.1:Data.Vector.Unboxed
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         stm-2.4.5.0:Control.Monad.STM time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic
+         network-2.6.3.5:Network.Socket text-1.2.3.0:Data.Text.Lazy
+         basement-0.0.7:Basement.UArray.Base basement-0.0.7:Basement.Block
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.3.0:Data.Text.Show base-4.10.1.0:GHC.Float
+         base-4.10.1.0:GHC.Base
+family instance modules: aeson-1.2.4.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.10.1.0:Control.Applicative base-4.10.1.0:Data.Complex
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Compose
+                         base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats basement-0.0.7:Basement.Block.Base
+                         basement-0.0.7:Basement.Monad
+                         basement-0.0.7:Basement.MutableBuilder basement-0.0.7:Basement.Nat
+                         basement-0.0.7:Basement.NonEmpty
+                         basement-0.0.7:Basement.Numerical.Subtractive
+                         basement-0.0.7:Basement.PrimType basement-0.0.7:Basement.String
+                         basement-0.0.7:Basement.String.Encoding.ASCII7
+                         basement-0.0.7:Basement.String.Encoding.ISO_8859_1
+                         basement-0.0.7:Basement.String.Encoding.UTF16
+                         basement-0.0.7:Basement.String.Encoding.UTF32
+                         basement-0.0.7:Basement.Types.OffsetSize
+                         basement-0.0.7:Basement.UArray.Base
+                         basement-0.0.7:Basement.UTF8.Base
+                         containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal containers-0.5.10.2:Data.Tree
+                         cryptonite-0.25:Crypto.Hash.Blake2
+                         cryptonite-0.25:Crypto.Hash.Blake2b
+                         cryptonite-0.25:Crypto.Hash.Blake2bp
+                         cryptonite-0.25:Crypto.Hash.Blake2s
+                         cryptonite-0.25:Crypto.Hash.Blake2sp
+                         cryptonite-0.25:Crypto.Hash.Keccak cryptonite-0.25:Crypto.Hash.MD2
+                         cryptonite-0.25:Crypto.Hash.MD4 cryptonite-0.25:Crypto.Hash.MD5
+                         cryptonite-0.25:Crypto.Hash.RIPEMD160
+                         cryptonite-0.25:Crypto.Hash.SHA1 cryptonite-0.25:Crypto.Hash.SHA224
+                         cryptonite-0.25:Crypto.Hash.SHA256 cryptonite-0.25:Crypto.Hash.SHA3
+                         cryptonite-0.25:Crypto.Hash.SHA384
+                         cryptonite-0.25:Crypto.Hash.SHA512
+                         cryptonite-0.25:Crypto.Hash.SHA512t
+                         cryptonite-0.25:Crypto.Hash.SHAKE
+                         cryptonite-0.25:Crypto.Hash.Skein256
+                         cryptonite-0.25:Crypto.Hash.Skein512
+                         cryptonite-0.25:Crypto.Hash.Tiger
+                         cryptonite-0.25:Crypto.Hash.Whirlpool dlist-0.8.0.4:Data.DList
+                         ghc-boot-th-8.2.2:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.2.2:GHC.LanguageExtensions.Type
+                         http-api-data-0.3.7.2:Web.Internal.FormUrlEncoded
+                         iproute-1.7.5:Data.IP.Addr iproute-1.7.5:Data.IP.Range
+                         monad-control-1.0.2.3:Control.Monad.Trans.Control
+                         network-uri-2.6.1.0:Network.URI
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.4.0:Control.Monad.Primitive
+                         primitive-0.6.4.0:Data.Primitive.Array
+                         primitive-0.6.4.0:Data.Primitive.ByteArray
+                         primitive-0.6.4.0:Data.Primitive.PrimArray
+                         primitive-0.6.4.0:Data.Primitive.SmallArray
+                         primitive-0.6.4.0:Data.Primitive.UnliftedArray
+                         resourcet-1.2.1:Control.Monad.Trans.Resource.Internal
+                         servant-0.13.0.1:Servant.API.ContentTypes
+                         servant-0.13.0.1:Servant.API.IsSecure
+                         servant-0.13.0.1:Servant.API.Stream
+                         servant-0.13.0.1:Servant.API.Verbs
+                         servant-0.13.0.1:Servant.Utils.Links
+                         servant-server-0.13.0.1:Servant.Server.Internal
+                         servant-server-0.13.0.1:Servant.Server.Internal.BasicAuth
+                         servant-server-0.13.0.1:Servant.Server.Internal.Handler
+                         servant-server-0.13.0.1:Servant.Server.Internal.RoutingApplication
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.12.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         th-abstraction-0.2.7.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uri-bytestring-0.3.2.0:URI.ByteString.Types
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+                         zlib-0.6.2:Codec.Compression.Zlib.Stream
+import  -/  aeson-1.2.4.0:Data.Aeson f64616f3bd6ca66eab1c315556c9e4bc
+import  -/  aeson-1.2.4.0:Data.Aeson.TH 00cee6d10b64b2a6d21f3e186a07f225
+import  -/  base-4.10.1.0:Control.Concurrent 54b4f33006223552c60861a4a302d698
+import  -/  base-4.10.1.0:Control.Monad.IO.Class 9d78cd0f73a837f3c00753bd212b9f2c
+import  -/  base-4.10.1.0:Data.Proxy da449059b879cc23dde5f0d9cfa646e9
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Conc.Sync 3cf9d980bef04043684377f638021935
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  servant-0.13.0.1:Servant.API.Alternative 786281ca92f0f63bf0990304489d4b75
+import  -/  servant-0.13.0.1:Servant.API.ContentTypes e55711dc021079b1013f6c6c11f44c44
+import  -/  servant-0.13.0.1:Servant.API.Sub 1049e3ff8de7f99479c9ae164ae50184
+import  -/  servant-0.13.0.1:Servant.API.Verbs d5b719f2cfc0feae5afb00fc9b0915df
+import  -/  servant-server-0.13.0.1:Servant e0c5b91bb9323d2b85aa19c3aa5114d5
+import  -/  servant-server-0.13.0.1:Servant.Server e08839998f66be935b6bf9a9560484c5
+import  -/  servant-server-0.13.0.1:Servant.Server.Internal 8b39ee393c3f8b2f570ce979d30e1387
+import  -/  servant-server-0.13.0.1:Servant.Server.Internal.Handler 6d69a4e03f5891598258c4f346c782b7
+import  -/  stm-2.4.5.0:Control.Concurrent.STM.TVar 7c37b6488b16a0d65afd57aa7f103f48
+import  -/  stm-2.4.5.0:Control.Monad.STM 3520d9ee2e3017818aa54f9f361d9510
+import  -/  transformers-0.5.2.0:Control.Monad.Trans.Reader cc12564dc0d2121844a0316ee821dfff
+import  -/  wai-3.2.1.2:Network.Wai 3953218fc0211cf406d3a4bfb307e7a0
+import  -/  warp-3.2.22:Network.Wai.Handler.Warp f695ffc7e1d03318b98bea6cc67c86e3
+import  -/  warp-3.2.22:Network.Wai.Handler.Warp.Run 3172d9aeb264844b29c36ffbab9e397e
+16f707c662d64d5490c1203b52cde654
+  $tc'State :: GHC.Types.TyCon
+943bc420eb27eca9487cc795811162bc
+  $tcState :: GHC.Types.TyCon
+dc5784926dbf9897627a8fedf9fad540
+  $trModule :: GHC.Types.Module
+cdfe836f0c8319e73cd74f3ed828665b
+  type API =
+    ("autorizado"
+     Servant.API.Sub.:> Servant.API.Verbs.Get
+                          '[Servant.API.ContentTypes.JSON] GHC.Types.Bool)
+    Servant.API.Alternative.:<|> (("autorizar"
+                                   Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                        '[Servant.API.ContentTypes.JSON] ())
+                                  Servant.API.Alternative.:<|> ("revocar"
+                                                                Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                     '[Servant.API.ContentTypes.JSON]
+                                                                                     ()))
+0029854343a01ef855370dac0be62869
+  data State = State {state :: GHC.Conc.Sync.TVar GHC.Types.Bool}
+2d17d37dd585b5bfec0230f28fda2c9f
+  app :: Lib.State -> Network.Wai.Application
+da280c07e1817f6b6cddbecc1e45a9a5
+  startApp :: GHC.Types.IO ()
+0029854343a01ef855370dac0be62869
+  state :: Lib.State -> GHC.Conc.Sync.TVar GHC.Types.Bool
+  RecSel Left Lib.State
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

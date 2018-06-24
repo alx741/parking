@@ -1,0 +1,180 @@
+[1 of 2] Compiling Main             ( /tmp/stack-9e5a327100d51890/servant-0.13.0.1/Setup.lhs, /tmp/stack-9e5a327100d51890/servant-0.13.0.1/.stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/setup/Main.o )
+[2 of 2] Compiling StackSetupShim   ( /mnt/hdd/stack/setup-exe-src/setup-shim-mPHDZzAJ.hs, /tmp/stack-9e5a327100d51890/servant-0.13.0.1/.stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/setup/StackSetupShim.o )
+Linking /tmp/stack-9e5a327100d51890/servant-0.13.0.1/.stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/setup/setup ...
+Configuring servant-0.13.0.1...
+Preprocessing library for servant-0.13.0.1..
+Building library for servant-0.13.0.1..
+[ 1 of 26] Compiling Servant.API.Alternative ( src/Servant/API/Alternative.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/Alternative.o )
+[ 2 of 26] Compiling Servant.API.BasicAuth ( src/Servant/API/BasicAuth.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/BasicAuth.o )
+[ 3 of 26] Compiling Servant.API.Capture ( src/Servant/API/Capture.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/Capture.o )
+[ 4 of 26] Compiling Servant.API.ContentTypes ( src/Servant/API/ContentTypes.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/ContentTypes.o )
+[ 5 of 26] Compiling Servant.API.Description ( src/Servant/API/Description.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/Description.o )
+[ 6 of 26] Compiling Servant.API.Empty ( src/Servant/API/Empty.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/Empty.o )
+[ 7 of 26] Compiling Servant.API.Experimental.Auth ( src/Servant/API/Experimental/Auth.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/Experimental/Auth.o )
+[ 8 of 26] Compiling Servant.API.HttpVersion ( src/Servant/API/HttpVersion.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/HttpVersion.o )
+[ 9 of 26] Compiling Servant.API.IsSecure ( src/Servant/API/IsSecure.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/IsSecure.o )
+[10 of 26] Compiling Servant.API.Modifiers ( src/Servant/API/Modifiers.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/Modifiers.o )
+[11 of 26] Compiling Servant.API.Header ( src/Servant/API/Header.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/Header.o )
+[12 of 26] Compiling Servant.API.QueryParam ( src/Servant/API/QueryParam.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/QueryParam.o )
+[13 of 26] Compiling Servant.API.Raw  ( src/Servant/API/Raw.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/Raw.o )
+[14 of 26] Compiling Servant.API.RemoteHost ( src/Servant/API/RemoteHost.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/RemoteHost.o )
+[15 of 26] Compiling Servant.API.ReqBody ( src/Servant/API/ReqBody.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/ReqBody.o )
+[16 of 26] Compiling Servant.API.ResponseHeaders ( src/Servant/API/ResponseHeaders.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/ResponseHeaders.o )
+[17 of 26] Compiling Servant.API.Stream ( src/Servant/API/Stream.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/Stream.o )
+[18 of 26] Compiling Servant.API.Sub  ( src/Servant/API/Sub.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/Sub.o )
+[19 of 26] Compiling Servant.API.Vault ( src/Servant/API/Vault.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/Vault.o )
+[20 of 26] Compiling Servant.API.Verbs ( src/Servant/API/Verbs.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/Verbs.o )
+[21 of 26] Compiling Servant.API.TypeLevel ( src/Servant/API/TypeLevel.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/TypeLevel.o )
+[22 of 26] Compiling Servant.API.WithNamedContext ( src/Servant/API/WithNamedContext.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/WithNamedContext.o )
+[23 of 26] Compiling Servant.Utils.Links ( src/Servant/Utils/Links.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/Utils/Links.o )
+[24 of 26] Compiling Servant.API      ( src/Servant/API.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API.o )
+[25 of 26] Compiling Servant.Utils.Enter ( src/Servant/Utils/Enter.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/Utils/Enter.o )
+[26 of 26] Compiling Servant.API.Internal.Test.ComprehensiveAPI ( src/Servant/API/Internal/Test/ComprehensiveAPI.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Servant/API/Internal/Test/ComprehensiveAPI.o )
+Preprocessing library for servant-0.13.0.1..
+Running Haddock on library for servant-0.13.0.1..
+Haddock coverage:
+  50% (  1 /  2) in 'Servant.API.Alternative'
+  Missing documentation for:
+    Module header
+  67% (  2 /  3) in 'Servant.API.BasicAuth'
+  Missing documentation for:
+    Module header
+  75% (  3 /  4) in 'Servant.API.Capture'
+  Missing documentation for:
+    Module header
+  48% ( 10 / 21) in 'Servant.API.ContentTypes'
+  Missing documentation for:
+    JSON (src/Servant/API/ContentTypes.hs:106)
+    PlainText (src/Servant/API/ContentTypes.hs:107)
+    FormUrlEncoded (src/Servant/API/ContentTypes.hs:108)
+    OctetStream (src/Servant/API/ContentTypes.hs:109)
+    AcceptHeader (src/Servant/API/ContentTypes.hs:153)
+    AllCTRender (src/Servant/API/ContentTypes.hs:176)
+    AllCTUnrender (src/Servant/API/ContentTypes.hs:232)
+    AllMime (src/Servant/API/ContentTypes.hs:251)
+    AllMimeRender (src/Servant/API/ContentTypes.hs:269)
+    AllMimeUnrender (src/Servant/API/ContentTypes.hs:309)
+    canHandleAcceptH (src/Servant/API/ContentTypes.hs:263)
+  88% (  7 /  8) in 'Servant.API.Description'
+  Missing documentation for:
+    Module header
+  50% (  1 /  2) in 'Servant.API.Empty'
+  Missing documentation for:
+    Module header
+  50% (  1 /  2) in 'Servant.API.Experimental.Auth'
+  Missing documentation for:
+    Module header
+  67% (  2 /  3) in 'Servant.API.HttpVersion'
+  Missing documentation for:
+    Module header
+  67% (  2 /  3) in 'Servant.API.IsSecure'
+  Missing documentation for:
+    Module header
+  94% ( 16 / 17) in 'Servant.API.Modifiers'
+  Missing documentation for:
+    Module header
+  33% (  1 /  3) in 'Servant.API.Header'
+  Missing documentation for:
+    Module header
+    Header' (src/Servant/API/Header.hs:24)
+  80% (  4 /  5) in 'Servant.API.QueryParam'
+  Missing documentation for:
+    Module header
+  50% (  1 /  2) in 'Servant.API.Raw'
+  Missing documentation for:
+    Module header
+  67% (  2 /  3) in 'Servant.API.RemoteHost'
+  Missing documentation for:
+    Module header
+  67% (  2 /  3) in 'Servant.API.ReqBody'
+  Missing documentation for:
+    Module header
+  40% (  4 / 10) in 'Servant.API.ResponseHeaders'
+  Missing documentation for:
+    ResponseHeader (src/Servant/API/ResponseHeaders.hs:58)
+    AddHeader (src/Servant/API/ResponseHeaders.hs:120)
+    BuildHeadersTo (src/Servant/API/ResponseHeaders.hs:73)
+    GetHeaders (src/Servant/API/ResponseHeaders.hs:96)
+    HeaderValMap (src/Servant/API/ResponseHeaders.hs:68)
+    HList (src/Servant/API/ResponseHeaders.hs:64)
+  55% ( 11 / 20) in 'Servant.API.Stream'
+  Missing documentation for:
+    Module header
+    StreamGet (src/Servant/API/Stream.hs:29)
+    StreamPost (src/Servant/API/Stream.hs:30)
+     (src/Servant/API/Stream.hs:39)
+     (src/Servant/API/Stream.hs:49)
+     (src/Servant/API/Stream.hs:80)
+     (src/Servant/API/Stream.hs:85)
+     (src/Servant/API/Stream.hs:97)
+     (src/Servant/API/Stream.hs:103)
+  50% (  1 /  2) in 'Servant.API.Sub'
+  Missing documentation for:
+    Module header
+  67% (  2 /  3) in 'Servant.API.Vault'
+  Missing documentation for:
+    Module header
+  77% ( 37 / 48) in 'Servant.API.Verbs'
+  Missing documentation for:
+    Module header
+    ReflectMethod (src/Servant/API/Verbs.hs:152)
+     (src/Servant/API/Verbs.hs:155)
+     (src/Servant/API/Verbs.hs:158)
+     (src/Servant/API/Verbs.hs:161)
+     (src/Servant/API/Verbs.hs:164)
+     (src/Servant/API/Verbs.hs:167)
+     (src/Servant/API/Verbs.hs:170)
+     (src/Servant/API/Verbs.hs:173)
+     (src/Servant/API/Verbs.hs:176)
+     (src/Servant/API/Verbs.hs:179)
+  92% ( 22 / 24) in 'Servant.API.TypeLevel'
+  Missing documentation for:
+    IsSubList (src/Servant/API/TypeLevel.hs:197)
+    ElemGo (src/Servant/API/TypeLevel.hs:213)
+  50% (  1 /  2) in 'Servant.API.WithNamedContext'
+  Missing documentation for:
+    Module header
+  88% ( 15 / 17) in 'Servant.Utils.Links'
+  Missing documentation for:
+    linkSegments (src/Servant/Utils/Links.hs:157)
+    linkQueryParams (src/Servant/Utils/Links.hs:160)
+  95% ( 55 / 58) in 'Servant.API'
+  Missing documentation for:
+    Module header
+    SBool
+    SBoolI
+  57% ( 12 / 21) in 'Servant.Utils.Enter'
+  Missing documentation for:
+    Module header
+    Enter (src/Servant/Utils/Enter.hs:36)
+     (src/Servant/Utils/Enter.hs:46)
+     (src/Servant/Utils/Enter.hs:55)
+     (src/Servant/Utils/Enter.hs:65)
+     (src/Servant/Utils/Enter.hs:72)
+    runReaderTNat (src/Servant/Utils/Enter.hs:83)
+    evalStateTLNat (src/Servant/Utils/Enter.hs:86)
+    evalStateTSNat (src/Servant/Utils/Enter.hs:89)
+  17% (  1 /  6) in 'Servant.API.Internal.Test.ComprehensiveAPI'
+  Missing documentation for:
+    GET (src/Servant/API/Internal/Test/ComprehensiveAPI.hs:13)
+    ComprehensiveAPI (src/Servant/API/Internal/Test/ComprehensiveAPI.hs:15)
+    comprehensiveAPI (src/Servant/API/Internal/Test/ComprehensiveAPI.hs:19)
+    ComprehensiveAPIWithoutRaw (src/Servant/API/Internal/Test/ComprehensiveAPI.hs:22)
+    comprehensiveAPIWithoutRaw (src/Servant/API/Internal/Test/ComprehensiveAPI.hs:48)
+Warning: Servant.API.Alternative: could not find link destinations for:
+    ~
+Warning: Servant.API.Modifiers: could not find link destinations for:
+    addOptionalHeader
+Warning: Servant.API.Header: could not find link destinations for:
+    addOptionalHeader
+Warning: Servant.API.ResponseHeaders: could not find link destinations for:
+    addOptionalHeader ~
+Warning: Servant.API.Verbs: could not find link destinations for:
+    unsafeIndex unsafeRangeSize
+Warning: Servant.Utils.Enter: could not find link destinations for:
+    ~
+Documentation created:
+.stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/doc/html/servant/index.html,
+.stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/doc/html/servant/servant.txt
+Installing library in /mnt/hdd/stack/snapshots/x86_64-linux-nopie/lts-11.15/8.2.2/lib/x86_64-linux-ghc-8.2.2/servant-0.13.0.1-17kzhprXSrj6pMTxJWMZZh
+Registering library for servant-0.13.0.1..

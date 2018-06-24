@@ -1,0 +1,20 @@
+Configuring attoparsec-iso8601-1.0.0.0...
+Preprocessing library for attoparsec-iso8601-1.0.0.0..
+Building library for attoparsec-iso8601-1.0.0.0..
+[1 of 2] Compiling Data.Attoparsec.Time.Internal ( Data/Attoparsec/Time/Internal.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Data/Attoparsec/Time/Internal.o )
+[2 of 2] Compiling Data.Attoparsec.Time ( Data/Attoparsec/Time.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Data/Attoparsec/Time.o )
+Preprocessing library for attoparsec-iso8601-1.0.0.0..
+Running Haddock on library for attoparsec-iso8601-1.0.0.0..
+Haddock coverage:
+  33% (  2 /  6) in 'Data.Attoparsec.Time.Internal'
+  Missing documentation for:
+    fromPico (Data/Attoparsec/Time/Internal.hs:34)
+    toPico (Data/Attoparsec/Time/Internal.hs:31)
+    diffTimeOfDay64 (Data/Attoparsec/Time/Internal.hs:54)
+    toTimeOfDay64 (Data/Attoparsec/Time/Internal.hs:60)
+ 100% (  7 /  7) in 'Data.Attoparsec.Time'
+Documentation created:
+.stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/doc/html/attoparsec-iso8601/index.html,
+.stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/doc/html/attoparsec-iso8601/attoparsec-iso8601.txt
+Installing library in /mnt/hdd/stack/snapshots/x86_64-linux-nopie/lts-11.15/8.2.2/lib/x86_64-linux-ghc-8.2.2/attoparsec-iso8601-1.0.0.0-4vvtgSRGfFY1WhuuvuXB4R
+Registering library for attoparsec-iso8601-1.0.0.0..

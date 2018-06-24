@@ -1,0 +1,1373 @@
+Configuring Cabal-2.0.1.1...
+Preprocessing library for Cabal-2.0.1.1..
+Building library for Cabal-2.0.1.1..
+[  1 of 168] Compiling Distribution.Compat.Binary ( Distribution/Compat/Binary.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Compat/Binary.o )
+[  2 of 168] Compiling Distribution.Compat.Exception ( Distribution/Compat/Exception.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Compat/Exception.o )
+[  3 of 168] Compiling Distribution.Compat.Internal.TempFile ( Distribution/Compat/Internal/TempFile.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Compat/Internal/TempFile.o )
+[  4 of 168] Compiling Distribution.Compat.Map.Strict ( Distribution/Compat/Map/Strict.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Compat/Map/Strict.o )
+[  5 of 168] Compiling Distribution.Compat.MonadFail ( Distribution/Compat/MonadFail.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Compat/MonadFail.o )
+[  6 of 168] Compiling Distribution.Compat.Semigroup ( Distribution/Compat/Semigroup.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Compat/Semigroup.o )
+[  7 of 168] Compiling Distribution.Compat.Stack ( Distribution/Compat/Stack.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Compat/Stack.o )
+[  8 of 168] Compiling Distribution.Compat.Prelude ( Distribution/Compat/Prelude.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Compat/Prelude.o )
+[  9 of 168] Compiling Distribution.Compat.SnocList ( Distribution/Compat/SnocList.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Compat/SnocList.o )
+[ 10 of 168] Compiling Distribution.Compat.ReadP ( Distribution/Compat/ReadP.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Compat/ReadP.o )
+[ 11 of 168] Compiling Distribution.Compat.Prelude.Internal ( Distribution/Compat/Prelude/Internal.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Compat/Prelude/Internal.o )
+[ 12 of 168] Compiling Distribution.Compat.Graph ( Distribution/Compat/Graph.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Compat/Graph.o )
+[ 13 of 168] Compiling Distribution.Compat.GetShortPathName ( Distribution/Compat/GetShortPathName.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Compat/GetShortPathName.o )
+[ 14 of 168] Compiling Distribution.Compat.DList ( Distribution/Compat/DList.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Compat/DList.o )
+[ 15 of 168] Compiling Distribution.Compat.CopyFile ( Distribution/Compat/CopyFile.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Compat/CopyFile.o )
+[ 16 of 168] Compiling Distribution.Compat.Environment ( Distribution/Compat/Environment.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Compat/Environment.o )
+[ 17 of 168] Compiling Distribution.Compat.CreatePipe ( Distribution/Compat/CreatePipe.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Compat/CreatePipe.o )
+[ 18 of 168] Compiling Distribution.GetOpt ( Distribution/GetOpt.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/GetOpt.o )
+[ 19 of 168] Compiling Distribution.Lex ( Distribution/Lex.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Lex.o )
+[ 20 of 168] Compiling Distribution.PackageDescription.Utils ( Distribution/PackageDescription/Utils.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/PackageDescription/Utils.o )
+[ 21 of 168] Compiling Distribution.ReadE ( Distribution/ReadE.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/ReadE.o )
+[ 22 of 168] Compiling Distribution.Simple.CCompiler ( Distribution/Simple/CCompiler.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/CCompiler.o )
+[ 23 of 168] Compiling Distribution.Simple.PreProcess.Unlit ( Distribution/Simple/PreProcess/Unlit.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/PreProcess/Unlit.o )
+[ 24 of 168] Compiling Distribution.Simple.Program.Internal ( Distribution/Simple/Program/Internal.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Program/Internal.o )
+[ 25 of 168] Compiling Distribution.TestSuite ( Distribution/TestSuite.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/TestSuite.o )
+[ 26 of 168] Compiling Distribution.Text ( Distribution/Text.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Text.o )
+[ 27 of 168] Compiling Distribution.System ( Distribution/System.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/System.o )
+[ 28 of 168] Compiling Distribution.Types.BuildType ( Distribution/Types/BuildType.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/BuildType.o )
+[ 29 of 168] Compiling Distribution.Types.Condition ( Distribution/Types/Condition.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/Condition.o )
+[ 30 of 168] Compiling Distribution.Types.CondTree ( Distribution/Types/CondTree.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/CondTree.o )
+[ 31 of 168] Compiling Distribution.Types.ExecutableScope ( Distribution/Types/ExecutableScope.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/ExecutableScope.o )
+[ 32 of 168] Compiling Distribution.Types.ForeignLibOption ( Distribution/Types/ForeignLibOption.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/ForeignLibOption.o )
+[ 33 of 168] Compiling Distribution.Types.ForeignLibType ( Distribution/Types/ForeignLibType.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/ForeignLibType.o )
+[ 34 of 168] Compiling Distribution.Types.SourceRepo ( Distribution/Types/SourceRepo.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/SourceRepo.o )
+[ 35 of 168] Compiling Distribution.Utils.Base62 ( Distribution/Utils/Base62.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Utils/Base62.o )
+[ 36 of 168] Compiling Distribution.Utils.MapAccum ( Distribution/Utils/MapAccum.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Utils/MapAccum.o )
+[ 37 of 168] Compiling Distribution.Utils.Progress ( Distribution/Utils/Progress.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Utils/Progress.o )
+[ 38 of 168] Compiling Distribution.Utils.String ( Distribution/Utils/String.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Utils/String.o )
+[ 39 of 168] Compiling Distribution.Utils.ShortText ( Distribution/Utils/ShortText.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Utils/ShortText.o )
+[ 40 of 168] Compiling Distribution.Types.PkgconfigName ( Distribution/Types/PkgconfigName.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/PkgconfigName.o )
+[ 41 of 168] Compiling Distribution.Types.ComponentId ( Distribution/Types/ComponentId.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/ComponentId.o )
+[ 42 of 168] Compiling Distribution.Types.AbiHash ( Distribution/Types/AbiHash.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/AbiHash.o )
+[ 43 of 168] Compiling Distribution.ModuleName ( Distribution/ModuleName.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/ModuleName.o )
+[ 44 of 168] Compiling Distribution.Types.ModuleRenaming ( Distribution/Types/ModuleRenaming.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/ModuleRenaming.o )
+[ 45 of 168] Compiling Distribution.Types.IncludeRenaming ( Distribution/Types/IncludeRenaming.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/IncludeRenaming.o )
+[ 46 of 168] Compiling Distribution.Utils.Generic ( Distribution/Utils/Generic.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Utils/Generic.o )
+[ 47 of 168] Compiling Distribution.Utils.UnionFind ( Distribution/Utils/UnionFind.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Utils/UnionFind.o )
+[ 48 of 168] Compiling Distribution.Verbosity ( Distribution/Verbosity.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Verbosity.o )
+[ 49 of 168] Compiling Distribution.Version ( Distribution/Version.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Version.o )
+[ 50 of 168] Compiling Distribution.Types.TestType ( Distribution/Types/TestType.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/TestType.o )
+[ 51 of 168] Compiling Distribution.Types.TestSuiteInterface ( Distribution/Types/TestSuiteInterface.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/TestSuiteInterface.o )
+[ 52 of 168] Compiling Distribution.Types.PkgconfigDependency ( Distribution/Types/PkgconfigDependency.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/PkgconfigDependency.o )
+[ 53 of 168] Compiling Distribution.Types.BenchmarkType ( Distribution/Types/BenchmarkType.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/BenchmarkType.o )
+[ 54 of 168] Compiling Distribution.Types.BenchmarkInterface ( Distribution/Types/BenchmarkInterface.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/BenchmarkInterface.o )
+[ 55 of 168] Compiling Distribution.License ( Distribution/License.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/License.o )
+[ 56 of 168] Compiling Language.Haskell.Extension ( Language/Haskell/Extension.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Language/Haskell/Extension.o )
+[ 57 of 168] Compiling Distribution.Compiler ( Distribution/Compiler.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Compiler.o )
+[ 58 of 168] Compiling Distribution.PrettyUtils ( Distribution/PrettyUtils.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/PrettyUtils.o )
+[ 59 of 168] Compiling Distribution.ParseUtils ( Distribution/ParseUtils.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/ParseUtils.o )
+[ 60 of 168] Compiling Distribution.Types.PackageName ( Distribution/Types/PackageName.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/PackageName.o )
+[ 61 of 168] Compiling Distribution.Types.UnqualComponentName ( Distribution/Types/UnqualComponentName.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/UnqualComponentName.o )
+[ 62 of 168] Compiling Distribution.Types.ComponentName ( Distribution/Types/ComponentName.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/ComponentName.o )
+[ 63 of 168] Compiling Distribution.Types.PackageId ( Distribution/Types/PackageId.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/PackageId.o )
+[ 64 of 168] Compiling Distribution.Types.UnitId ( Distribution/Types/UnitId.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/UnitId.o )
+[ 65 of 168] Compiling Distribution.Types.Module ( Distribution/Types/Module.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/Module.o )
+[ 66 of 168] Compiling Distribution.Backpack ( Distribution/Backpack.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Backpack.o )
+[ 67 of 168] Compiling Distribution.Backpack.ModSubst ( Distribution/Backpack/ModSubst.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Backpack/ModSubst.o )
+[ 68 of 168] Compiling Distribution.Backpack.FullUnitId ( Distribution/Backpack/FullUnitId.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Backpack/FullUnitId.o )
+[ 69 of 168] Compiling Distribution.Types.ModuleReexport ( Distribution/Types/ModuleReexport.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/ModuleReexport.o )
+[ 70 of 168] Compiling Distribution.Types.Mixin ( Distribution/Types/Mixin.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/Mixin.o )
+[ 71 of 168] Compiling Distribution.Types.ExeDependency ( Distribution/Types/ExeDependency.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/ExeDependency.o )
+[ 72 of 168] Compiling Distribution.Types.Dependency ( Distribution/Types/Dependency.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/Dependency.o )
+[ 73 of 168] Compiling Distribution.Types.SetupBuildInfo ( Distribution/Types/SetupBuildInfo.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/SetupBuildInfo.o )
+[ 74 of 168] Compiling Distribution.Types.DependencyMap ( Distribution/Types/DependencyMap.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/DependencyMap.o )
+[ 75 of 168] Compiling Distribution.Simple.GHC.IPIConvert ( Distribution/Simple/GHC/IPIConvert.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/GHC/IPIConvert.o )
+[ 76 of 168] Compiling Distribution.Backpack.ModuleScope ( Distribution/Backpack/ModuleScope.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Backpack/ModuleScope.o )
+[ 77 of 168] Compiling Distribution.Types.MungedPackageName ( Distribution/Types/MungedPackageName.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/MungedPackageName.o )
+[ 78 of 168] Compiling Distribution.Types.MungedPackageId ( Distribution/Types/MungedPackageId.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/MungedPackageId.o )
+[ 79 of 168] Compiling Distribution.Package ( Distribution/Package.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Package.o )
+[ 80 of 168] Compiling Distribution.Types.AnnotatedId ( Distribution/Types/AnnotatedId.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/AnnotatedId.o )
+[ 81 of 168] Compiling Distribution.Types.ComponentInclude ( Distribution/Types/ComponentInclude.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/ComponentInclude.o )
+[ 82 of 168] Compiling Distribution.Simple.InstallDirs ( Distribution/Simple/InstallDirs.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/InstallDirs.o )
+[ 83 of 168] Compiling Distribution.Types.LegacyExeDependency ( Distribution/Types/LegacyExeDependency.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/LegacyExeDependency.o )
+[ 84 of 168] Compiling Distribution.Types.BuildInfo ( Distribution/Types/BuildInfo.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/BuildInfo.o )
+[ 85 of 168] Compiling Distribution.Types.TestSuite ( Distribution/Types/TestSuite.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/TestSuite.o )
+[ 86 of 168] Compiling Distribution.Types.Library ( Distribution/Types/Library.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/Library.o )
+[ 87 of 168] Compiling Distribution.Types.HookedBuildInfo ( Distribution/Types/HookedBuildInfo.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/HookedBuildInfo.o )
+[ 88 of 168] Compiling Distribution.Types.ForeignLib ( Distribution/Types/ForeignLib.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/ForeignLib.o )
+[ 89 of 168] Compiling Distribution.Types.Executable ( Distribution/Types/Executable.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/Executable.o )
+[ 90 of 168] Compiling Distribution.Types.Benchmark ( Distribution/Types/Benchmark.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/Benchmark.o )
+[ 91 of 168] Compiling Distribution.Types.Component ( Distribution/Types/Component.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/Component.o )
+[ 92 of 168] Compiling Distribution.Types.ComponentRequestedSpec ( Distribution/Types/ComponentRequestedSpec.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/ComponentRequestedSpec.o )
+[ 93 of 168] Compiling Distribution.Types.PackageDescription ( Distribution/Types/PackageDescription.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/PackageDescription.o )
+[ 94 of 168] Compiling Distribution.Types.GenericPackageDescription ( Distribution/Types/GenericPackageDescription.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/GenericPackageDescription.o )
+[ 95 of 168] Compiling Distribution.PackageDescription ( Distribution/PackageDescription.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/PackageDescription.o )
+[ 96 of 168] Compiling Distribution.Simple.BuildToolDepends ( Distribution/Simple/BuildToolDepends.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/BuildToolDepends.o )
+[ 97 of 168] Compiling Distribution.InstalledPackageInfo ( Distribution/InstalledPackageInfo.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/InstalledPackageInfo.o )
+[ 98 of 168] Compiling Distribution.Types.ComponentLocalBuildInfo ( Distribution/Types/ComponentLocalBuildInfo.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/ComponentLocalBuildInfo.o )
+[ 99 of 168] Compiling Distribution.Types.TargetInfo ( Distribution/Types/TargetInfo.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/TargetInfo.o )
+[100 of 168] Compiling Distribution.Simple.GHC.IPI642 ( Distribution/Simple/GHC/IPI642.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/GHC/IPI642.o )
+[101 of 168] Compiling Distribution.Backpack.ModuleShape ( Distribution/Backpack/ModuleShape.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Backpack/ModuleShape.o )
+[102 of 168] Compiling Distribution.Backpack.UnifyM ( Distribution/Backpack/UnifyM.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Backpack/UnifyM.o )
+[103 of 168] Compiling Distribution.Backpack.MixLink ( Distribution/Backpack/MixLink.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Backpack/MixLink.o )
+[104 of 168] Compiling Distribution.Backpack.PreExistingComponent ( Distribution/Backpack/PreExistingComponent.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Backpack/PreExistingComponent.o )
+[105 of 168] Compiling Paths_Cabal      ( .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/autogen/Paths_Cabal.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Paths_Cabal.o )
+[106 of 168] Compiling Distribution.Simple.Utils ( Distribution/Simple/Utils.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Utils.o )
+[107 of 168] Compiling Distribution.Utils.NubList ( Distribution/Utils/NubList.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Utils/NubList.o )
+[108 of 168] Compiling Distribution.Utils.LogProgress ( Distribution/Utils/LogProgress.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Utils/LogProgress.o )
+[109 of 168] Compiling Distribution.Simple.Program.Find ( Distribution/Simple/Program/Find.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Program/Find.o )
+[110 of 168] Compiling Distribution.Simple.Program.Types ( Distribution/Simple/Program/Types.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Program/Types.o )
+[111 of 168] Compiling Distribution.Simple.Program.Run ( Distribution/Simple/Program/Run.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Program/Run.o )
+[112 of 168] Compiling Distribution.Simple.Program.Script ( Distribution/Simple/Program/Script.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Program/Script.o )
+[113 of 168] Compiling Distribution.Simple.Program.Ld ( Distribution/Simple/Program/Ld.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Program/Ld.o )
+[114 of 168] Compiling Distribution.Simple.Program.Hpc ( Distribution/Simple/Program/Hpc.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Program/Hpc.o )
+[115 of 168] Compiling Distribution.Simple.Program.Builtin ( Distribution/Simple/Program/Builtin.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Program/Builtin.o )
+[116 of 168] Compiling Distribution.Simple.Program.Db ( Distribution/Simple/Program/Db.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Program/Db.o )
+[117 of 168] Compiling Distribution.Simple.Program ( Distribution/Simple/Program.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Program.o )
+[118 of 168] Compiling Distribution.Simple.Program.Strip ( Distribution/Simple/Program/Strip.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Program/Strip.o )
+[119 of 168] Compiling Distribution.Simple.PackageIndex ( Distribution/Simple/PackageIndex.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/PackageIndex.o )
+[120 of 168] Compiling Distribution.Simple.Compiler ( Distribution/Simple/Compiler.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Compiler.o )
+[121 of 168] Compiling Distribution.Simple.Program.HcPkg ( Distribution/Simple/Program/HcPkg.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Program/HcPkg.o )
+[122 of 168] Compiling Distribution.Simple.GHC.ImplInfo ( Distribution/Simple/GHC/ImplInfo.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/GHC/ImplInfo.o )
+[123 of 168] Compiling Distribution.Simple.Command ( Distribution/Simple/Command.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Command.o )
+[124 of 168] Compiling Distribution.Simple.Setup ( Distribution/Simple/Setup.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Setup.o )
+[125 of 168] Compiling Distribution.Types.LocalBuildInfo ( Distribution/Types/LocalBuildInfo.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Types/LocalBuildInfo.o )
+[126 of 168] Compiling Distribution.Simple.LocalBuildInfo ( Distribution/Simple/LocalBuildInfo.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/LocalBuildInfo.o )
+[127 of 168] Compiling Distribution.Simple.Program.Ar ( Distribution/Simple/Program/Ar.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Program/Ar.o )
+[128 of 168] Compiling Distribution.Simple.Hpc ( Distribution/Simple/Hpc.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Hpc.o )
+[129 of 168] Compiling Distribution.Simple.Build.Macros ( Distribution/Simple/Build/Macros.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Build/Macros.o )
+[130 of 168] Compiling Distribution.Backpack.ComponentsGraph ( Distribution/Backpack/ComponentsGraph.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Backpack/ComponentsGraph.o )
+[131 of 168] Compiling Distribution.Simple.Test.Log ( Distribution/Simple/Test/Log.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Test/Log.o )
+[132 of 168] Compiling Distribution.Simple.Program.GHC ( Distribution/Simple/Program/GHC.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Program/GHC.o )
+[133 of 168] Compiling Distribution.Backpack.Id ( Distribution/Backpack/Id.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Backpack/Id.o )
+[134 of 168] Compiling Distribution.Backpack.ConfiguredComponent ( Distribution/Backpack/ConfiguredComponent.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Backpack/ConfiguredComponent.o )
+[135 of 168] Compiling Distribution.Backpack.LinkedComponent ( Distribution/Backpack/LinkedComponent.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Backpack/LinkedComponent.o )
+[136 of 168] Compiling Distribution.Simple.BuildTarget ( Distribution/Simple/BuildTarget.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/BuildTarget.o )
+[137 of 168] Compiling Distribution.Simple.BuildPaths ( Distribution/Simple/BuildPaths.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/BuildPaths.o )
+[138 of 168] Compiling Distribution.Simple.UHC ( Distribution/Simple/UHC.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/UHC.o )
+[139 of 168] Compiling Distribution.Simple.LHC ( Distribution/Simple/LHC.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/LHC.o )
+[140 of 168] Compiling Distribution.Simple.JHC ( Distribution/Simple/JHC.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/JHC.o )
+[141 of 168] Compiling Distribution.Simple.HaskellSuite ( Distribution/Simple/HaskellSuite.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/HaskellSuite.o )
+[142 of 168] Compiling Distribution.Simple.GHC.Internal ( Distribution/Simple/GHC/Internal.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/GHC/Internal.o )
+[143 of 168] Compiling Distribution.Simple.GHCJS ( Distribution/Simple/GHCJS.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/GHCJS.o )
+[144 of 168] Compiling Distribution.Simple.GHC ( Distribution/Simple/GHC.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/GHC.o )
+[145 of 168] Compiling Distribution.Simple.Install ( Distribution/Simple/Install.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Install.o )
+[146 of 168] Compiling Distribution.Simple.Build.PathsModule ( Distribution/Simple/Build/PathsModule.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Build/PathsModule.o )
+[147 of 168] Compiling Distribution.Simple.Test.LibV09 ( Distribution/Simple/Test/LibV09.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Test/LibV09.o )
+[148 of 168] Compiling Distribution.Simple.Test.ExeV10 ( Distribution/Simple/Test/ExeV10.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Test/ExeV10.o )
+[149 of 168] Compiling Distribution.PackageDescription.Configuration ( Distribution/PackageDescription/Configuration.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/PackageDescription/Configuration.o )
+[150 of 168] Compiling Distribution.PackageDescription.Parse ( Distribution/PackageDescription/Parse.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/PackageDescription/Parse.o )
+[151 of 168] Compiling Distribution.PackageDescription.PrettyPrint ( Distribution/PackageDescription/PrettyPrint.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/PackageDescription/PrettyPrint.o )
+[152 of 168] Compiling Distribution.PackageDescription.Check ( Distribution/PackageDescription/Check.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/PackageDescription/Check.o )
+[153 of 168] Compiling Distribution.Make ( Distribution/Make.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Make.o )
+[154 of 168] Compiling Distribution.Compat.Time ( Distribution/Compat/Time.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Compat/Time.o )
+[155 of 168] Compiling Distribution.Backpack.ReadyComponent ( Distribution/Backpack/ReadyComponent.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Backpack/ReadyComponent.o )
+[156 of 168] Compiling Distribution.Backpack.Configure ( Distribution/Backpack/Configure.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Backpack/Configure.o )
+[157 of 168] Compiling Distribution.Backpack.DescribeUnitId ( Distribution/Backpack/DescribeUnitId.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Backpack/DescribeUnitId.o )
+[158 of 168] Compiling Distribution.Simple.Register ( Distribution/Simple/Register.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Register.o )
+[159 of 168] Compiling Distribution.Simple.PreProcess ( Distribution/Simple/PreProcess.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/PreProcess.o )
+[160 of 168] Compiling Distribution.Simple.UserHooks ( Distribution/Simple/UserHooks.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/UserHooks.o )
+[161 of 168] Compiling Distribution.Simple.Test ( Distribution/Simple/Test.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Test.o )
+[162 of 168] Compiling Distribution.Simple.Bench ( Distribution/Simple/Bench.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Bench.o )
+[163 of 168] Compiling Distribution.Simple.SrcDist ( Distribution/Simple/SrcDist.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/SrcDist.o )
+[164 of 168] Compiling Distribution.Simple.Configure ( Distribution/Simple/Configure.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Configure.o )
+[165 of 168] Compiling Distribution.Simple.Build ( Distribution/Simple/Build.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Build.o )
+[166 of 168] Compiling Distribution.Simple.Haddock ( Distribution/Simple/Haddock.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Haddock.o )
+[167 of 168] Compiling Distribution.Simple.Doctest ( Distribution/Simple/Doctest.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple/Doctest.o )
+[168 of 168] Compiling Distribution.Simple ( Distribution/Simple.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Distribution/Simple.o )
+Preprocessing library for Cabal-2.0.1.1..
+Running Haddock on library for Cabal-2.0.1.1..
+Haddock coverage:
+  50% (  2 /  4) in 'Distribution.Compat.Binary'
+  Missing documentation for:
+    Module header
+    decodeOrFailIO (Distribution/Compat/Binary.hs:72)
+  20% (  1 /  5) in 'Distribution.Compat.Exception'
+  Missing documentation for:
+    Module header
+    catchIO (Distribution/Compat/Exception.hs:18)
+    catchExit (Distribution/Compat/Exception.hs:21)
+    tryIO (Distribution/Compat/Exception.hs:15)
+  40% (  2 /  5) in 'Distribution.Compat.Internal.TempFile'
+  Missing documentation for:
+    Module header
+    openNewBinaryFile (Distribution/Compat/Internal/TempFile.hs:42)
+    createTempDirectory (Distribution/Compat/Internal/TempFile.hs:106)
+Warning: Distribution.Compat.Map.Strict: Could not find documentation for exported module: X
+   0% (  0 /  1) in 'Distribution.Compat.Map.Strict'
+  Missing documentation for:
+    Module header
+ 100% (  2 /  2) in 'Distribution.Compat.MonadFail'
+ 100% (  8 /  8) in 'Distribution.Compat.Semigroup'
+  67% (  6 /  9) in 'Distribution.Compat.Stack'
+  Missing documentation for:
+    Module header
+    WithCallStack (Distribution/Compat/Stack.hs:30)
+    withLexicalCallStack (Distribution/Compat/Stack.hs:72)
+Warning: Distribution.Compat.Prelude: Could not find documentation for exported module: BasePrelude
+  98% ( 83 / 85) in 'Distribution.Compat.Prelude'
+  Missing documentation for:
+    IO (Distribution/Compat/Prelude.hs:144)
+    NoCallStackIO (Distribution/Compat/Prelude.hs:145)
+  25% (  1 /  4) in 'Distribution.Compat.SnocList'
+  Missing documentation for:
+    SnocList (Distribution/Compat/SnocList.hs:20)
+    runSnocList (Distribution/Compat/SnocList.hs:25)
+    snoc (Distribution/Compat/SnocList.hs:22)
+  98% ( 40 / 41) in 'Distribution.Compat.ReadP'
+  Missing documentation for:
+    ReadP (Distribution/Compat/ReadP.hs:154)
+  98% ( 83 / 85) in 'Distribution.Compat.Prelude.Internal'
+  Missing documentation for:
+    IO (Distribution/Compat/Prelude.hs:144)
+    NoCallStackIO (Distribution/Compat/Prelude.hs:145)
+ 100% ( 42 / 42) in 'Distribution.Compat.Graph'
+  50% (  1 /  2) in 'Distribution.Compat.GetShortPathName'
+  Missing documentation for:
+    getShortPathName (Distribution/Compat/GetShortPathName.hs:56)
+  60% (  3 /  5) in 'Distribution.Compat.DList'
+  Missing documentation for:
+    runDList (Distribution/Compat/DList.hs:25)
+    snoc (Distribution/Compat/DList.hs:32)
+  33% (  3 /  9) in 'Distribution.Compat.CopyFile'
+  Missing documentation for:
+    Module header
+    copyOrdinaryFile (Distribution/Compat/CopyFile.hs:45)
+    copyExecutableFile (Distribution/Compat/CopyFile.hs:45)
+    setFileOrdinary (Distribution/Compat/CopyFile.hs:49)
+    setFileExecutable (Distribution/Compat/CopyFile.hs:49)
+    setDirOrdinary (Distribution/Compat/CopyFile.hs:49)
+  60% (  3 /  5) in 'Distribution.Compat.Environment'
+  Missing documentation for:
+    Module header
+    getEnvironment (Distribution/Compat/Environment.hs:42)
+   0% (  0 /  2) in 'Distribution.Compat.CreatePipe'
+  Missing documentation for:
+    Module header
+    createPipe (Distribution/Compat/CreatePipe.hs:32)
+ 100% ( 10 / 10) in 'Distribution.GetOpt'
+  50% (  1 /  2) in 'Distribution.Lex'
+  Missing documentation for:
+    tokenizeQuotedWords (Distribution/Lex.hs:19)
+  33% (  1 /  3) in 'Distribution.PackageDescription.Utils'
+  Missing documentation for:
+    cabalBug (Distribution/PackageDescription/Utils.hs:20)
+    userBug (Distribution/PackageDescription/Utils.hs:17)
+  44% (  4 /  9) in 'Distribution.ReadE'
+  Missing documentation for:
+    succeedReadE (Distribution/ReadE.hs:34)
+    failReadE (Distribution/ReadE.hs:37)
+    parseReadE (Distribution/ReadE.hs:40)
+    readEOrFail (Distribution/ReadE.hs:45)
+    readP_to_E (Distribution/ReadE.hs:48)
+ 100% (  5 /  5) in 'Distribution.Simple.CCompiler'
+ 100% (  3 /  3) in 'Distribution.Simple.PreProcess.Unlit'
+ 100% (  2 /  2) in 'Distribution.Simple.Program.Internal'
+  22% (  2 /  9) in 'Distribution.TestSuite'
+  Missing documentation for:
+    TestInstance (Distribution/TestSuite.hs:30)
+    OptionDescr (Distribution/TestSuite.hs:45)
+    OptionType (Distribution/TestSuite.hs:54)
+    Test (Distribution/TestSuite.hs:73)
+    Options (Distribution/TestSuite.hs:89)
+    Progress (Distribution/TestSuite.hs:91)
+    Result (Distribution/TestSuite.hs:94)
+  57% (  4 /  7) in 'Distribution.Text'
+  Missing documentation for:
+    Text (Distribution/Text.hs:31)
+    simpleParse (Distribution/Text.hs:58)
+    stdParse (Distribution/Text.hs:64)
+  56% ( 10 / 18) in 'Distribution.System'
+  Missing documentation for:
+    buildOS (Distribution/System.hs:135)
+    buildArch (Distribution/System.hs:196)
+    Platform (Distribution/System.hs:203)
+    platformFromTriple (Distribution/System.hs:247)
+    knownOSs (Distribution/System.hs:101)
+    knownArches (Distribution/System.hs:164)
+    classifyOS (Distribution/System.hs:127)
+    classifyArch (Distribution/System.hs:188)
+  33% (  1 /  3) in 'Distribution.Types.BuildType'
+  Missing documentation for:
+    Module header
+    knownBuildTypes (Distribution/Types/BuildType.hs:34)
+  83% (  5 /  6) in 'Distribution.Types.Condition'
+  Missing documentation for:
+    Module header
+  50% (  7 / 14) in 'Distribution.Types.CondTree'
+  Missing documentation for:
+    Module header
+    condIfThen (Distribution/Types/CondTree.hs:82)
+    condIfThenElse (Distribution/Types/CondTree.hs:85)
+    mapCondTree (Distribution/Types/CondTree.hs:88)
+    mapTreeConstrs (Distribution/Types/CondTree.hs:98)
+    mapTreeConds (Distribution/Types/CondTree.hs:101)
+    mapTreeData (Distribution/Types/CondTree.hs:104)
+   0% (  0 /  2) in 'Distribution.Types.ExecutableScope'
+  Missing documentation for:
+    Module header
+    ExecutableScope (Distribution/Types/ExecutableScope.hs:16)
+   0% (  0 /  2) in 'Distribution.Types.ForeignLibOption'
+  Missing documentation for:
+    Module header
+    ForeignLibOption (Distribution/Types/ForeignLibOption.hs:15)
+  25% (  1 /  4) in 'Distribution.Types.ForeignLibType'
+  Missing documentation for:
+    Module header
+    knownForeignLibTypes (Distribution/Types/ForeignLibType.hs:50)
+    foreignLibTypeIsShared (Distribution/Types/ForeignLibType.hs:56)
+  38% (  3 /  8) in 'Distribution.Types.SourceRepo'
+  Missing documentation for:
+    Module header
+    knownRepoTypes (Distribution/Types/SourceRepo.hs:125)
+    emptySourceRepo (Distribution/Types/SourceRepo.hs:83)
+    classifyRepoType (Distribution/Types/SourceRepo.hs:153)
+    classifyRepoKind (Distribution/Types/SourceRepo.hs:142)
+ 100% (  2 /  2) in 'Distribution.Utils.Base62'
+  50% (  1 /  2) in 'Distribution.Utils.MapAccum'
+  Missing documentation for:
+    Module header
+ 100% (  5 /  5) in 'Distribution.Utils.Progress'
+  75% (  3 /  4) in 'Distribution.Utils.String'
+  Missing documentation for:
+    Module header
+  88% (  7 /  8) in 'Distribution.Utils.ShortText'
+  Missing documentation for:
+    Module header
+  75% (  3 /  4) in 'Distribution.Types.PkgconfigName'
+  Missing documentation for:
+    Module header
+  75% (  3 /  4) in 'Distribution.Types.ComponentId'
+  Missing documentation for:
+    Module header
+  75% (  3 /  4) in 'Distribution.Types.AbiHash'
+  Missing documentation for:
+    Module header
+  70% (  7 / 10) in 'Distribution.ModuleName'
+  Missing documentation for:
+    fromString
+    simple (Distribution/ModuleName.hs:70)
+    validModuleComponent (Distribution/ModuleName.hs:64)
+  75% (  3 /  4) in 'Distribution.Types.ModuleRenaming'
+  Missing documentation for:
+    Module header
+  75% (  3 /  4) in 'Distribution.Types.IncludeRenaming'
+  Missing documentation for:
+    Module header
+  80% ( 32 / 40) in 'Distribution.Utils.Generic'
+  Missing documentation for:
+    fromUTF8 (Distribution/Utils/Generic.hs:164)
+    fromUTF8BS (Distribution/Utils/Generic.hs:205)
+    fromUTF8LBS (Distribution/Utils/Generic.hs:208)
+    toUTF8 (Distribution/Utils/Generic.hs:211)
+    equating (Distribution/Utils/Generic.hs:375)
+    lowercase (Distribution/Utils/Generic.hs:378)
+    isAscii (Distribution/Utils/Generic.hs:381)
+    unintersperse (Distribution/Utils/Generic.hs:393)
+ 100% (  6 /  6) in 'Distribution.Utils.UnionFind'
+  55% ( 16 / 29) in 'Distribution.Verbosity'
+  Missing documentation for:
+    Verbosity (Distribution/Verbosity.hs:58)
+    silent (Distribution/Verbosity.hs:95)
+    normal (Distribution/Verbosity.hs:99)
+    verbose (Distribution/Verbosity.hs:103)
+    deafening (Distribution/Verbosity.hs:108)
+    moreVerbose (Distribution/Verbosity.hs:111)
+    lessVerbose (Distribution/Verbosity.hs:119)
+    intToVerbosity (Distribution/Verbosity.hs:140)
+    flagToVerbosity (Distribution/Verbosity.hs:170)
+    showForCabal (Distribution/Verbosity.hs:181)
+    showForGHC (Distribution/Verbosity.hs:181)
+    verboseNoFlags (Distribution/Verbosity.hs:241)
+    verboseHasFlags (Distribution/Verbosity.hs:244)
+  83% ( 48 / 58) in 'Distribution.Version'
+  Missing documentation for:
+    showVersion (Distribution/Version.hs:291)
+    VersionRange (Distribution/Version.hs:300)
+    betweenVersionsInclusive (Distribution/Version.hs:456)
+    VersionInterval (Distribution/Version.hs:721)
+    LowerBound (Distribution/Version.hs:722)
+    UpperBound (Distribution/Version.hs:723)
+    Bound (Distribution/Version.hs:724)
+    unionVersionIntervals (Distribution/Version.hs:872)
+    intersectVersionIntervals (Distribution/Version.hs:905)
+    invertVersionIntervals (Distribution/Version.hs:938)
+  33% (  1 /  3) in 'Distribution.Types.TestType'
+  Missing documentation for:
+    Module header
+    knownTestTypes (Distribution/Types/TestType.hs:26)
+  50% (  1 /  2) in 'Distribution.Types.TestSuiteInterface'
+  Missing documentation for:
+    Module header
+  50% (  1 /  2) in 'Distribution.Types.PkgconfigDependency'
+  Missing documentation for:
+    Module header
+  33% (  1 /  3) in 'Distribution.Types.BenchmarkType'
+  Missing documentation for:
+    Module header
+    knownBenchmarkTypes (Distribution/Types/BenchmarkType.hs:27)
+  50% (  1 /  2) in 'Distribution.Types.BenchmarkInterface'
+  Missing documentation for:
+    Module header
+ 100% (  3 /  3) in 'Distribution.License'
+  44% (  4 /  9) in 'Language.Haskell.Extension'
+  Missing documentation for:
+    knownLanguages (Language/Haskell/Extension.hs:61)
+    classifyLanguage (Language/Haskell/Extension.hs:72)
+    KnownExtension (Language/Haskell/Extension.hs:111)
+    knownExtensions (Language/Haskell/Extension.hs:779)
+    classifyExtension (Language/Haskell/Extension.hs:817)
+  53% (  8 / 15) in 'Distribution.Compiler'
+  Missing documentation for:
+    CompilerFlavor (Distribution/Compiler.hs:58)
+    buildCompilerId (Distribution/Compiler.hs:118)
+    buildCompilerFlavor (Distribution/Compiler.hs:112)
+    classifyCompilerFlavor (Distribution/Compiler.hs:80)
+    CompilerId (Distribution/Compiler.hs:136)
+    AbiTag (Distribution/Compiler.hs:180)
+    abiTagString (Distribution/Compiler.hs:195)
+  50% (  4 /  8) in 'Distribution.PrettyUtils'
+  Missing documentation for:
+    Separator (Distribution/PrettyUtils.hs:31)
+    showFilePath (Distribution/PrettyUtils.hs:33)
+    showToken (Distribution/PrettyUtils.hs:37)
+    showTestedWith (Distribution/PrettyUtils.hs:44)
+  13% (  8 / 62) in 'Distribution.ParseUtils'
+  Missing documentation for:
+    LineNo (Distribution/ParseUtils.hs:71)
+    PError (Distribution/ParseUtils.hs:73)
+    PWarning (Distribution/ParseUtils.hs:79)
+    locatedErrorMsg (Distribution/ParseUtils.hs:147)
+    syntaxError (Distribution/ParseUtils.hs:155)
+    warning (Distribution/ParseUtils.hs:161)
+    runP (Distribution/ParseUtils.hs:121)
+    runE (Distribution/ParseUtils.hs:134)
+    ParseResult (Distribution/ParseUtils.hs:90)
+    catchParseError (Distribution/ParseUtils.hs:113)
+    parseFail (Distribution/ParseUtils.hs:118)
+    showPWarning (Distribution/ParseUtils.hs:83)
+    Field (Distribution/ParseUtils.hs:355)
+    fName (Distribution/ParseUtils.hs:385)
+    lineNo (Distribution/ParseUtils.hs:380)
+    ppField (Distribution/ParseUtils.hs:273)
+    ppFields (Distribution/ParseUtils.hs:269)
+    readFields (Distribution/ParseUtils.hs:390)
+    readFieldsFlat (Distribution/ParseUtils.hs:398)
+    showFields (Distribution/ParseUtils.hs:296)
+    showSingleNamedField (Distribution/ParseUtils.hs:299)
+    showSimpleSingleNamedField (Distribution/ParseUtils.hs:305)
+    parseFields (Distribution/ParseUtils.hs:312)
+    parseFieldsFlat (Distribution/ParseUtils.hs:316)
+    parseFilePathQ (Distribution/ParseUtils.hs:617)
+    parseTokenQ (Distribution/ParseUtils.hs:669)
+    parseTokenQ' (Distribution/ParseUtils.hs:672)
+    parseOptVersion (Distribution/ParseUtils.hs:639)
+    parsePackageName (Distribution/ParseUtils.hs:628)
+    parseTestedWithQ (Distribution/ParseUtils.hs:644)
+    parseLicenseQ (Distribution/ParseUtils.hs:652)
+    parseLanguageQ (Distribution/ParseUtils.hs:660)
+    parseExtensionQ (Distribution/ParseUtils.hs:663)
+    parseSepList (Distribution/ParseUtils.hs:675)
+    parseCommaList (Distribution/ParseUtils.hs:685)
+    parseOptCommaList (Distribution/ParseUtils.hs:689)
+    showFilePath (Distribution/PrettyUtils.hs:33)
+    showToken (Distribution/PrettyUtils.hs:37)
+    showTestedWith (Distribution/PrettyUtils.hs:44)
+    parseFreeText (Distribution/ParseUtils.hs:699)
+    field (Distribution/ParseUtils.hs:176)
+    simpleField (Distribution/ParseUtils.hs:192)
+    listField (Distribution/ParseUtils.hs:232)
+    listFieldWithSep (Distribution/ParseUtils.hs:223)
+    spaceListField (Distribution/ParseUtils.hs:214)
+    commaListField (Distribution/ParseUtils.hs:206)
+    commaListFieldWithSep (Distribution/ParseUtils.hs:197)
+    commaNewLineListField (Distribution/ParseUtils.hs:210)
+    optsField (Distribution/ParseUtils.hs:236)
+    liftField (Distribution/ParseUtils.hs:182)
+    boolField (Distribution/ParseUtils.hs:254)
+    parseQuoted (Distribution/ParseUtils.hs:693)
+    parseMaybeQuoted (Distribution/ParseUtils.hs:696)
+    readPToMaybe (Distribution/ParseUtils.hs:702)
+  75% (  3 /  4) in 'Distribution.Types.PackageName'
+  Missing documentation for:
+    Module header
+  83% (  5 /  6) in 'Distribution.Types.UnqualComponentName'
+  Missing documentation for:
+    Module header
+  29% (  2 /  7) in 'Distribution.Types.ComponentName'
+  Missing documentation for:
+    Module header
+    ComponentName (Distribution/Types/ComponentName.hs:24)
+    defaultLibName (Distribution/Types/ComponentName.hs:54)
+    showComponentName (Distribution/Types/ComponentName.hs:57)
+    componentNameStanza (Distribution/Types/ComponentName.hs:65)
+  67% (  2 /  3) in 'Distribution.Types.PackageId'
+  Missing documentation for:
+    Module header
+  64% (  7 / 11) in 'Distribution.Types.UnitId'
+  Missing documentation for:
+    Module header
+    mkUnitId (Distribution/Types/UnitId.hs:85)
+    unDefUnitId (Distribution/Types/UnitId.hs:111)
+    InstalledPackageId (Distribution/Types/UnitId.hs:68)
+  50% (  1 /  2) in 'Distribution.Types.Module'
+  Missing documentation for:
+    Module header
+  95% ( 21 / 22) in 'Distribution.Backpack'
+  Missing documentation for:
+    unDefUnitId (Distribution/Types/UnitId.hs:111)
+ 100% (  2 /  2) in 'Distribution.Backpack.ModSubst'
+   0% (  0 /  5) in 'Distribution.Backpack.FullUnitId'
+  Missing documentation for:
+    Module header
+    FullUnitId (Distribution/Backpack/FullUnitId.hs:14)
+    FullDb (Distribution/Backpack/FullUnitId.hs:17)
+    expandOpenUnitId (Distribution/Backpack/FullUnitId.hs:19)
+    expandUnitId (Distribution/Backpack/FullUnitId.hs:25)
+   0% (  0 /  2) in 'Distribution.Types.ModuleReexport'
+  Missing documentation for:
+    Module header
+    ModuleReexport (Distribution/Types/ModuleReexport.hs:21)
+   0% (  0 /  2) in 'Distribution.Types.Mixin'
+  Missing documentation for:
+    Module header
+    Mixin (Distribution/Types/Mixin.hs:18)
+  33% (  1 /  3) in 'Distribution.Types.ExeDependency'
+  Missing documentation for:
+    Module header
+    qualifiedExeName (Distribution/Types/ExeDependency.hs:45)
+  29% (  2 /  7) in 'Distribution.Types.Dependency'
+  Missing documentation for:
+    Module header
+    depPkgName (Distribution/Types/Dependency.hs:32)
+    depVerRange (Distribution/Types/Dependency.hs:35)
+    thisPackageVersion (Distribution/Types/Dependency.hs:51)
+    notThisPackageVersion (Distribution/Types/Dependency.hs:55)
+   0% (  0 /  2) in 'Distribution.Types.SetupBuildInfo'
+  Missing documentation for:
+    Module header
+    SetupBuildInfo (Distribution/Types/SetupBuildInfo.hs:20)
+  20% (  1 /  5) in 'Distribution.Types.DependencyMap'
+  Missing documentation for:
+    Module header
+    toDepMap (Distribution/Types/DependencyMap.hs:48)
+    fromDepMap (Distribution/Types/DependencyMap.hs:52)
+    constrainBy (Distribution/Types/DependencyMap.hs:59)
+  33% (  2 /  6) in 'Distribution.Simple.GHC.IPIConvert'
+  Missing documentation for:
+    convertPackageId (Distribution/Simple/GHC/IPIConvert.hs:36)
+    License (Distribution/Simple/GHC/IPIConvert.hs:40)
+    convertLicense (Distribution/Simple/GHC/IPIConvert.hs:47)
+    convertModuleName (Distribution/Simple/GHC/IPIConvert.hs:44)
+  86% (  6 /  7) in 'Distribution.Backpack.ModuleScope'
+  Missing documentation for:
+    ModuleSource (Distribution/Backpack/ModuleScope.hs:71)
+  67% (  4 /  6) in 'Distribution.Types.MungedPackageName'
+  Missing documentation for:
+    Module header
+    decodeCompatPackageName (Distribution/Types/MungedPackageName.hs:103)
+  67% (  2 /  3) in 'Distribution.Types.MungedPackageId'
+  Missing documentation for:
+    Module header
+  72% ( 13 / 18) in 'Distribution.Package'
+  Missing documentation for:
+    packageName (Distribution/Package.hs:77)
+    packageVersion (Distribution/Package.hs:80)
+    HasMungedPackageId (Distribution/Package.hs:71)
+    mungedName' (Distribution/Package.hs:65)
+    mungedVersion' (Distribution/Package.hs:68)
+  50% (  1 /  2) in 'Distribution.Types.AnnotatedId'
+  Missing documentation for:
+    Module header
+  20% (  1 /  5) in 'Distribution.Types.ComponentInclude'
+  Missing documentation for:
+    Module header
+    ComponentInclude (Distribution/Types/ComponentInclude.hs:16)
+    ci_id (Distribution/Types/ComponentInclude.hs:24)
+    ci_pkgid (Distribution/Types/ComponentInclude.hs:27)
+  48% ( 11 / 23) in 'Distribution.Simple.InstallDirs'
+  Missing documentation for:
+    defaultInstallDirs (Distribution/Simple/InstallDirs.hs:168)
+    defaultInstallDirs' (Distribution/Simple/InstallDirs.hs:171)
+    combineInstallDirs (Distribution/Simple/InstallDirs.hs:108)
+    PathTemplateVariable (Distribution/Simple/InstallDirs.hs:354)
+    PathTemplateEnv (Distribution/Simple/InstallDirs.hs:382)
+    combinePathTemplate (Distribution/Simple/InstallDirs.hs:394)
+    substPathTemplate (Distribution/Simple/InstallDirs.hs:398)
+    platformTemplateEnv (Distribution/Simple/InstallDirs.hs:435)
+    compilerTemplateEnv (Distribution/Simple/InstallDirs.hs:430)
+    packageTemplateEnv (Distribution/Simple/InstallDirs.hs:420)
+    abiTemplateEnv (Distribution/Simple/InstallDirs.hs:441)
+    installDirsTemplateEnv (Distribution/Simple/InstallDirs.hs:451)
+  50% (  1 /  2) in 'Distribution.Types.LegacyExeDependency'
+  Missing documentation for:
+    Module header
+  44% (  4 /  9) in 'Distribution.Types.BuildInfo'
+  Missing documentation for:
+    Module header
+    BuildInfo (Distribution/Types/BuildInfo.hs:31)
+    emptyBuildInfo (Distribution/Types/BuildInfo.hs:163)
+    hcProfOptions (Distribution/Types/BuildInfo.hs:188)
+    hcSharedOptions (Distribution/Types/BuildInfo.hs:191)
+  50% (  3 /  6) in 'Distribution.Types.TestSuite'
+  Missing documentation for:
+    Module header
+    emptyTestSuite (Distribution/Types/TestSuite.hs:55)
+    testType (Distribution/Types/TestSuite.hs:59)
+  50% (  3 /  6) in 'Distribution.Types.Library'
+  Missing documentation for:
+    Module header
+    Library (Distribution/Types/Library.hs:20)
+    emptyLibrary (Distribution/Types/Library.hs:54)
+  33% (  1 /  3) in 'Distribution.Types.HookedBuildInfo'
+  Missing documentation for:
+    Module header
+    emptyHookedBuildInfo (Distribution/Types/HookedBuildInfo.hs:65)
+  83% ( 10 / 12) in 'Distribution.Types.ForeignLib'
+  Missing documentation for:
+    Module header
+    LibVersionInfo (Distribution/Types/ForeignLib.hs:63)
+  40% (  2 /  5) in 'Distribution.Types.Executable'
+  Missing documentation for:
+    Module header
+    Executable (Distribution/Types/Executable.hs:19)
+    emptyExecutable (Distribution/Types/Executable.hs:48)
+  50% (  3 /  6) in 'Distribution.Types.Benchmark'
+  Missing documentation for:
+    Module header
+    emptyBenchmark (Distribution/Types/Benchmark.hs:55)
+    benchmarkType (Distribution/Types/Benchmark.hs:58)
+  14% (  1 /  7) in 'Distribution.Types.Component'
+  Missing documentation for:
+    Module header
+    Component (Distribution/Types/Component.hs:24)
+    foldComponent (Distribution/Types/Component.hs:39)
+    componentBuildInfo (Distribution/Types/Component.hs:52)
+    componentName (Distribution/Types/Component.hs:65)
+    partitionComponents (Distribution/Types/Component.hs:73)
+  88% (  7 /  8) in 'Distribution.Types.ComponentRequestedSpec'
+  Missing documentation for:
+    Module header
+  80% ( 20 / 25) in 'Distribution.Types.PackageDescription'
+  Missing documentation for:
+    emptyPackageDescription (Distribution/Types/PackageDescription.hs:179)
+    allLibraries (Distribution/Types/PackageDescription.hs:230)
+    updatePackageDescription (Distribution/Types/PackageDescription.hs:344)
+    lookupComponent (Distribution/Types/PackageDescription.hs:397)
+    getComponent (Distribution/Types/PackageDescription.hs:410)
+  83% ( 10 / 12) in 'Distribution.Types.GenericPackageDescription'
+  Missing documentation for:
+    Module header
+    GenericPackageDescription (Distribution/Types/GenericPackageDescription.hs:45)
+  72% ( 66 / 92) in 'Distribution.PackageDescription'
+  Missing documentation for:
+    emptyPackageDescription (Distribution/Types/PackageDescription.hs:179)
+    knownBuildTypes (Distribution/Types/BuildType.hs:34)
+    allLibraries (Distribution/Types/PackageDescription.hs:230)
+    Library (Distribution/Types/Library.hs:20)
+    ModuleReexport (Distribution/Types/ModuleReexport.hs:21)
+    emptyLibrary (Distribution/Types/Library.hs:54)
+    Executable (Distribution/Types/Executable.hs:19)
+    emptyExecutable (Distribution/Types/Executable.hs:48)
+    testType (Distribution/Types/TestSuite.hs:59)
+    knownTestTypes (Distribution/Types/TestType.hs:26)
+    emptyTestSuite (Distribution/Types/TestSuite.hs:55)
+    benchmarkType (Distribution/Types/Benchmark.hs:58)
+    knownBenchmarkTypes (Distribution/Types/BenchmarkType.hs:27)
+    emptyBenchmark (Distribution/Types/Benchmark.hs:55)
+    BuildInfo (Distribution/Types/BuildInfo.hs:31)
+    emptyBuildInfo (Distribution/Types/BuildInfo.hs:163)
+    hcProfOptions (Distribution/Types/BuildInfo.hs:188)
+    hcSharedOptions (Distribution/Types/BuildInfo.hs:191)
+    ComponentName (Distribution/Types/ComponentName.hs:24)
+    defaultLibName (Distribution/Types/ComponentName.hs:54)
+    emptyHookedBuildInfo (Distribution/Types/HookedBuildInfo.hs:65)
+    updatePackageDescription (Distribution/Types/PackageDescription.hs:344)
+    GenericPackageDescription (Distribution/Types/GenericPackageDescription.hs:45)
+    knownRepoTypes (Distribution/Types/SourceRepo.hs:125)
+    emptySourceRepo (Distribution/Types/SourceRepo.hs:83)
+    SetupBuildInfo (Distribution/Types/SetupBuildInfo.hs:20)
+ 100% (  5 /  5) in 'Distribution.Simple.BuildToolDepends'
+  28% (  5 / 18) in 'Distribution.InstalledPackageInfo'
+  Missing documentation for:
+    InstalledPackageInfo (Distribution/InstalledPackageInfo.hs:77)
+    installedComponentId (Distribution/InstalledPackageInfo.hs:132)
+    sourceComponentName (Distribution/InstalledPackageInfo.hs:308)
+    ExposedModule (Distribution/InstalledPackageInfo.hs:228)
+    ParseResult (Distribution/ParseUtils.hs:90)
+    PError (Distribution/ParseUtils.hs:73)
+    PWarning (Distribution/ParseUtils.hs:79)
+    emptyInstalledPackageInfo (Distribution/InstalledPackageInfo.hs:180)
+    parseInstalledPackageInfo (Distribution/InstalledPackageInfo.hs:354)
+    showInstalledPackageInfo (Distribution/InstalledPackageInfo.hs:362)
+    showInstalledPackageInfoField (Distribution/InstalledPackageInfo.hs:365)
+    showSimpleInstalledPackageInfoField (Distribution/InstalledPackageInfo.hs:368)
+    fieldsInstalledPackageInfo (Distribution/InstalledPackageInfo.hs:381)
+  25% (  1 /  4) in 'Distribution.Types.ComponentLocalBuildInfo'
+  Missing documentation for:
+    Module header
+    componentIsIndefinite (Distribution/Types/ComponentLocalBuildInfo.hs:120)
+    maybeComponentInstantiatedWith (Distribution/Types/ComponentLocalBuildInfo.hs:124)
+  50% (  1 /  2) in 'Distribution.Types.TargetInfo'
+  Missing documentation for:
+    Module header
+  67% (  2 /  3) in 'Distribution.Simple.GHC.IPI642'
+  Missing documentation for:
+    toCurrent (Distribution/Simple/GHC/IPI642.hs:68)
+  80% (  4 /  5) in 'Distribution.Backpack.ModuleShape'
+  Missing documentation for:
+    shapeInstalledPackage (Distribution/Backpack/ModuleShape.hs:74)
+  72% ( 23 / 32) in 'Distribution.Backpack.UnifyM'
+  Missing documentation for:
+    failWith (Distribution/Backpack/UnifyM.hs:173)
+    addErr (Distribution/Backpack/UnifyM.hs:164)
+    failIfErrs (Distribution/Backpack/UnifyM.hs:181)
+    tryM (Distribution/Backpack/UnifyM.hs:187)
+    convertModule (Distribution/Backpack/UnifyM.hs:343)
+    convertModuleU (Distribution/Backpack/UnifyM.hs:414)
+    convertUnitId (Distribution/Backpack/UnifyM.hs:340)
+    convertUnitIdU (Distribution/Backpack/UnifyM.hs:411)
+    ModuleSourceU (Distribution/Backpack/UnifyM.hs:427)
+ 100% (  2 /  2) in 'Distribution.Backpack.MixLink'
+ 100% (  3 /  3) in 'Distribution.Backpack.PreExistingComponent'
+   0% (  0 /  9) in 'Paths_Cabal'
+  Missing documentation for:
+    Module header
+    version (.stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/autogen/Paths_Cabal.hs:28)
+    getBinDir (.stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/autogen/Paths_Cabal.hs:39)
+    getLibDir (.stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/autogen/Paths_Cabal.hs:39)
+    getDynLibDir (.stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/autogen/Paths_Cabal.hs:39)
+    getDataDir (.stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/autogen/Paths_Cabal.hs:39)
+    getLibexecDir (.stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/autogen/Paths_Cabal.hs:39)
+    getDataFileName (.stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/autogen/Paths_Cabal.hs:47)
+    getSysconfDir (.stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/autogen/Paths_Cabal.hs:39)
+  72% ( 96 /134) in 'Distribution.Simple.Utils'
+  Missing documentation for:
+    cabalVersion (Distribution/Simple/Utils.hs:238)
+    die (Distribution/Simple/Utils.hs:312)
+    dieWithLocation (Distribution/Simple/Utils.hs:301)
+    dieNoVerbosity (Distribution/Simple/Utils.hs:315)
+    die' (Distribution/Simple/Utils.hs:346)
+    dieWithLocation' (Distribution/Simple/Utils.hs:334)
+    dieNoWrap (Distribution/Simple/Utils.hs:354)
+    topHandler (Distribution/Simple/Utils.hs:428)
+    topHandlerWith (Distribution/Simple/Utils.hs:373)
+    infoNoWrap (Distribution/Simple/Utils.hs:492)
+    printRawCommandAndArgs (Distribution/Simple/Utils.hs:651)
+    printRawCommandAndArgsAndEnv (Distribution/Simple/Utils.hs:655)
+    rawSystemExit (Distribution/Simple/Utils.hs:671)
+    rawSystemExitCode (Distribution/Simple/Utils.hs:680)
+    rawSystemExitWithEnv (Distribution/Simple/Utils.hs:689)
+    rawSystemIOWithEnv (Distribution/Simple/Utils.hs:713)
+    createProcessWithEnv (Distribution/Simple/Utils.hs:733)
+    maybeExit (Distribution/Simple/Utils.hs:646)
+    smartCopySources (Distribution/Simple/Utils.hs:1321)
+    copyDirectoryRecursiveVerbose (Distribution/Simple/Utils.hs:1329)
+    setFileOrdinary (Distribution/Compat/CopyFile.hs:49)
+    setFileExecutable (Distribution/Compat/CopyFile.hs:49)
+    shortRelativePath (Distribution/Simple/Utils.hs:1429)
+    findFirstFile (Distribution/Simple/Utils.hs:971)
+    findAllFilesWithExtension (Distribution/Simple/Utils.hs:948)
+    addLibraryPath (Distribution/Simple/Utils.hs:1050)
+    matchFileGlob (Distribution/Simple/Utils.hs:1091)
+    matchDirFileGlob (Distribution/Simple/Utils.hs:1094)
+    parseFileGlob (Distribution/Simple/Utils.hs:1080)
+    FileGlob (Distribution/Simple/Utils.hs:1072)
+    defaultTempFileOptions (Distribution/Simple/Utils.hs:1343)
+    fromUTF8 (Distribution/Utils/Generic.hs:164)
+    fromUTF8BS (Distribution/Utils/Generic.hs:205)
+    fromUTF8LBS (Distribution/Utils/Generic.hs:208)
+    toUTF8 (Distribution/Utils/Generic.hs:211)
+    equating (Distribution/Utils/Generic.hs:375)
+    lowercase (Distribution/Utils/Generic.hs:378)
+    unintersperse (Distribution/Utils/Generic.hs:393)
+  67% (  6 /  9) in 'Distribution.Utils.NubList'
+  Missing documentation for:
+    Module header
+    fromNubList (Distribution/Utils/NubList.hs:23)
+    fromNubListR (Distribution/Utils/NubList.hs:82)
+  86% (  6 /  7) in 'Distribution.Utils.LogProgress'
+  Missing documentation for:
+    Module header
+  62% (  5 /  8) in 'Distribution.Simple.Program.Find'
+  Missing documentation for:
+    ProgramSearchPathEntry (Distribution/Simple/Program/Find.hs:67)
+    defaultProgramSearchPath (Distribution/Simple/Program/Find.hs:74)
+    findProgramOnSearchPath (Distribution/Simple/Program/Find.hs:77)
+  85% ( 11 / 13) in 'Distribution.Simple.Program.Types'
+  Missing documentation for:
+    ProgramSearchPathEntry (Distribution/Simple/Program/Find.hs:67)
+    ProgArg (Distribution/Simple/Program/Types.hs:82)
+  40% (  4 / 10) in 'Distribution.Simple.Program.Run'
+  Missing documentation for:
+    IOEncoding (Distribution/Simple/Program/Run.hs:61)
+    emptyProgramInvocation (Distribution/Simple/Program/Run.hs:64)
+    simpleProgramInvocation (Distribution/Simple/Program/Run.hs:77)
+    programInvocation (Distribution/Simple/Program/Run.hs:84)
+    runProgramInvocation (Distribution/Simple/Program/Run.hs:95)
+    getProgramInvocationOutput (Distribution/Simple/Program/Run.hs:150)
+ 100% (  4 /  4) in 'Distribution.Simple.Program.Script'
+ 100% (  2 /  2) in 'Distribution.Simple.Program.Ld'
+  67% (  2 /  3) in 'Distribution.Simple.Program.Hpc'
+  Missing documentation for:
+    union (Distribution/Simple/Program/Hpc.hs:89)
+  12% (  4 / 33) in 'Distribution.Simple.Program.Builtin'
+  Missing documentation for:
+    ghcProgram (Distribution/Simple/Program/Builtin.hs:107)
+    ghcPkgProgram (Distribution/Simple/Program/Builtin.hs:137)
+    runghcProgram (Distribution/Simple/Program/Builtin.hs:128)
+    ghcjsProgram (Distribution/Simple/Program/Builtin.hs:147)
+    ghcjsPkgProgram (Distribution/Simple/Program/Builtin.hs:153)
+    lhcProgram (Distribution/Simple/Program/Builtin.hs:163)
+    lhcPkgProgram (Distribution/Simple/Program/Builtin.hs:168)
+    hmakeProgram (Distribution/Simple/Program/Builtin.hs:178)
+    jhcProgram (Distribution/Simple/Program/Builtin.hs:188)
+    haskellSuiteProgram (Distribution/Simple/Program/Builtin.hs:229)
+    haskellSuitePkgProgram (Distribution/Simple/Program/Builtin.hs:239)
+    uhcProgram (Distribution/Simple/Program/Builtin.hs:199)
+    gccProgram (Distribution/Simple/Program/Builtin.hs:266)
+    arProgram (Distribution/Simple/Program/Builtin.hs:271)
+    stripProgram (Distribution/Simple/Program/Builtin.hs:274)
+    happyProgram (Distribution/Simple/Program/Builtin.hs:246)
+    alexProgram (Distribution/Simple/Program/Builtin.hs:256)
+    hsc2hsProgram (Distribution/Simple/Program/Builtin.hs:280)
+    c2hsProgram (Distribution/Simple/Program/Builtin.hs:290)
+    cpphsProgram (Distribution/Simple/Program/Builtin.hs:295)
+    hscolourProgram (Distribution/Simple/Program/Builtin.hs:304)
+    doctestProgram (Distribution/Simple/Program/Builtin.hs:316)
+    haddockProgram (Distribution/Simple/Program/Builtin.hs:326)
+    greencardProgram (Distribution/Simple/Program/Builtin.hs:336)
+    ldProgram (Distribution/Simple/Program/Builtin.hs:339)
+    tarProgram (Distribution/Simple/Program/Builtin.hs:342)
+    cppProgram (Distribution/Simple/Program/Builtin.hs:357)
+    pkgConfigProgram (Distribution/Simple/Program/Builtin.hs:360)
+    hpcProgram (Distribution/Simple/Program/Builtin.hs:204)
+  81% ( 25 / 31) in 'Distribution.Simple.Program.Db'
+  Missing documentation for:
+    emptyProgramDb (Distribution/Simple/Program/Db.hs:102)
+    defaultProgramDb (Distribution/Simple/Program/Db.hs:105)
+    addKnownPrograms (Distribution/Simple/Program/Db.hs:177)
+    lookupKnownProgram (Distribution/Simple/Program/Db.hs:181)
+    knownPrograms (Distribution/Simple/Program/Db.hs:186)
+    userMaybeSpecifyPath (Distribution/Simple/Program/Db.hs:228)
+  45% ( 41 / 91) in 'Distribution.Simple.Program'
+  Missing documentation for:
+    ProgramSearchPathEntry (Distribution/Simple/Program/Find.hs:67)
+    findProgramOnSearchPath (Distribution/Simple/Program/Find.hs:77)
+    defaultProgramSearchPath (Distribution/Simple/Program/Find.hs:74)
+    ProgArg (Distribution/Simple/Program/Types.hs:82)
+    emptyProgramInvocation (Distribution/Simple/Program/Run.hs:64)
+    simpleProgramInvocation (Distribution/Simple/Program/Run.hs:77)
+    programInvocation (Distribution/Simple/Program/Run.hs:84)
+    runProgramInvocation (Distribution/Simple/Program/Run.hs:95)
+    getProgramInvocationOutput (Distribution/Simple/Program/Run.hs:150)
+    defaultProgramDb (Distribution/Simple/Program/Db.hs:105)
+    emptyProgramDb (Distribution/Simple/Program/Db.hs:102)
+    addKnownPrograms (Distribution/Simple/Program/Db.hs:177)
+    lookupKnownProgram (Distribution/Simple/Program/Db.hs:181)
+    knownPrograms (Distribution/Simple/Program/Db.hs:186)
+    userMaybeSpecifyPath (Distribution/Simple/Program/Db.hs:228)
+    ghcProgram (Distribution/Simple/Program/Builtin.hs:107)
+    ghcPkgProgram (Distribution/Simple/Program/Builtin.hs:137)
+    ghcjsProgram (Distribution/Simple/Program/Builtin.hs:147)
+    ghcjsPkgProgram (Distribution/Simple/Program/Builtin.hs:153)
+    lhcProgram (Distribution/Simple/Program/Builtin.hs:163)
+    lhcPkgProgram (Distribution/Simple/Program/Builtin.hs:168)
+    hmakeProgram (Distribution/Simple/Program/Builtin.hs:178)
+    jhcProgram (Distribution/Simple/Program/Builtin.hs:188)
+    uhcProgram (Distribution/Simple/Program/Builtin.hs:199)
+    gccProgram (Distribution/Simple/Program/Builtin.hs:266)
+    arProgram (Distribution/Simple/Program/Builtin.hs:271)
+    stripProgram (Distribution/Simple/Program/Builtin.hs:274)
+    happyProgram (Distribution/Simple/Program/Builtin.hs:246)
+    alexProgram (Distribution/Simple/Program/Builtin.hs:256)
+    hsc2hsProgram (Distribution/Simple/Program/Builtin.hs:280)
+    c2hsProgram (Distribution/Simple/Program/Builtin.hs:290)
+    cpphsProgram (Distribution/Simple/Program/Builtin.hs:295)
+    hscolourProgram (Distribution/Simple/Program/Builtin.hs:304)
+    doctestProgram (Distribution/Simple/Program/Builtin.hs:316)
+    haddockProgram (Distribution/Simple/Program/Builtin.hs:326)
+    greencardProgram (Distribution/Simple/Program/Builtin.hs:336)
+    ldProgram (Distribution/Simple/Program/Builtin.hs:339)
+    tarProgram (Distribution/Simple/Program/Builtin.hs:342)
+    cppProgram (Distribution/Simple/Program/Builtin.hs:357)
+    pkgConfigProgram (Distribution/Simple/Program/Builtin.hs:360)
+    hpcProgram (Distribution/Simple/Program/Builtin.hs:204)
+    ProgramConfiguration (Distribution/Simple/Program.hs:224)
+    emptyProgramConfiguration (Distribution/Simple/Program.hs:228)
+    defaultProgramConfiguration (Distribution/Simple/Program.hs:228)
+    restoreProgramConfiguration (Distribution/Simple/Program.hs:234)
+    rawSystemProgram (Distribution/Simple/Program.hs:204)
+    rawSystemProgramStdout (Distribution/Simple/Program.hs:209)
+    rawSystemProgramConf (Distribution/Simple/Program.hs:214)
+    rawSystemProgramStdoutConf (Distribution/Simple/Program.hs:219)
+    findProgramOnPath (Distribution/Simple/Program.hs:239)
+  33% (  1 /  3) in 'Distribution.Simple.Program.Strip'
+  Missing documentation for:
+    stripLib (Distribution/Simple/Program/Strip.hs:49)
+    stripExe (Distribution/Simple/Program/Strip.hs:38)
+  93% ( 40 / 43) in 'Distribution.Simple.PackageIndex'
+  Missing documentation for:
+    SearchResult (Distribution/Simple/PackageIndex.hs:534)
+    topologicalOrder (Distribution/Simple/PackageIndex.hs:629)
+    reverseTopologicalOrder (Distribution/Simple/PackageIndex.hs:635)
+  66% ( 29 / 44) in 'Distribution.Simple.Compiler'
+  Missing documentation for:
+    Compiler (Distribution/Simple/Compiler.hs:85)
+    showCompilerId (Distribution/Simple/Compiler.hs:105)
+    showCompilerIdWithAbi (Distribution/Simple/Compiler.hs:108)
+    compilerFlavor (Distribution/Simple/Compiler.hs:115)
+    compilerVersion (Distribution/Simple/Compiler.hs:118)
+    compilerInfo (Distribution/Simple/Compiler.hs:151)
+    absolutePackageDBPath (Distribution/Simple/Compiler.hs:207)
+    flagToOptimisationLevel (Distribution/Simple/Compiler.hs:228)
+    flagToDebugInfoLevel (Distribution/Simple/Compiler.hs:255)
+    Flag (Distribution/Simple/Compiler.hs:290)
+    languageToFlags (Distribution/Simple/Compiler.hs:275)
+    unsupportedLanguages (Distribution/Simple/Compiler.hs:270)
+    knownProfDetailLevels (Distribution/Simple/Compiler.hs:402)
+    flagToProfDetailLevel (Distribution/Simple/Compiler.hs:392)
+    showProfDetailLevel (Distribution/Simple/Compiler.hs:411)
+  65% ( 17 / 26) in 'Distribution.Simple.Program.HcPkg'
+  Missing documentation for:
+    initInvocation (Distribution/Simple/Program/HcPkg.hs:368)
+    registerInvocation (Distribution/Simple/Program/HcPkg.hs:375)
+    unregisterInvocation (Distribution/Simple/Program/HcPkg.hs:401)
+    recacheInvocation (Distribution/Simple/Program/HcPkg.hs:409)
+    exposeInvocation (Distribution/Simple/Program/HcPkg.hs:417)
+    hideInvocation (Distribution/Simple/Program/HcPkg.hs:434)
+    dumpInvocation (Distribution/Simple/Program/HcPkg.hs:442)
+    describeInvocation (Distribution/Simple/Program/HcPkg.hs:424)
+    listInvocation (Distribution/Simple/Program/HcPkg.hs:453)
+  33% (  2 /  6) in 'Distribution.Simple.GHC.ImplInfo'
+  Missing documentation for:
+    getImplInfo (Distribution/Simple/GHC/ImplInfo.hs:49)
+    ghcVersionImplInfo (Distribution/Simple/GHC/ImplInfo.hs:62)
+    ghcjsVersionImplInfo (Distribution/Simple/GHC/ImplInfo.hs:78)
+    lhcVersionImplInfo (Distribution/Simple/GHC/ImplInfo.hs:96)
+  65% ( 33 / 51) in 'Distribution.Simple.Command'
+  Missing documentation for:
+    CommandUI (Distribution/Simple/Command.hs:83)
+    CommandParse (Distribution/Simple/Command.hs:502)
+    helpCommandUI (Distribution/Simple/Command.hs:598)
+    ShowOrParseArgs (Distribution/Simple/Command.hs:102)
+    Command (Distribution/Simple/Command.hs:514)
+    commandAddAction (Distribution/Simple/Command.hs:523)
+    CommandType (Distribution/Simple/Command.hs:513)
+    commandFromSpec (Distribution/Simple/Command.hs:620)
+    commandsRun (Distribution/Simple/Command.hs:536)
+    Name (Distribution/Simple/Command.hs:103)
+    liftOption (Distribution/Simple/Command.hs:321)
+    Description (Distribution/Simple/Command.hs:104)
+    OptFlags (Distribution/Simple/Command.hs:132)
+    ArgPlaceHolder (Distribution/Simple/Command.hs:133)
+    MkOptDescr (Distribution/Simple/Command.hs:153)
+    noArg (Distribution/Simple/Command.hs:185)
+    boolOpt (Distribution/Simple/Command.hs:188)
+    boolOpt' (Distribution/Simple/Command.hs:195)
+  23% ( 23 / 99) in 'Distribution.Simple.Setup'
+  Missing documentation for:
+    emptyGlobalFlags (Distribution/Simple/Setup.hs:262)
+    defaultGlobalFlags (Distribution/Simple/Setup.hs:217)
+    globalCommand (Distribution/Simple/Setup.hs:223)
+    emptyConfigFlags (Distribution/Simple/Setup.hs:975)
+    defaultConfigFlags (Distribution/Simple/Setup.hs:515)
+    configureCommand (Distribution/Simple/Setup.hs:555)
+    configAbsolutePaths (Distribution/Simple/Setup.hs:509)
+    readPackageDbList (Distribution/Simple/Setup.hs:878)
+    showPackageDbList (Distribution/Simple/Setup.hs:884)
+    emptyCopyFlags (Distribution/Simple/Setup.hs:1043)
+    defaultCopyFlags (Distribution/Simple/Setup.hs:1001)
+    copyCommand (Distribution/Simple/Setup.hs:1009)
+    emptyInstallFlags (Distribution/Simple/Setup.hs:1114)
+    defaultInstallFlags (Distribution/Simple/Setup.hs:1067)
+    installCommand (Distribution/Simple/Setup.hs:1076)
+    DoctestFlags (Distribution/Simple/Setup.hs:1405)
+    emptyDoctestFlags (Distribution/Simple/Setup.hs:1453)
+    defaultDoctestFlags (Distribution/Simple/Setup.hs:1413)
+    doctestCommand (Distribution/Simple/Setup.hs:1421)
+    HaddockFlags (Distribution/Simple/Setup.hs:1481)
+    emptyHaddockFlags (Distribution/Simple/Setup.hs:1644)
+    defaultHaddockFlags (Distribution/Simple/Setup.hs:1503)
+    haddockCommand (Distribution/Simple/Setup.hs:1525)
+    HscolourFlags (Distribution/Simple/Setup.hs:1311)
+    emptyHscolourFlags (Distribution/Simple/Setup.hs:1322)
+    defaultHscolourFlags (Distribution/Simple/Setup.hs:1325)
+    hscolourCommand (Distribution/Simple/Setup.hs:1343)
+    BuildFlags (Distribution/Simple/Setup.hs:1709)
+    emptyBuildFlags (Distribution/Simple/Setup.hs:1790)
+    defaultBuildFlags (Distribution/Simple/Setup.hs:1725)
+    buildCommand (Distribution/Simple/Setup.hs:1735)
+    buildVerbose (Distribution/Simple/Setup.hs:1722)
+    ReplFlags (Distribution/Simple/Setup.hs:1804)
+    defaultReplFlags (Distribution/Simple/Setup.hs:1813)
+    replCommand (Distribution/Simple/Setup.hs:1829)
+    CleanFlags (Distribution/Simple/Setup.hs:1658)
+    emptyCleanFlags (Distribution/Simple/Setup.hs:1695)
+    defaultCleanFlags (Distribution/Simple/Setup.hs:1665)
+    cleanCommand (Distribution/Simple/Setup.hs:1672)
+    emptyRegisterFlags (Distribution/Simple/Setup.hs:1297)
+    defaultRegisterFlags (Distribution/Simple/Setup.hs:1210)
+    registerCommand (Distribution/Simple/Setup.hs:1222)
+    unregisterCommand (Distribution/Simple/Setup.hs:1267)
+    emptySDistFlags (Distribution/Simple/Setup.hs:1181)
+    defaultSDistFlags (Distribution/Simple/Setup.hs:1138)
+    sdistCommand (Distribution/Simple/Setup.hs:1147)
+    TestFlags (Distribution/Simple/Setup.hs:1926)
+    emptyTestFlags (Distribution/Simple/Setup.hs:2023)
+    defaultTestFlags (Distribution/Simple/Setup.hs:1937)
+    testCommand (Distribution/Simple/Setup.hs:1948)
+    TestShowDetails (Distribution/Simple/Setup.hs:1901)
+    BenchmarkFlags (Distribution/Simple/Setup.hs:2037)
+    emptyBenchmarkFlags (Distribution/Simple/Setup.hs:2096)
+    defaultBenchmarkFlags (Distribution/Simple/Setup.hs:2043)
+    benchmarkCommand (Distribution/Simple/Setup.hs:2050)
+    configureOptions (Distribution/Simple/Setup.hs:591)
+    configureCCompiler (Distribution/Simple/Setup.hs:2305)
+    configureLinker (Distribution/Simple/Setup.hs:2309)
+    buildOptions (Distribution/Simple/Setup.hs:1774)
+    haddockOptions (Distribution/Simple/Setup.hs:1549)
+    installDirsOptions (Distribution/Simple/Setup.hs:903)
+    defaultDistPref (Distribution/Simple/Setup.hs:110)
+    optionDistPref (Distribution/Simple/Setup.hs:2226)
+    toFlag (Distribution/Simple/Setup.hs:166)
+    fromFlag (Distribution/Simple/Setup.hs:169)
+    fromFlagOrDefault (Distribution/Simple/Setup.hs:173)
+    flagToMaybe (Distribution/Simple/Setup.hs:177)
+    flagToList (Distribution/Simple/Setup.hs:181)
+    maybeToFlag (Distribution/Simple/Setup.hs:190)
+    boolOpt (Distribution/Simple/Setup.hs:2210)
+    boolOpt' (Distribution/Simple/Setup.hs:2214)
+    trueArg (Distribution/Simple/Setup.hs:2218)
+    falseArg (Distribution/Simple/Setup.hs:2218)
+    optionVerbosity (Distribution/Simple/Setup.hs:2240)
+    optionNumJobs (Distribution/Simple/Setup.hs:2251)
+    readPToMaybe (Distribution/ParseUtils.hs:702)
+  67% ( 18 / 27) in 'Distribution.Types.LocalBuildInfo'
+  Missing documentation for:
+    Module header
+    unitIdTarget' (Distribution/Types/LocalBuildInfo.hs:227)
+    componentNameTargets (Distribution/Types/LocalBuildInfo.hs:287)
+    unitIdTarget (Distribution/Types/LocalBuildInfo.hs:290)
+    allTargetsInBuildOrder (Distribution/Types/LocalBuildInfo.hs:293)
+    withAllTargetsInBuildOrder (Distribution/Types/LocalBuildInfo.hs:296)
+    neededTargetsInBuildOrder (Distribution/Types/LocalBuildInfo.hs:299)
+    withNeededTargetsInBuildOrder (Distribution/Types/LocalBuildInfo.hs:302)
+    componentsConfigs (Distribution/Types/LocalBuildInfo.hs:309)
+  56% ( 24 / 43) in 'Distribution.Simple.LocalBuildInfo'
+  Missing documentation for:
+    Component (Distribution/Types/Component.hs:24)
+    ComponentName (Distribution/Types/ComponentName.hs:24)
+    defaultLibName (Distribution/Types/ComponentName.hs:54)
+    showComponentName (Distribution/Types/ComponentName.hs:57)
+    componentBuildDir (Distribution/Simple/LocalBuildInfo.hs:104)
+    foldComponent (Distribution/Types/Component.hs:39)
+    componentName (Distribution/Types/Component.hs:65)
+    componentBuildInfo (Distribution/Types/Component.hs:52)
+    lookupComponent (Distribution/Types/PackageDescription.hs:397)
+    getComponent (Distribution/Types/PackageDescription.hs:410)
+    getComponentLocalBuildInfo (Distribution/Simple/LocalBuildInfo.hs:125)
+    allComponentsInBuildOrder (Distribution/Simple/LocalBuildInfo.hs:210)
+    componentsInBuildOrder (Distribution/Simple/LocalBuildInfo.hs:223)
+    withComponentsInBuildOrder (Distribution/Simple/LocalBuildInfo.hs:201)
+    withComponentsLBI (Distribution/Simple/LocalBuildInfo.hs:185)
+    withTestLBI (Distribution/Simple/LocalBuildInfo.hs:165)
+    enabledTestLBIs (Distribution/Simple/LocalBuildInfo.hs:170)
+    enabledBenchLBIs (Distribution/Simple/LocalBuildInfo.hs:177)
+    substPathTemplate (Distribution/Simple/LocalBuildInfo.hs:376)
+ 100% (  3 /  3) in 'Distribution.Simple.Program.Ar'
+  56% (  5 /  9) in 'Distribution.Simple.Hpc'
+  Missing documentation for:
+    Way (Distribution/Simple/Hpc.hs:51)
+    htmlDir (Distribution/Simple/Hpc.hs:83)
+    mixDir (Distribution/Simple/Hpc.hs:64)
+    tixDir (Distribution/Simple/Hpc.hs:70)
+ 100% (  3 /  3) in 'Distribution.Simple.Build.Macros'
+ 100% (  7 /  7) in 'Distribution.Backpack.ComponentsGraph'
+  71% ( 10 / 14) in 'Distribution.Simple.Test.Log'
+  Missing documentation for:
+    Module header
+    TestLogs (Distribution/Simple/Test/Log.hs:60)
+    summarizeSuiteStart (Distribution/Simple/Test/Log.hs:163)
+    testSuiteLogPath (Distribution/Simple/Test/Log.hs:109)
+  11% (  1 /  9) in 'Distribution.Simple.Program.GHC'
+  Missing documentation for:
+    Module header
+    GhcMode (Distribution/Simple/Program/GHC.hs:249)
+    GhcOptimisation (Distribution/Simple/Program/GHC.hs:258)
+    GhcDynLinkMode (Distribution/Simple/Program/GHC.hs:264)
+    GhcProfAuto (Distribution/Simple/Program/GHC.hs:269)
+    ghcInvocation (Distribution/Simple/Program/GHC.hs:280)
+    renderGhcOptions (Distribution/Simple/Program/GHC.hs:287)
+    runGHC (Distribution/Simple/Program/GHC.hs:274)
+ 100% (  4 /  4) in 'Distribution.Backpack.Id'
+  55% (  6 / 11) in 'Distribution.Backpack.ConfiguredComponent'
+  Missing documentation for:
+    toConfiguredComponent (Distribution/Backpack/ConfiguredComponent.hs:157)
+    toConfiguredComponents (Distribution/Backpack/ConfiguredComponent.hs:246)
+    ConfiguredComponentMap (Distribution/Backpack/ConfiguredComponent.hs:154)
+    extendConfiguredComponentMap (Distribution/Backpack/ConfiguredComponent.hs:233)
+    newPackageDepsBehaviour (Distribution/Backpack/ConfiguredComponent.hs:277)
+  55% (  6 / 11) in 'Distribution.Backpack.LinkedComponent'
+  Missing documentation for:
+    toLinkedComponent (Distribution/Backpack/LinkedComponent.hs:117)
+    toLinkedComponents (Distribution/Backpack/LinkedComponent.hs:329)
+    dispLinkedComponent (Distribution/Backpack/LinkedComponent.hs:104)
+    LinkedComponentMap (Distribution/Backpack/LinkedComponent.hs:347)
+    extendLinkedComponentMap (Distribution/Backpack/LinkedComponent.hs:349)
+  58% ( 11 / 19) in 'Distribution.Simple.BuildTarget'
+  Missing documentation for:
+    QualLevel (Distribution/Simple/BuildTarget.hs:337)
+    buildTargetComponentName (Distribution/Simple/BuildTarget.hs:136)
+    readUserBuildTargets (Distribution/Simple/BuildTarget.hs:179)
+    showUserBuildTarget (Distribution/Simple/BuildTarget.hs:232)
+    UserBuildTargetProblem (Distribution/Simple/BuildTarget.hs:211)
+    reportUserBuildTargetProblems (Distribution/Simple/BuildTarget.hs:215)
+    BuildTargetProblem (Distribution/Simple/BuildTarget.hs:305)
+    reportBuildTargetProblems (Distribution/Simple/BuildTarget.hs:363)
+  56% ( 15 / 27) in 'Distribution.Simple.BuildPaths'
+  Missing documentation for:
+    defaultDistPref (Distribution/Simple/Setup.hs:110)
+    srcPref (Distribution/Simple/BuildPaths.hs:62)
+    hscolourPref (Distribution/Simple/BuildPaths.hs:65)
+    cppHeaderName (Distribution/Simple/BuildPaths.hs:97)
+    haddockName (Distribution/Simple/BuildPaths.hs:113)
+    mkLibName (Distribution/Simple/BuildPaths.hs:186)
+    mkProfLibName (Distribution/Simple/BuildPaths.hs:190)
+    mkSharedLibName (Distribution/Simple/BuildPaths.hs:196)
+    getSourceFiles (Distribution/Simple/BuildPaths.hs:161)
+    getLibSourceFiles (Distribution/Simple/BuildPaths.hs:119)
+    getExeSourceFiles (Distribution/Simple/BuildPaths.hs:132)
+    getFLibSourceFiles (Distribution/Simple/BuildPaths.hs:148)
+  12% (  1 /  8) in 'Distribution.Simple.UHC'
+  Missing documentation for:
+    configure (Distribution/Simple/UHC.hs:52)
+    getInstalledPackages (Distribution/Simple/UHC.hs:96)
+    buildLib (Distribution/Simple/UHC.hs:172)
+    buildExe (Distribution/Simple/UHC.hs:195)
+    installLib (Distribution/Simple/UHC.hs:250)
+    registerPackage (Distribution/Simple/UHC.hs:272)
+    inplacePackageDbPath (Distribution/Simple/UHC.hs:292)
+  45% (  5 / 11) in 'Distribution.Simple.LHC'
+  Missing documentation for:
+    configure (Distribution/Simple/LHC.hs:81)
+    getInstalledPackages (Distribution/Simple/LHC.hs:200)
+    registerPackage (Distribution/Simple/LHC.hs:755)
+    hcPkgInfo (Distribution/Simple/LHC.hs:766)
+    ghcOptions (Distribution/Simple/LHC.hs:577)
+    ghcVerbosityOptions (Distribution/Simple/LHC.hs:571)
+  43% (  3 /  7) in 'Distribution.Simple.JHC'
+  Missing documentation for:
+    configure (Distribution/Simple/JHC.hs:57)
+    getInstalledPackages (Distribution/Simple/JHC.hs:93)
+    installLib (Distribution/Simple/JHC.hs:175)
+    installExe (Distribution/Simple/JHC.hs:189)
+   0% (  0 / 13) in 'Distribution.Simple.HaskellSuite'
+  Missing documentation for:
+    Module header
+    configure (Distribution/Simple/HaskellSuite.hs:28)
+    hstoolVersion (Distribution/Simple/HaskellSuite.hs:87)
+    numericVersion (Distribution/Simple/HaskellSuite.hs:90)
+    getCompilerVersion (Distribution/Simple/HaskellSuite.hs:93)
+    getExtensions (Distribution/Simple/HaskellSuite.hs:105)
+    getLanguages (Distribution/Simple/HaskellSuite.hs:113)
+    getInstalledPackages (Distribution/Simple/HaskellSuite.hs:123)
+    buildLib (Distribution/Simple/HaskellSuite.hs:151)
+    installLib (Distribution/Simple/HaskellSuite.hs:186)
+    registerPackage (Distribution/Simple/HaskellSuite.hs:206)
+    initPackageDB (Distribution/Simple/HaskellSuite.hs:220)
+    packageDbOpt (Distribution/Simple/HaskellSuite.hs:225)
+  52% ( 14 / 27) in 'Distribution.Simple.GHC.Internal'
+  Missing documentation for:
+    getLanguages (Distribution/Simple/GHC/Internal.hs:213)
+    getExtensions (Distribution/Simple/GHC/Internal.hs:233)
+    targetPlatform (Distribution/Simple/GHC/Internal.hs:82)
+    getGhcInfo (Distribution/Simple/GHC/Internal.hs:221)
+    componentCcGhcOptions (Distribution/Simple/GHC/Internal.hs:261)
+    componentGhcOptions (Distribution/Simple/GHC/Internal.hs:293)
+    mkGHCiLibName (Distribution/Simple/GHC/Internal.hs:371)
+    ghcLookupProperty (Distribution/Simple/GHC/Internal.hs:374)
+    getHaskellObjects (Distribution/Simple/GHC/Internal.hs:382)
+    mkGhcOptPackages (Distribution/Simple/GHC/Internal.hs:400)
+    substTopDir (Distribution/Simple/GHC/Internal.hs:404)
+    checkPackageDbEnvVar (Distribution/Simple/GHC/Internal.hs:433)
+    profDetailLevelFlag (Distribution/Simple/GHC/Internal.hs:451)
+  32% (  6 / 19) in 'Distribution.Simple.GHCJS'
+  Missing documentation for:
+    Module header
+    configure (Distribution/Simple/GHCJS.hs:56)
+    buildLib (Distribution/Simple/GHCJS.hs:263)
+    buildExe (Distribution/Simple/GHCJS.hs:506)
+    replLib (Distribution/Simple/GHCJS.hs:263)
+    replExe (Distribution/Simple/GHCJS.hs:506)
+    installExe (Distribution/Simple/GHCJS.hs:748)
+    libAbiHash (Distribution/Simple/GHCJS.hs:773)
+    hcPkgInfo (Distribution/Simple/GHCJS.hs:852)
+    registerPackage (Distribution/Simple/GHCJS.hs:806)
+    componentGhcOptions (Distribution/Simple/GHCJS.hs:816)
+    getLibDir (Distribution/Simple/GHCJS.hs:239)
+    isDynamic (Distribution/Simple/GHCJS.hs:835)
+  59% ( 19 / 32) in 'Distribution.Simple.GHC'
+  Missing documentation for:
+    getGhcInfo (Distribution/Simple/GHC.hs:303)
+    configure (Distribution/Simple/GHC.hs:123)
+    getInstalledPackagesMonitorFiles (Distribution/Simple/GHC.hs:474)
+    buildLib (Distribution/Simple/GHC.hs:505)
+    replLib (Distribution/Simple/GHC.hs:505)
+    hcPkgInfo (Distribution/Simple/GHC.hs:1685)
+    registerPackage (Distribution/Simple/GHC.hs:1701)
+    componentGhcOptions (Distribution/Simple/GHC.hs:1526)
+    componentCcGhcOptions (Distribution/Simple/GHC.hs:1535)
+    getLibDir (Distribution/Simple/GHC.hs:354)
+    isDynamic (Distribution/Simple/GHC.hs:1735)
+    pkgRoot (Distribution/Simple/GHC.hs:1712)
+    getImplInfo (Distribution/Simple/GHC/ImplInfo.hs:49)
+ 100% (  2 /  2) in 'Distribution.Simple.Install'
+  67% (  2 /  3) in 'Distribution.Simple.Build.PathsModule'
+  Missing documentation for:
+    generate (Distribution/Simple/Build/PathsModule.hs:40)
+  75% (  6 /  8) in 'Distribution.Simple.Test.LibV09'
+  Missing documentation for:
+    Module header
+    runTest (Distribution/Simple/Test/LibV09.hs:47)
+   0% (  0 /  2) in 'Distribution.Simple.Test.ExeV10'
+  Missing documentation for:
+    Module header
+    runTest (Distribution/Simple/Test/ExeV10.hs:38)
+  53% (  8 / 15) in 'Distribution.PackageDescription.Configuration'
+  Missing documentation for:
+    finalizePackageDescription (Distribution/PackageDescription/Configuration.hs:475)
+    freeVars (Distribution/PackageDescription/Configuration.hs:311)
+    mapCondTree (Distribution/Types/CondTree.hs:88)
+    mapTreeData (Distribution/Types/CondTree.hs:104)
+    mapTreeConds (Distribution/Types/CondTree.hs:101)
+    mapTreeConstrs (Distribution/Types/CondTree.hs:98)
+    transformAllBuildInfos (Distribution/PackageDescription/Configuration.hs:588)
+  42% ( 11 / 26) in 'Distribution.PackageDescription.Parse'
+  Missing documentation for:
+    readPackageDescription (Distribution/PackageDescription/Parse.hs:604)
+    parsePackageDescription (Distribution/PackageDescription/Parse.hs:729)
+    ParseResult (Distribution/ParseUtils.hs:90)
+    LineNo (Distribution/ParseUtils.hs:71)
+    readHookedBuildInfo (Distribution/PackageDescription/Parse.hs:600)
+    parseHookedBuildInfo (Distribution/PackageDescription/Parse.hs:1271)
+    pkgDescrFieldDescrs (Distribution/PackageDescription/Parse.hs:87)
+    libFieldDescrs (Distribution/PackageDescription/Parse.hs:183)
+    foreignLibFieldDescrs (Distribution/PackageDescription/Parse.hs:208)
+    executableFieldDescrs (Distribution/PackageDescription/Parse.hs:243)
+    binfoFieldDescrs (Distribution/PackageDescription/Parse.hs:422)
+    sourceRepoFieldDescrs (Distribution/PackageDescription/Parse.hs:547)
+    testSuiteFieldDescrs (Distribution/PackageDescription/Parse.hs:275)
+    benchmarkFieldDescrs (Distribution/PackageDescription/Parse.hs:360)
+    flagFieldDescrs (Distribution/PackageDescription/Parse.hs:534)
+ 100% ( 10 / 10) in 'Distribution.PackageDescription.PrettyPrint'
+  90% (  9 / 10) in 'Distribution.PackageDescription.Check'
+  Missing documentation for:
+    checkConfiguredPackage (Distribution/PackageDescription/Check.hs:159)
+  57% (  4 /  7) in 'Distribution.Make'
+  Missing documentation for:
+    defaultMain (Distribution/Make.hs:86)
+    defaultMainArgs (Distribution/Make.hs:89)
+    defaultMainNoRead (Distribution/Make.hs:93)
+  86% (  6 /  7) in 'Distribution.Compat.Time'
+  Missing documentation for:
+    Module header
+  89% (  8 /  9) in 'Distribution.Backpack.ReadyComponent'
+  Missing documentation for:
+    dispReadyComponent (Distribution/Backpack/ReadyComponent.hs:176)
+  50% (  1 /  2) in 'Distribution.Backpack.Configure'
+  Missing documentation for:
+    configureComponentLocalBuildInfos (Distribution/Backpack/Configure.hs:60)
+  50% (  1 /  2) in 'Distribution.Backpack.DescribeUnitId'
+  Missing documentation for:
+    Module header
+  53% (  9 / 17) in 'Distribution.Simple.Register'
+  Missing documentation for:
+    register (Distribution/Simple/Register.hs:97)
+    unregister (Distribution/Simple/Register.hs:563)
+    internalPackageDBPath (Distribution/Simple/Register.hs:586)
+    initPackageDB (Distribution/Simple/Register.hs:288)
+    doesPackageDBExist (Distribution/Simple/Register.hs:306)
+    deletePackageDB (Distribution/Simple/Register.hs:314)
+    registerPackage (Distribution/Simple/Register.hs:341)
+    generateRegistrationInfo (Distribution/Simple/Register.hs:217)
+  39% (  7 / 18) in 'Distribution.Simple.PreProcess'
+  Missing documentation for:
+    mkSimplePreProcessor (Distribution/Simple/PreProcess.hs:125)
+    runSimplePreProcessor (Distribution/Simple/PreProcess.hs:134)
+    ppCpp (Distribution/Simple/PreProcess.hs:340)
+    ppCpp' (Distribution/Simple/PreProcess.hs:343)
+    ppGreenCard (Distribution/Simple/PreProcess.hs:320)
+    ppC2hs (Distribution/Simple/PreProcess.hs:481)
+    ppHsc2hs (Distribution/Simple/PreProcess.hs:389)
+    ppHappy (Distribution/Simple/PreProcess.hs:612)
+    ppAlex (Distribution/Simple/PreProcess.hs:620)
+    ppUnlit (Distribution/Simple/PreProcess.hs:331)
+    platformDefines (Distribution/Simple/PreProcess.hs:529)
+  75% (  3 /  4) in 'Distribution.Simple.UserHooks'
+  Missing documentation for:
+    Args (Distribution/Simple/UserHooks.hs:44)
+ 100% (  2 /  2) in 'Distribution.Simple.Test'
+ 100% (  2 /  2) in 'Distribution.Simple.Bench'
+  93% ( 13 / 14) in 'Distribution.Simple.SrcDist'
+  Missing documentation for:
+    printPackageProblems (Distribution/Simple/SrcDist.hs:461)
+  80% ( 24 / 30) in 'Distribution.Simple.Configure'
+  Missing documentation for:
+    configCompiler (Distribution/Simple/Configure.hs:1618)
+    configCompilerAux (Distribution/Simple/Configure.hs:1626)
+    configCompilerEx (Distribution/Simple/Configure.hs:1595)
+    configCompilerAuxEx (Distribution/Simple/Configure.hs:1585)
+    checkForeignDeps (Distribution/Simple/Configure.hs:1638)
+    platformDefines (Distribution/Simple/PreProcess.hs:529)
+  86% (  6 /  7) in 'Distribution.Simple.Build'
+  Missing documentation for:
+    repl (Distribution/Simple/Build.hs:131)
+  50% (  2 /  4) in 'Distribution.Simple.Haddock'
+  Missing documentation for:
+    haddock (Distribution/Simple/Haddock.hs:122)
+    hscolour (Distribution/Simple/Haddock.hs:674)
+  50% (  1 /  2) in 'Distribution.Simple.Doctest'
+  Missing documentation for:
+    doctest (Distribution/Simple/Doctest.hs:57)
+  91% ( 21 / 23) in 'Distribution.Simple'
+  Missing documentation for:
+    Args (Distribution/Simple/UserHooks.hs:44)
+    autoconfUserHooks (Distribution/Simple.hs:633)
+Warning: Distribution.Compat.Semigroup: could not find link destinations for:
+    EventLifetime GSemigroup GMonoid
+Warning: Distribution.Compat.ReadP: could not find link destinations for:
+    Parser P
+Warning: Distribution.Compat.Prelude.Internal: could not find link destinations for:
+    GSemigroup GMonoid typeRep# ~ GNFData P unsafeIndex unsafeRangeSize numElements unsafeArray unsafeAt unsafeReplace unsafeAccum unsafeAccumArray getNumElements unsafeNewArray_ unsafeRead unsafeWrite D:R:UReckWordp0 UWord uWord#
+Warning: Distribution.Compat.Graph: could not find link destinations for:
+    ~ fromMap
+Warning: Distribution.ReadE: could not find link destinations for:
+    ErrorMsg
+Warning: Distribution.ModuleName: could not find link destinations for:
+    ShortTextLst
+Warning: Distribution.Simple.Utils: could not find link destinations for:
+    NormalMark AlwaysTrace
+Warning: Distribution.Utils.LogProgress: could not find link destinations for:
+    CtxMsg
+Warning: Distribution.Simple.Program.Find: could not find link destinations for:
+    findExecutable
+Warning: Distribution.Simple.Program.Types: could not find link destinations for:
+    findExecutable
+Warning: Distribution.Simple.Program: could not find link destinations for:
+    findExecutable
+Warning: Distribution.Simple.PackageIndex: could not find link destinations for:
+    DepUniqueKey
+Warning: Distribution.Simple.Setup: could not find link destinations for:
+    programDbPaths dispModSubstEntry
+Warning: Distribution.Simple.Build.Macros: could not find link destinations for:
+    generateToolVersionMacros
+Warning: Distribution.Simple.BuildTarget: could not find link destinations for:
+    matchInexactly findMatch None Unambiguous Ambiguous
+Warning: Distribution.Simple.GHC: could not find link destinations for:
+    gbuild GBuildMode
+Warning: Distribution.PackageDescription.Configuration: could not find link destinations for:
+    PDTagged PDNull
+Warning: Distribution.Backpack.Configure: could not find link destinations for:
+    PreExistingComponent
+Warning: Distribution.Simple.SrcDist: could not find link destinations for:
+    CreateArchiveFun
+Documentation created:
+.stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/doc/html/Cabal/index.html,
+.stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/doc/html/Cabal/Cabal.txt
+Installing library in /mnt/hdd/stack/snapshots/x86_64-linux-nopie/lts-11.15/8.2.2/lib/x86_64-linux-ghc-8.2.2/Cabal-2.0.1.1-ARIl7MGNKZFBAH1HVzpC6s
+Registering library for Cabal-2.0.1.1..
