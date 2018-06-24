@@ -1,0 +1,26 @@
+#!/bin/sh
+
+HOST=localhost
+PORT=8080
+
+if [[ $# -ne 1 ]]
+then
+    echo "Pasar ruta de driver como argumento"
+    exit 1
+fi
+
+if [[ $(whoami) != "root" ]]
+then
+    echo "Ejecutar como root"
+    exit 1
+fi
+
+state=$(curl -s "$HOST:$PORT/autorizado")
+
+echo $state
+if [[ "$state" == "true" ]]
+then
+    $(sudo "$1" F)
+else
+    $(sudo "$1" f)
+fi

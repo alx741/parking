@@ -24,7 +24,7 @@ type API = "autorizado" :> Get '[JSON] Bool
 startApp :: IO ()
 startApp = do
     initial  <- atomically $ newTVar False
-    run 8080 $ app $ State initial
+    run 3001 $ app $ State initial
 
 data State = State { state :: TVar Bool }
 
