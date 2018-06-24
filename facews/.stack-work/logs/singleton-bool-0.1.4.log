@@ -1,6 +1,0 @@
-Configuring singleton-bool-0.1.4...
-Preprocessing library for singleton-bool-0.1.4..
-Building library for singleton-bool-0.1.4..
-[1 of 1] Compiling Data.Singletons.Bool ( src/Data/Singletons/Bool.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Data/Singletons/Bool.o )
-Installing library in /mnt/hdd/stack/snapshots/x86_64-linux-nopie/lts-11.15/8.2.2/lib/x86_64-linux-ghc-8.2.2/singleton-bool-0.1.4-ED9QTghcrRu1ELhk7dhoQa
-Registering library for singleton-bool-0.1.4..

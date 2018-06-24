@@ -1,4 +1,0 @@
-Configuring base64-bytestring-1.0.0.1...
-Preprocessing library for base64-bytestring-1.0.0.1..
-Building library for base64-bytestring-1.0.0.1..
-[1 of 5] Compiling Data.ByteString.Base64.Internal ( Data/ByteString/Base64/Internal.hs, .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/Data/ByteString/Base64/Internal.o )
