@@ -1,0 +1,14 @@
+#!/bin/sh
+
+HOST=localhost
+PORT=3001
+
+if [[ "$1" == "autorizar" ]]
+then
+    curl -s "$HOST:$PORT/autorizar"
+elif [[ "$1" == "revocar" ]]
+then
+    curl -s "$HOST:$PORT/revocar"
+else
+    echo "uso: ./control_client [autorizar | revocar]"
+fi
