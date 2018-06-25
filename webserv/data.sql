@@ -2,15 +2,15 @@
 
 use Parking;
 
-DELETE FROM Puesto;
-DELETE FROM Bloque;
-DELETE FROM Usuario;
-DELETE FROM Edificio;
+DELETE FROM puesto;
+DELETE FROM bloque;
+DELETE FROM usuario;
+DELETE FROM edificio;
 
-INSERT INTO Edificio
+INSERT INTO edificio
 VALUES (0, "Ingeniería", 2, 0, -2.9010587, -79.0097391);
 
-INSERT INTO Usuario (nombre, email, placa, edificioId)
+INSERT INTO usuario (nombre, email, placa, edificioId)
 VALUES
     ("Alysa Stanton","Abdullah@henri.us","281", 1),
     ("Vilma Runolfsson I","Roslyn_Luettgen@deonte.ca","62", 1),
@@ -24,16 +24,33 @@ VALUES
     ("Nathaniel Kulas DVM","Valerie@sadye.tv","493", 1);
 
 
-INSERT INTO Bloque
+INSERT INTO bloque
 VALUES
-    (1, 1, -2.9010587, -79.0097391, 0, 0, 0, NOW()),
-    (2, 1, -2.9010587, -79.0097391, 0, 0, 0, NOW());
+    (1, 1, -2.9010587, -79.0097391, 15, 0, 0, NOW()),
+    (2, 1, -2.9010587, -79.0097391, 7, 0, 0, NOW());
 
-INSERT INTO Puesto (bloqueId, puesto, ocupado)
+INSERT INTO puesto (bloqueId, puesto, ocupado)
 VALUES
     (1, 1, 0),
     (1, 2, 0),
     (1, 3, 0),
+    (1, 4, 0),
+    (1, 5, 0),
+    (1, 6, 0),
+    (1, 7, 0),
+    (1, 8, 0),
+    (1, 9, 0),
+    (1, 10, 0),
+    (1, 11, 0),
+    (1, 12, 0),
+    (1, 13, 0),
+    (1, 14, 0),
+    (1, 15, 0),
+
+    (2, 1, 0),
+    (2, 2, 0),
+    (2, 3, 0),
     (2, 4, 0),
     (2, 5, 0),
-    (2, 6, 0);
+    (2, 6, 0),
+    (2, 7, 0);
