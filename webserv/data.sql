@@ -8,7 +8,7 @@ DELETE FROM usuario;
 DELETE FROM edificio;
 
 INSERT INTO edificio
-VALUES (0, "Ingeniería", 2, 0, -2.9010587, -79.0097391);
+VALUES (0, "Ingenieria", 2, 0, -2.9010587, -79.0097391);
 
 INSERT INTO usuario (nombre, email, placa, edificioId)
 VALUES

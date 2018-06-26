@@ -18,6 +18,7 @@ import Servant.API
 type Api = "usuario" :> Capture "email" Text  :> Get '[JSON] (Maybe Usuario)
   :<|> "edificio" :> Capture "id" EdificioId :> Get '[JSON] (Maybe Edificio)
   :<|> "edificio" :> Capture "id" EdificioId :> "bloques" :> Get '[JSON] [Bloque]
+  :<|> "puesto" :> Capture "id" BloqueId :> Get '[JSON] [Puesto]
 
 api :: Proxy Api
 api = Proxy

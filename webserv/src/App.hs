@@ -26,7 +26,6 @@ import Models
 
 connInfo :: ConnectInfo
 connInfo = ConnectInfo
-    -- { connectHost = "localhost"
     { connectHost = "parking1.mysql.database.azure.com"
     , connectPort = 3306
     , connectUser = "alx@parking1"
@@ -39,11 +38,12 @@ connInfo = ConnectInfo
 
 server :: ConnectionPool -> Server Api
 server pool =
-  usuarioGetH :<|> edificioGetH :<|> bloqueGetH
+  usuarioGetH :<|> edificioGetH :<|> bloqueGetH :<|> puestoGetH
   where
     usuarioGetH email    = liftIO $ userGet email
     edificioGetH id      = liftIO $ edificioGet id
     bloqueGetH id        = liftIO $ bloqueGet id
+    puestoGetH id        = liftIO $ puestoGet id
 
     userGet :: Text -> IO (Maybe Usuario)
     userGet email = flip runSqlPersistMPool pool $ do
@@ -57,6 +57,11 @@ server pool =
     bloqueGet id = flip runSqlPersistMPool pool $ do
         bloques <- selectList [BloqueEdificioId ==. id] []
         return $ entityVal <$> bloques
+
+    puestoGet :: BloqueId -> IO [Puesto]
+    puestoGet id = flip runSqlPersistMPool pool $ do
+        puestos <- selectList [PuestoBloqueId ==. id] []
+        return $ entityVal <$> puestos
 
 
 app :: ConnectionPool -> Application
