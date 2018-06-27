@@ -1,3 +1,124 @@
+.spot
+{
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    padding-top: 130px;
+    padding-left: 30px;
+    height: 70px;
+    width: 150px;
+}
+
+#block1-spot1 {
+    top: 543px;
+    left: 440px;
+}
+
+#block1-spot2 {
+    top: 460px;
+    left: 440px;
+}
+
+#block1-spot3 {
+    top: 380px;
+    left: 440px;
+}
+
+#block1-spot4 {
+    top: 298px;
+    left: 440px;
+}
+
+#block1-spot5 {
+    top: 220px;
+    left: 440px;
+}
+
+#block1-spot6 {
+    top: 220px;
+    left: 240px;
+}
+
+#block1-spot7 {
+    top: 298px;
+    left: 240px;
+}
+
+#block1-spot8 {
+    top: 378px;
+    left: 240px;
+}
+
+#block1-spot9 {
+    top: 460px;
+    left: 240px;
+}
+
+#block1-spot10 {
+    top: 543px;
+    left: 240px;
+}
+
+#block1-spot11 {
+    top: 540px;
+    left: 40px;
+}
+
+#block1-spot12 {
+    top: 460px;
+    left: 40px;
+}
+
+#block1-spot13 {
+    top: 380px;
+    left: 40px;
+}
+
+#block1-spot14 {
+    top: 298px;
+    left: 40px;
+}
+
+#block1-spot15 {
+    top: 217px;
+    left: 40px;
+}
+
+#block2-spot1 {
+    top: 798px;
+    left: 890px;
+}
+
+#block2-spot2 {
+    top: 878px;
+    left: 890px;
+}
+
+#block2-spot3 {
+    top: 957px;
+    left: 890px;
+}
+
+#block2-spot4 {
+    top: 1032px;
+    left: 890px;
+}
+
+#block2-spot5 {
+    top: 1030px;
+    left: 625px;
+}
+
+#block2-spot6 {
+    top: 950px;
+    left: 625px;
+}
+
+#block2-spot7 {
+    top: 871px;
+    left: 625px;
+}
+
 #front-inge {
     text-align: center;
     color: white;
@@ -19,69 +140,6 @@
     left: 620px;
     height: 400px;
     width: 400px;
-}
-
-#right-arqui {
-    background-color: rgba(255, 0, 0, 0.4);
-    color: white;
-    font-size: 70px;
-    padding-top: 50px;
-    padding-left: 100px;
-    top: 500px;
-    left: 800px;
-    height: 350px;
-    width: 300px;
-}
-
-#left-arqui {
-    background-color: rgba(0, 255, 0, 0.4);
-    color: white;
-    font-size: 50px;
-    padding-top: 50px;
-    padding-left: 0px;
-    top: 200px;
-    left: 50px;
-    height: 350px;
-    width: 200px;
-}
-
-#back-arqui {
-    background-color: rgba(255, 255, 0, 0.4);
-    text-align: center;
-    color: white;
-    font-size: 70px;
-    padding-top: -10px;
-    padding-left: 30px;
-    top: 700px;
-    left: 20px;
-    height: 250px;
-    width: 350px;
-}
-
-#front-econ {
-    background-color: rgba(0, 255, 0, 0.4);
-    text-align: center;
-    color: white;
-    font-size: 70px;
-    padding-top: 30px;
-    padding-left: 30px;
-    top: 50px;
-    left: 600px;
-    height: 350px;
-    width: 300px;
-}
-
-#front-filo {
-    background-color: rgba(0, 255, 0, 0.4);
-    text-align: center;
-    color: white;
-    font-size: 70px;
-    padding-top: 350px;
-    padding-left: 10px;
-    top: 170px;
-    left: 630px;
-    height: 1000px;
-    width: 200px;
 }
 
 .full {
