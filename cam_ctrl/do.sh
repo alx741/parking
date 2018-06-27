@@ -23,13 +23,17 @@ function funky
 
             if [[ $current_section -eq 0 ]] && [[ $tmp_section -eq 0 ]];
             then
+                touch ./lock
                 sudo ./driver I
+                rm ./lock
                 SECCION=1
                 sleep 3
             elif [[ $current_section -eq 1 ]] && [[ $tmp_section -eq 1 ]];
             then
                 current_section=0
+                touch ./lock
                 sudo ./driver D
+                rm ./lock
                 SECCION=0
                 sleep 3
             fi
@@ -42,11 +46,15 @@ function funky
         if [[ $current_section -eq 0 ]];
         then
             current_section=1
+            touch ./lock
             sudo ./driver I
+            rm ./lock
             sleep 20
         else
             current_section=0
+            touch ./lock
             sudo ./driver D
+            rm ./lock
             sleep 20
         fi
 
@@ -60,7 +68,6 @@ do
     then
         echo "seccion 1"
         sleep .5
-        #capturar la imagen de la webcam aqui:
         fswebcam -S 20 -q -r 640x480 --jpeg 85 --no-banner ./puntoInicio.jpg
         scp ./puntoInicio.jpg boro101094@191.232.235.107:/home/boro101094/casaAbierta/procesos/fotosInicio
         curl -s 'http://104.42.176.241:3002/working'
