@@ -1,8 +1,0 @@
-#!/bin/sh
-
-HOST=104.42.176.241
-PORT=3001
-
-state=$(curl -s "$HOST:$PORT/autorizado")
-
-echo $state

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-HOST=localhost
+HOST=104.42.176.241
 PORT=3001
 
 if [[ "$1" == "autorizar" ]]
