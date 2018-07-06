@@ -7,15 +7,16 @@
 
 module App where
 
-import Control.Monad.IO.Class (liftIO)
-import Control.Monad.Logger   (runStderrLoggingT)
+import Control.Monad.IO.Class   (liftIO)
+import Control.Monad.Logger     (runStderrLoggingT)
 import Data.String.Conversions  (cs)
 import Data.Text                (Text)
+import Database.Persist.MySQL   (ConnectInfo (..), ConnectionPool, connectPath,
+                                 createMySQLPool, defaultConnectInfo, entityVal,
+                                 get, insert, runMigration, runSqlPersistMPool,
+                                 runSqlPool, selectFirst, selectList,
+                                 updateWhere, (=.), (==.))
 import Database.Persist.Types
-import Database.Persist.MySQL   (ConnectInfo(..), ConnectionPool, createMySQLPool,
-                                 entityVal, insert, runMigration,
-                                 runSqlPersistMPool, runSqlPool, selectFirst, selectList, get,
-                                 (==.), connectPath, defaultConnectInfo)
 import Network.Wai.Handler.Warp as Warp
 
 import Servant
@@ -38,12 +39,21 @@ connInfo = ConnectInfo
 
 server :: ConnectionPool -> Server Api
 server pool =
-  usuarioGetH :<|> edificioGetH :<|> bloqueGetH :<|> puestoGetH
+       usuarioGetH
+  :<|> edificioGetH
+  :<|> bloqueGetH
+  :<|> puestoGetH
+  :<|> puestoIsReservedH
+  :<|> puestoReserveH
+  :<|> puestoWipeReserveH
   where
-    usuarioGetH email    = liftIO $ userGet email
-    edificioGetH id      = liftIO $ edificioGet id
-    bloqueGetH id        = liftIO $ bloqueGet id
-    puestoGetH id        = liftIO $ puestoGet id
+    usuarioGetH email        = liftIO $ userGet email
+    edificioGetH id          = liftIO $ edificioGet id
+    bloqueGetH id            = liftIO $ bloqueGet id
+    puestoGetH id            = liftIO $ puestoGet id
+    puestoIsReservedH id pid = liftIO $ puestoIsReserved id pid
+    puestoReserveH id pid    = liftIO $ puestoReserve id pid
+    puestoWipeReserveH       = liftIO $ puestoWipeReserve
 
     userGet :: Text -> IO (Maybe Usuario)
     userGet email = flip runSqlPersistMPool pool $ do
@@ -62,6 +72,23 @@ server pool =
     puestoGet id = flip runSqlPersistMPool pool $ do
         puestos <- selectList [PuestoBloqueId ==. id] []
         return $ entityVal <$> puestos
+
+    puestoIsReserved :: BloqueId -> Int -> IO Bool
+    puestoIsReserved id pid = flip runSqlPersistMPool pool $ do
+        puesto <- selectFirst [PuestoBloqueId ==. id, PuestoPuesto ==. pid] []
+        case puesto of
+            Just p  -> return $ puestoReservado $ entityVal p
+            Nothing -> return False
+
+    puestoReserve :: BloqueId -> Int -> IO ()
+    puestoReserve id pid = flip runSqlPersistMPool pool $ do
+        updateWhere [PuestoBloqueId ==. id, PuestoPuesto ==. pid] [PuestoReservado =. True]
+        return ()
+
+    puestoWipeReserve :: IO ()
+    puestoWipeReserve = flip runSqlPersistMPool pool $ do
+        updateWhere [] [PuestoReservado =. False]
+        return ()
 
 
 app :: ConnectionPool -> Application

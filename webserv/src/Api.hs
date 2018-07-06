@@ -20,5 +20,9 @@ type Api = "usuario" :> Capture "email" Text  :> Get '[JSON] (Maybe Usuario)
   :<|> "edificio" :> Capture "id" EdificioId :> "bloques" :> Get '[JSON] [Bloque]
   :<|> "puesto" :> Capture "id" BloqueId :> Get '[JSON] [Puesto]
 
+  :<|> "puesto" :> Capture "id" BloqueId :> Capture "pid" Int :> "isReserved" :> Get '[JSON] Bool
+  :<|> "puesto" :> Capture "id" BloqueId :> Capture "pid" Int :> "reserve" :> Get '[JSON] ()
+  :<|> "puesto" :> "wipeReserved" :> Get '[JSON] ()
+
 api :: Proxy Api
 api = Proxy

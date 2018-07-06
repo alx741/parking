@@ -43,6 +43,7 @@ Puesto
     bloqueId BloqueId
     puesto Int
     ocupado Bool
+    reservado Bool
     deriving Eq Read Show Generic
 
 Usuario
