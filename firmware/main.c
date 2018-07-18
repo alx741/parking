@@ -42,6 +42,14 @@ void init(void)
     // Light control
     DDRB |= (1 << PORTB3);
     PORTB &= ~(1 << PORTB3);
+
+    // Reservation ligths
+    DDRD |= (1 << PORTD2);
+    PORTD &= ~(1 << PORTD2);
+    DDRD |= (1 << PORTD3);
+    PORTD &= ~(1 << PORTD3);
+    DDRC |= (1 << PORTC5);
+    PORTC &= ~(1 << PORTC5);
 }
 
 void toggle_lights(void)
@@ -73,8 +81,7 @@ void lights_off(void)
 command_t read_command(char c)
 {
     command_t command;
-    command.command = 0x0F & c;
-    command.value = false;
+    command.command = 0xFF & c;
     return command;
 }
 
@@ -153,6 +160,30 @@ void execute_command(command_t c)
 
         case DISABLE_AUTO_ENTRY_REACT:
             AUTO_ENTRY_REACT_ENABLED = false;
+            break;
+
+        case RESERVE_ON_1:
+            PORTD |= (1 << PORTD2);
+            break;
+
+        case RESERVE_ON_2:
+            PORTD |= (1 << PORTD3);
+            break;
+
+        case RESERVE_ON_3:
+            PORTC |= (1 << PORTC5);
+            break;
+
+        case RESERVE_OFF_1:
+            PORTD &= ~(1 << PORTD2);
+            break;
+
+        case RESERVE_OFF_2:
+            PORTD &= ~(1 << PORTD3);
+            break;
+
+        case RESERVE_OFF_3:
+            PORTC &= ~(1 << PORTC5);
             break;
     }
 }
