@@ -34,6 +34,8 @@ function onNavigatingTo(args) {
     page.bindingContext = parking;
 }
 
+const host = "192.168.1.50"
+
 function getBlocks(args)
 {
     var bloque2 = new Array(15);
@@ -42,7 +44,7 @@ function getBlocks(args)
     let block1spots = 15;
     let block2spots = 7;
 
-    fetchModule.fetch("http://104.42.176.241:3000/puesto/1")
+    fetchModule.fetch("http://" + host + ":3000/puesto/1")
         .then(handleErrors)
         .then(function(response) {
             return response.json();
@@ -58,7 +60,7 @@ function getBlocks(args)
             return;
         });
 
-    fetchModule.fetch("http://104.42.176.241:3000/puesto/2")
+    fetchModule.fetch("http://" + host + ":3000/puesto/2")
         .then(handleErrors)
         .then(function(response) {
             return response.json();
