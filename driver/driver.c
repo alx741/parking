@@ -82,6 +82,9 @@ int main(int argc, char *argv[])
 [p|P] - bajar|levantar brazo posterior\n \
 [s|S] - leer sensor frontal|posterior (true = carro en la entrada)\n \
 [r|R] - desactivar|activar reacción automática de brazos\n \
+[1|2] - desactivar|activar reservado puesto 1\n \
+[3|4] - desactivar|activar reservado puesto 2\n \
+[5|6] - desactivar|activar reservado puesto 3\n \
                 ");
         return 1;
     }
@@ -148,6 +151,30 @@ int main(int argc, char *argv[])
 
         case 'R':
             command.command = ENABLE_AUTO_ENTRY_REACT;
+            break;
+
+        case '1':
+            command.command = RESERVE_ON_1;
+            break;
+
+        case '2':
+            command.command = RESERVE_OFF_1;
+            break;
+
+        case '3':
+            command.command = RESERVE_ON_2;
+            break;
+
+        case '4':
+            command.command = RESERVE_OFF_2;
+            break;
+
+        case '5':
+            command.command = RESERVE_ON_3;
+            break;
+
+        case '6':
+            command.command = RESERVE_OFF_3;
             break;
     }
 
