@@ -44,6 +44,7 @@ Puesto
     puesto Int
     ocupado Bool
     reservado Bool
+    reservadoAt UTCTime
     deriving Eq Read Show Generic
 
 Usuario

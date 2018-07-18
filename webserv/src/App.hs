@@ -1,20 +1,21 @@
 {-# LANGUAGE DataKinds         #-}
-{-# LANGUAGE DeriveGeneric     #-}
-{-# LANGUAGE LambdaCase        #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TypeFamilies      #-}
 {-# LANGUAGE TypeOperators     #-}
 
 module App where
 
+import Control.Monad            (forM_)
 import Control.Monad.IO.Class   (liftIO)
 import Control.Monad.Logger     (runStderrLoggingT)
 import Data.String.Conversions  (cs)
 import Data.Text                (Text)
+import Data.Time.Clock
+import Data.Time.Clock.POSIX
 import Database.Persist.MySQL   (ConnectInfo (..), ConnectionPool, connectPath,
                                  createMySQLPool, defaultConnectInfo, entityVal,
                                  get, insert, runMigration, runSqlPersistMPool,
-                                 runSqlPool, selectFirst, selectList,
+                                 runSqlPool, selectFirst, selectList, update,
                                  updateWhere, (=.), (==.))
 import Database.Persist.Types
 import Network.Wai.Handler.Warp as Warp
@@ -83,22 +84,33 @@ server pool =
 
     puestoReserve :: BloqueId -> Int -> IO ()
     puestoReserve id pid = flip runSqlPersistMPool pool $ do
-        updateWhere [PuestoBloqueId ==. id, PuestoPuesto ==. pid] [PuestoReservado =. True]
+        time <- liftIO getCurrentTime
+        updateWhere [PuestoBloqueId ==. id, PuestoPuesto ==. pid] [PuestoReservado =. True, PuestoReservadoAt =. time]
         return ()
 
     puestoWipeReserve :: IO ()
     puestoWipeReserve = flip runSqlPersistMPool pool $ do
-        updateWhere [] [PuestoReservado =. False]
+        curTime <- liftIO getCurrentTime
+        spots <- selectList [PuestoReservado ==. True] []
+
+        let reservedOverDue = filter
+                (\(Entity _ a) -> isOverDue curTime $ puestoReservadoAt a)
+                spots
+
+        forM_ reservedOverDue (\a -> update (entityKey a) [PuestoReservado =. False, PuestoReservadoAt =. curTime])
         return ()
 
+
+isOverDue :: UTCTime -> UTCTime -> Bool
+isOverDue currentTime placementTime = placementTime < expireTime
+    where expireTime = posixSecondsToUTCTime $ utcTimeToPOSIXSeconds currentTime - 5
 
 app :: ConnectionPool -> Application
 app pool = serve api $ server pool
 
 mkApp :: IO Application
 mkApp = do
-  pool <- runStderrLoggingT $ do
-    createMySQLPool connInfo 5
+  pool <- runStderrLoggingT $ createMySQLPool connInfo 5
 
   runSqlPool (runMigration migrateAll) pool
   return $ app pool
