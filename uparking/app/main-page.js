@@ -3,6 +3,7 @@ var createViewModel = require("./main-view-model").createViewModel;
 var observableModule = require("data/observable");
 var page;
 
+
 var parking = new observableModule.fromObject({
     b1s1: "empty",
     b1s2: "empty",
@@ -44,36 +45,87 @@ function getBlocks(args)
     let block1spots = 15;
     let block2spots = 7;
 
-    fetchModule.fetch("http://" + host + ":3000/puesto/1")
+    var spot1reserved = false;
+    var spot2reserved = false;
+    var spot3reserved = false;
+
+    fetchModule.fetch("http://" + host + ":3000/puesto/wipeReserved")
         .then(handleErrors)
         .then(function(response) {
             return response.json();
         })
         .then(function(data) {
-            console.log(data[0].puestoOcupado);
-
-            for (i = 0; i < block1spots; i++)
-            {
-                setState(1, i+1, data[i].puestoOcupado);
-            }
-
-            return;
+            spot1reserved = data;
         });
 
-    fetchModule.fetch("http://" + host + ":3000/puesto/2")
+    fetchModule.fetch("http://" + host + ":3000/puesto/1/1/isReserved")
         .then(handleErrors)
         .then(function(response) {
             return response.json();
         })
         .then(function(data) {
-            console.log(data[0].puestoOcupado);
+            spot1reserved = data;
 
-            for (i = 0; i < block2spots; i++)
-            {
-                setState(2, i+1, data[i].puestoOcupado);
-            }
+            fetchModule.fetch("http://" + host + ":3000/puesto/1/10/isReserved")
+                .then(handleErrors)
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(data) {
+                    spot2reserved = data;
 
-            return;
+                    fetchModule.fetch("http://" + host + ":3000/puesto/1/11/isReserved")
+                        .then(handleErrors)
+                        .then(function(response) {
+                            return response.json();
+                        })
+                        .then(function(data) {
+                            spot3reserved = data;
+
+                            fetchModule.fetch("http://" + host + ":3000/puesto/1")
+                                .then(handleErrors)
+                                .then(function(response) {
+                                    return response.json();
+                                })
+                                .then(function(data) {
+                                    for (i = 0; i < block1spots; i++)
+                                    {
+                                        if (i == 0 && spot1reserved == true)
+                                        {
+                                            parking.set("b1s1", "spot reserved");
+                                        }
+                                        else if (i == 9 && spot2reserved == true)
+                                        {
+                                            parking.set("b1s10", "spot reserved");
+                                        }
+                                        else if (i == 10 && spot3reserved == true)
+                                        {
+                                            parking.set("b1s11", "spot reserved");
+                                        }
+                                        else
+                                        {
+                                            setState(1, i+1, data[i].puestoOcupado);
+                                        }
+                                    }
+
+                                    return;
+                                });
+
+                            fetchModule.fetch("http://" + host + ":3000/puesto/2")
+                                .then(handleErrors)
+                                .then(function(response) {
+                                    return response.json();
+                                })
+                                .then(function(data) {
+                                    for (i = 0; i < block2spots; i++)
+                                    {
+                                        setState(2, i+1, data[i].puestoOcupado);
+                                    }
+
+                                    return;
+                                });
+                    });
+                });
         });
 
 }
@@ -93,23 +145,6 @@ function setState(block, spot, state)
     parking.set("b" + block + "s" + spot, "spot " + state_render);
 }
 
-// function getStateClass(totales, vacios)
-// {
-//     var ratio = vacios/totales
-//     if (ratio >= 0.3)
-//     {
-//         return "empty";
-//     }
-//     else if (ratio >= 0.1)
-//     {
-//         return "medium";
-//     }
-//     else
-//     {
-//         return "full";
-//     }
-// }
-
 function handleErrors(response) {
     if (!response.ok) {
         console.log("ERROR in fetch");
@@ -122,3 +157,40 @@ function handleErrors(response) {
 setInterval(getBlocks, 2000); ;
 
 exports.onNavigatingTo = onNavigatingTo;
+
+function reserve1(args) {
+    parking.set("b1s11", "spot reserved");
+    fetchModule.fetch("http://" + host + ":3000/puesto/1/11/reserve")
+        .then(handleErrors)
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+        });
+}
+
+function reserve2(args) {
+    parking.set("b1s10", "spot reserved");
+    fetchModule.fetch("http://" + host + ":3000/puesto/1/10/reserve")
+        .then(handleErrors)
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+        });
+}
+
+function reserve3(args) {
+    parking.set("b1s1", "spot reserved");
+    fetchModule.fetch("http://" + host + ":3000/puesto/1/1/reserve")
+        .then(handleErrors)
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+        });
+}
+
+exports.reserve1 = reserve1;
+exports.reserve2 = reserve2;
+exports.reserve3 = reserve3;

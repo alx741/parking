@@ -153,3 +153,7 @@
 .empty {
     background-color: rgba(0, 255, 0, 0.4);
 }
+
+.reserved {
+    background-color: rgba(0, 0, 255, 0.8);
+}
